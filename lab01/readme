@@ -1,0 +1,55 @@
+-- Lab01 Readme
+
+If you've made it this far, congratulations!!!
+
+For the rest of this lab we are going to compile a couple of programs and run
+them.  In future lessons we will learn how to edit files and debug programs.
+We're just starting off simple today.
+
+-- hello
+
+It is typical that your first program in a new environment is the "hello
+world" program.  This is a simple program that just prints a string.  You do
+this basically to make sure that you know how to get something simple and
+basic working.  From the command line type:
+
+g++ -o hello hello.cpp
+
+If you've done everything correctly up till now then this will run without any
+errors (i.e., it won't produce any ouptut to the screen).  If you do a
+directory listing you will see a new file called "hello" -- note that there
+isn't an extension.  Linux doesn't use file extensions to decide if something
+is a program or not.  Now, you can run this program by typing the following
+command:
+
+./hello
+
+Note the "./" at the beginning of the command.  This is critical.  If you
+don't have "./" then you will get an error.  If you do this successfully you
+will see the word "hello" printed to the screen.
+
+That's all with hello.
+
+-- secret code
+
+The final part of this lab is to compile the program found in the file
+main.cpp.  I'm not going to give you the command to create this.  I'm going to
+let you figure it out be examining what you did with the hello.cpp file (see
+above).  Once you successfully compile the main.cpp program.  Run it.  It
+should generate output similar to this:
+
+Username: mike.noel
+Class ID: 11585692
+
+Everyone will have a different ID (and I know what your ID should be).
+
+-- Lab completion
+
+To show that you have completed the lab you need to run the main program that
+you compiled above and save the output in a text file. Then using the turnin
+program to send me that text file. For information about turning in
+assignments look at ~mike.noel/classes/all/turnin.txt.
+
+
+
+
