@@ -1,0 +1,70 @@
+================================================================================
+============================== The turnin command ==============================
+================================================================================
+
+The turnin command is used to turn in assignments by submitting files for an
+instructor and class.
+
+================================================================================
+== Submitting files ============================================================
+
+The program is ~mike.noel/bin/turnin. If you add ~mike.noel/bin to your path
+then you can simply run the command by typing "turnin".
+
+In order to submit files for a class you type:
+
+  turnin submit prof=my.instructor course=cs999 file1 file2 file3 ...
+
+This will submit file1, file2, file3 (and any more files you specify) to the
+turnin depository for my.instructor (e.g. mike.noel) and for the specified
+course. It will give you a "receipt" identifier that you can keep if you want
+to have a record of turning in the file(s).
+
+You can call this command as many times as you want. Each subsequent call does
+not overwrite the previous one. 
+
+If you have multiple files to turn in you can either call turnin with multiple
+files listed on the command line, or use zip or tar to create a single bundle
+and turn that in. Either way is fine.
+
+================================================================================
+== Configuration (optional) ====================================================
+
+If you have a single course that is using the turnin command then you can
+configure turnin to remember the instructor and course as follows:
+
+  turnin config set prof=my.instructor course=cs999
+
+After setting up your configuration like this then you can simple type:
+
+  turnin submit file1 file2 file3 ...
+
+That will do the same thing as the full submit command shown above.
+
+You can view your stored configuration:
+
+  turnin config list
+
+You can delete your stored configuration:
+
+  turnin config delete
+
+================================================================================
+== Checking submissions (optional) =============================================
+
+You can check to see what files you have turned in by using the "check"
+command as follows:
+
+  turnin check
+
+At this time, the "check" command requires using the configuration as
+described in the section above.
+
+================================================================================
+== Getting help ================================================================
+
+If you forget how to configure or submit files you can simply run the turnin
+command with the --help argument to see a detailed help screen.
+
+  turnin --help
+
