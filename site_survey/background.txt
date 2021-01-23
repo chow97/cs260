@@ -1,0 +1,84 @@
+Paul slowly opened his eyes and stretched out on the bed; the morning sun
+shone through the small window, lighting the room and gently waking him from a
+solid sleep. The room wasn't large but that didn't really matter. He was on
+Mars! Specially selected for the advance preparation team, a dream job if
+there ever was one, Paul was one of a handful of software engineers picked out
+to be a part of the preparation team. It was hard to believe that this whole
+thing started barely ten months ago but here he was. Paul, and 349 other
+people, were chosen as the team to get Mars ready for the larger colony ships.
+
+Once the vessel, the IMC Two (International Mars Coalition), had obtained
+Martian orbit, each of the seven groups were dropped to their assigned
+planetary locations. The project planners had decided that having seven
+different locations would increase the chances that at least one of them would
+be successful. Of course they didn't describe it that way. They said that they
+wanted colonies spread across the planet so that they would have a better
+chance of monitoring the planet as a whole, rather than just one small
+region. In any case, Boston, Kansas, and Chicago were deployed in the northern
+hemisphere. Alabama, Journey, and Survivor were spread out in the southern
+hemisphere. Paul's colony, Bon Jovi, was right on the equator.
+
+It only took Paul a few minutes to go through his morning routine. Then he
+headed to the common room. A few of the others were already milling around and
+waking up to steaming cups of coffee and trays of reconstituted food. The
+breakfast wasn't much but it would be all that was available for a while. The
+farming group still had quite a ways to go before they would be able to start
+producing fresh food. They promised it would be soon.
+
+Paul shoveled the scrambled eggs and rubbery bacon into his mouth quickly. The
+room was abuzz with excitment. No one knew quite what was going to be
+happening next but no matter what it was, it would be an adventure. Director
+Goliss walked into the room. If it was even possible, she looked more busy and
+concerned than she had been on the ship. That made sense. As the director of
+Bon Jovi colony, her real work was just getting started. Not only that, the
+success, or failure, of the whole site rested on her. Everything Paul had seen
+of her so far had only led him to believe that she was up for the job. Quite
+capable, in fact. Just a little stressed most of the time.
+
+She caught his eye and shifted to stride purposefully towards his table. She
+pulled out a chair and sat. "There you are. Paul, right? I was hoping to find
+you. How are you liking it here so far?"
+
+Before he can answer she continued. "Sorry to interupt but I've got an
+important assignment for you. Last night I got a message from Van Halen." That
+was the base back on Earth. Someone thought it would be funny to have Bon
+Jovi, and all of the other "bands", take orders from Van Halen.
+
+"Van Halen said that they need the surface site data for the energy stations
+right away. I need you to get that reporting software done as soon as
+possible."
+
+Paul nodded. That's right. As the shuttles were dropping off the prep teams,
+they had also sent out thousands of sensors to collect readings on sun
+exposure and windspeed from different areas near each drop site. The data that
+those sensors collected was sitting in large files and needed processing so
+that Van Halen could tell each station where to put their solar arrays and
+windmills. Obviously, setting up efficient energy stations was a priority. The
+processing software should be pretty simple. Just collect the readings and
+print the data out in a format that the managers could understand.
+
+"Yeah, I can start on it immediately," Paul replied. "I should be able to
+finish it in the next day or two. In the weeks before we landed I was
+experimenting with some programming techniques that should make the job quite
+a bit easier."
+
+Director Goliss smiled at him. "Thanks. I knew you would be able to. And when
+you're done, be sure to send copies of your code to the other
+colonies. Journey is already whining about the software being late. I don't
+know what they expect. We just got here!"
+
+She stood from the table looking just a little more relieved.
+
+"Now to get some of this recycled breakfast. I can't wait for the farms to
+start working!"  She quickly headed off.
+
+Paul glanced at the wall across from him. Almost as soon as the common room
+structure had been setup from the prefab units, someone had painted a picture
+of a young man and woman on one of the walls. The names "Tommy" and "Gina"
+were written over them and the line "Livin' on a prayer" underneath.
+
+"Well," Paul said quietly to himself, "I don't know if we're really 'half-way
+there' yet but I know 'we'll make it, I swear'". He finished off his breakfast
+and headed to the computer lab. Time to write some software.
+
+

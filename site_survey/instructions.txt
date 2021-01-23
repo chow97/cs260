@@ -1,0 +1,244 @@
+================================================================================
+========================================================= Overview and Objective 
+
+For this assignment you will write a program that reads in data (imagine it is
+coming from sensors) and stores that data in a special kind of linked
+list. After reading and storing all of the data your program will generate a
+report from the data. The "background.txt" file gives a short story that
+provides some context for where this data is coming from and how it's being
+used. Reading the story is just for fun and is optional.
+
+The two primary objectives of this assignment are to learn how to implement a
+specialized linked list and to gain familiarity with using a linked list in
+solving problems. Using the STL linked list, or any other premade linked list,
+would not fulfill the purpose of the assignment therefore those are
+disallowed.
+
+Linked lists are extremely common in all software. In some cases the
+"standard" linked list will suffice but often it is necessary to create a more
+specialized linked list for solving a specific problem. For this assignment
+you'll be creating a "triply-threaded linked list". More details are provided
+in a section below.
+
+Your program will be evaluated based on both how it runs as well as how it was
+designed and coded. Pay attention to the "rubric.txt" file to see how it will
+be evaluated.
+
+Along with these instructions, I have provided data files and the EXACT
+expected output that corresponds to those data files. It is important that
+your program output matches EXACTLY. This includes spelling, whitespace, and
+punctuation.
+
+The rest of this document provides more details about the assignment. If you
+have any questions, be sure to post in the discussion group or send me
+email. Do not wait until the last minute to start this assignment.
+
+================================================================================
+======================================================================== Details 
+
+The following sections provides details about the requirements for the
+assignment.
+
+-------------------------------------------------------------------- Sensor Data
+
+Each unit of sensor data contains three data items: sector number, exposure
+value, speed value. The sector number represents the geographic sector that
+the reading was taken from. The exposure value represents the percentage of
+exposure to sunlight that the sensor read at the time of the reading. The
+speed value represents the wind speed (in kh/hr) that the sensor read at that
+location. Each sector has only one sensor but that sensor takes several
+readings.
+
+Some of the sensors are bad and intermittently produce incorrect data. When
+this happens, either the exposure or the speed value will be -1. In this case,
+none of the data from that sensor can be trusted and it must all be
+discarded. Note that this isn't just the one bad reading that should be
+discarded, but ALL data from that sensor. This logic is already captured in
+process.cpp. As long as you implement addData() and removeSector() correctly,
+then you don't have to do anything extra to get rid of bad data.
+
+---------------------------------------------------- Triply-threaded Linked List 
+
+As you have learned, a linked list is a list of linked nodes. In its simplest
+form, this is implemented by a node that holds data and a pointer to the next
+node in the chain. This pointer is often referred to as the "next
+pointer". Sometimes the order of the nodes in the linked list doesn't matter
+but other times the order matters and items are inserted into the list in the
+correct position. That is, while inserting into a linked list, you traverse
+down the list to find the right place to insert an item and then insert it
+there.
+
+A simple linked list is sometimes sufficient for an application but more often
+than not a more sophisticated link structure is needed. For this program you
+will be creating a "triply-threaded linked list". This is just a linked list
+that contains three next pointers in each node. One next pointer for the next
+sequential sector number, one next pointer for the next sequential exposure
+value, and one for the next sequential speed value. Except for very rare
+situations, the three next pointers will point to different nodes. Each chain
+of next pointers of the same type represents a "thread" through all of the
+nodes ordered according to that type (smallest to largest). You will also need
+three head pointers in your class since each chain will likely start with a
+different node. Remember, the first node in a chain represents the smallest
+value for that type. It is unlikely the the same node contains the lowest
+sector number, the lowest exposure value, and the lowest windpseed.
+
+When you add or remove an item from the linked list, you will need to add or
+remove it from each thread.
+
+IMPORTANT: this is probably the most important detail about a "triply-threaded
+linked list. For each data item there only ONE node. A "triply-threaded linked
+list" is not the same thing a three linked lists. With three linked lists you
+would have a 3n nodes (for n data readings) but for a "triply-threaded linked
+list" you will have n nodes (for n data readings).
+
+------------------------------------------------------- Report Output and Format
+
+The report that your program outputs contains the following five
+sections. Each section is described in more detail below. The example output
+files that are included with the assignment show the exact format for each.
+
+  - Data values
+  - Averages per sector
+  - Histogram data for exposure
+  - Histogram data for speed
+  - Bad sectors
+
+The "Data values" section lists all of the read in values three times. The
+first time it displays all of the values in order according to the sector
+number (smallest to largest). The second time it displays all of the values in
+order according to the exposure value (smallest to largest). The third time it
+displays all of the values in order according to the speed value (smallest to
+largest). Each list is proceeded with a section header that explains what the
+list is. For example "Data by sector".
+
+Each line that shows the data in a sector shows the sector number, the
+exposure, and the speed. The format is:
+
+Sector: #<num> <exposure>% exposure, <speed> kh/hr windspeed
+
+For example:
+
+Sector: #1 81% exposure, 17 km/hr windspeed
+
+The "Averages per sector" section lists each of the sectors that has data and
+shows the average exposure and speed for that particular sector. This uses the
+same line format as the "Data values" section. For example, the following line
+shows that across all readings, the average exposure in sector #1 was 81% and
+the average windspeed was 17 km/hr.
+
+Sector: #1 81% exposure, 17 km/hr windspeed
+
+The two histogram sections are the same format. The first shows the data for
+exposure and the second for speed. Histogram data is the number of times that
+a particular value occurs in the dataset. Each line in the histogram data
+section is a simple value, count pair. The following example is for a value of
+81 that occurs once:
+
+81, 1
+
+The "Bad sectors" section lists all of the bad sectors. The list of bad
+sectors is a comma separated list of sectors with no line breaks. For example:
+
+17, 51, 119, 170, 187, 204, 221, 255, 272, 289, 306, 340, 374, 391, 408, 442, 493
+
+Each section heading consists of a line of 70 dashes, the title of the
+sections, and then another line of 70 dashes. For example:
+
+--- ... <total of 70 dashes> ... ---
+Data values
+--- ... <total of 70 dashes> ... ---
+
+All of the reporting is done on the cleaned version of the data. That is, it
+doesn't include any data from bad sectors.
+
+================================================================================
+========================================================================= Design
+
+The design of your program is just as important as the functionality of the
+program. The following sections define the design guidelines and some of the
+implementation requirements (in additional to what was described above).
+
+-------------------------------------------------------------- Design Guidelines 
+
+- The most important design decision is to use a separate class for the
+  datalogger, linkedlist, and surveydata classes.
+
+  - datalogger -- This class represents the "business logic" of adding data to
+    the storage. This is the only class that process.cpp knows about and it
+    expects these methods: 
+      - addData() -- add a data item to the logger
+      - removeSector() -- remove all survey data for the given sector
+      - containsSector() -- determine if the given sector data is already in the logger
+      - printReport() -- print a report
+      - printSectorList() -- print a list of all of the sectors in the logger
+  - linkedlist -- This class should implement a linked list. This class should
+    be distinct from the datalogger class.
+  - surveydata -- This class encapsulates the survey data (sector, exposure, speed).
+
+- The datalogger will need to have a linkedlist class member but there should
+  be no "linked list" knowledge in the datalogger. For example, the datalogger
+  must not have access to "nodes" in the linked list or use the "next"
+  pointers. All interaction with the linkedlist list object should be via the
+  linkedlist APIs (that you define) but should hide the mechanics of how a
+  linked list works from the datalogger.
+
+You are welcome to create any additional classes that you need.
+
+---------------------------------------------------------- Internal Requirements
+
+- The program must use the supplied process.cpp file, unmodified, as the main
+  driver.
+- All of the sensor data must be stored in a linked list as described in the
+  linked list section above.
+- Your program must have no memory leaks or memory errors as reported by
+  valgrind. See ~mike.noel/classes/all/memory_check.txt for information on
+  checking for memory leaks and errors.
+- If any of your classes have pointer data members then the class must either
+  provide a copy constructor, assignment operator, and destructor or it must
+  explicitly remove those methods from the class.
+- The program must be able to run using the "large.txt" input data file
+  in less than 15 seconds on the PCC linux server.
+
+================================================================================
+======================================================== Turnin and Extra Credit
+
+You must use the "turnin" program to turn in your assignment. DO NOT USE D2L
+TO TURN IN YOUR ASSIGNMENT. Assignments turned in using D2L will not be
+counted. For information on using the "turnin" program see
+~mike.noel/classes/all/turnin.txt for information on using the "turnin"
+program.
+
+IMPORTANT: If the program fails to compile, crashes, or hangs then the program
+automatically gets a 0.
+
+IMPORTANT: If the program fails to compile, crashes, or hangs then the program
+automatically gets a 0.
+
+IMPORTANT: If the program fails to compile, crashes, or hangs then the program
+automatically gets a 0.
+
+IMPORTANT: If the program fails to compile, crashes, or hangs then the program
+automatically gets a 0.
+
+IMPORTANT: If the program fails to compile, crashes, or hangs then the program
+automatically gets a 0.
+
+(I mentioned that five times on purpose because I don't want anyone to note
+notice it.)
+
+It is possible to earn 1 point of extra credit for this assignment. In order
+to earn the extra credit point you need to create at least one new USEFUL data
+file for testing your program. A data file that simple repeats the data that
+is already provided is not useful. You need to create a new data file (see the
+existing files to see the format) that contains some specific data condition
+that you want to test for. You must name that file "extra.txt" and you must
+also include a file called "explain.txt" that explains what it is about the
+test data in your file that is special. I will evaluate your extra data and
+explanation and if I think that it represents "useful" data then I will award
+the extra credit point.
+
+The extra credit point will give you 1 extra point on this assignment only. It
+will not allow you to exceed to maximum points for the assignment.
+
+
+

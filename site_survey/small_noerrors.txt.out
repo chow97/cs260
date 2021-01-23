@@ -1,0 +1,975 @@
+----------------------------------------------------------------------
+Data values
+----------------------------------------------------------------------
+Data by Sector
+Sector: #13 59% exposure, 33 km/hr windspeed
+Sector: #14 98% exposure, 28 km/hr windspeed
+Sector: #17 9% exposure, 9 km/hr windspeed
+Sector: #35 65% exposure, 11 km/hr windspeed
+Sector: #36 44% exposure, 39 km/hr windspeed
+Sector: #40 94% exposure, 29 km/hr windspeed
+Sector: #45 23% exposure, 26 km/hr windspeed
+Sector: #45 68% exposure, 38 km/hr windspeed
+Sector: #48 72% exposure, 54 km/hr windspeed
+Sector: #50 92% exposure, 22 km/hr windspeed
+Sector: #54 35% exposure, 48 km/hr windspeed
+Sector: #60 99% exposure, 19 km/hr windspeed
+Sector: #64 65% exposure, 14 km/hr windspeed
+Sector: #69 27% exposure, 17 km/hr windspeed
+Sector: #70 2% exposure, 3 km/hr windspeed
+Sector: #71 43% exposure, 27 km/hr windspeed
+Sector: #73 91% exposure, 48 km/hr windspeed
+Sector: #74 10% exposure, 34 km/hr windspeed
+Sector: #76 94% exposure, 31 km/hr windspeed
+Sector: #92 25% exposure, 34 km/hr windspeed
+Sector: #101 48% exposure, 5 km/hr windspeed
+Sector: #107 91% exposure, 37 km/hr windspeed
+Sector: #125 66% exposure, 5 km/hr windspeed
+Sector: #130 41% exposure, 7 km/hr windspeed
+Sector: #134 77% exposure, 23 km/hr windspeed
+Sector: #142 55% exposure, 63 km/hr windspeed
+Sector: #144 33% exposure, 37 km/hr windspeed
+Sector: #161 93% exposure, 27 km/hr windspeed
+Sector: #167 41% exposure, 44 km/hr windspeed
+Sector: #192 59% exposure, 19 km/hr windspeed
+Sector: #194 44% exposure, 33 km/hr windspeed
+Sector: #196 26% exposure, 43 km/hr windspeed
+Sector: #213 89% exposure, 39 km/hr windspeed
+Sector: #218 81% exposure, 31 km/hr windspeed
+Sector: #218 5% exposure, 30 km/hr windspeed
+Sector: #219 65% exposure, 1 km/hr windspeed
+Sector: #222 61% exposure, 34 km/hr windspeed
+Sector: #228 80% exposure, 39 km/hr windspeed
+Sector: #229 68% exposure, 24 km/hr windspeed
+Sector: #241 62% exposure, 18 km/hr windspeed
+Sector: #247 61% exposure, 28 km/hr windspeed
+Sector: #248 89% exposure, 22 km/hr windspeed
+Sector: #250 6% exposure, 41 km/hr windspeed
+Sector: #258 1% exposure, 13 km/hr windspeed
+Sector: #258 84% exposure, 7 km/hr windspeed
+Sector: #266 13% exposure, 34 km/hr windspeed
+Sector: #272 99% exposure, 8 km/hr windspeed
+Sector: #273 74% exposure, 21 km/hr windspeed
+Sector: #274 26% exposure, 22 km/hr windspeed
+Sector: #283 43% exposure, 18 km/hr windspeed
+Sector: #284 79% exposure, 31 km/hr windspeed
+Sector: #285 24% exposure, 2 km/hr windspeed
+Sector: #297 54% exposure, 42 km/hr windspeed
+Sector: #304 60% exposure, 45 km/hr windspeed
+Sector: #304 60% exposure, 6 km/hr windspeed
+Sector: #310 98% exposure, 14 km/hr windspeed
+Sector: #320 50% exposure, 24 km/hr windspeed
+Sector: #321 86% exposure, 21 km/hr windspeed
+Sector: #322 93% exposure, 50 km/hr windspeed
+Sector: #324 45% exposure, 61 km/hr windspeed
+Sector: #325 26% exposure, 30 km/hr windspeed
+Sector: #332 56% exposure, 54 km/hr windspeed
+Sector: #336 53% exposure, 8 km/hr windspeed
+Sector: #342 34% exposure, 39 km/hr windspeed
+Sector: #348 41% exposure, 24 km/hr windspeed
+Sector: #352 6% exposure, 18 km/hr windspeed
+Sector: #361 13% exposure, 38 km/hr windspeed
+Sector: #368 53% exposure, 14 km/hr windspeed
+Sector: #391 85% exposure, 42 km/hr windspeed
+Sector: #391 82% exposure, 34 km/hr windspeed
+Sector: #391 33% exposure, 8 km/hr windspeed
+Sector: #393 49% exposure, 29 km/hr windspeed
+Sector: #399 28% exposure, 25 km/hr windspeed
+Sector: #400 35% exposure, 39 km/hr windspeed
+Sector: #401 74% exposure, 41 km/hr windspeed
+Sector: #401 81% exposure, 17 km/hr windspeed
+Sector: #402 21% exposure, 16 km/hr windspeed
+Sector: #402 70% exposure, 37 km/hr windspeed
+Sector: #407 34% exposure, 51 km/hr windspeed
+Sector: #415 88% exposure, 30 km/hr windspeed
+Sector: #417 93% exposure, 21 km/hr windspeed
+Sector: #423 85% exposure, 19 km/hr windspeed
+Sector: #429 91% exposure, 12 km/hr windspeed
+Sector: #430 13% exposure, 16 km/hr windspeed
+Sector: #434 8% exposure, 2 km/hr windspeed
+Sector: #436 48% exposure, 15 km/hr windspeed
+Sector: #439 87% exposure, 16 km/hr windspeed
+Sector: #443 86% exposure, 41 km/hr windspeed
+Sector: #451 99% exposure, 33 km/hr windspeed
+Sector: #455 57% exposure, 64 km/hr windspeed
+Sector: #456 35% exposure, 62 km/hr windspeed
+Sector: #458 31% exposure, 30 km/hr windspeed
+Sector: #461 67% exposure, 48 km/hr windspeed
+Sector: #462 12% exposure, 15 km/hr windspeed
+Sector: #470 3% exposure, 37 km/hr windspeed
+Sector: #470 53% exposure, 5 km/hr windspeed
+Sector: #470 31% exposure, 13 km/hr windspeed
+Sector: #472 64% exposure, 27 km/hr windspeed
+Sector: #490 11% exposure, 44 km/hr windspeed
+Sector: #493 53% exposure, 52 km/hr windspeed
+Data by Exposure
+Sector: #258 1% exposure, 13 km/hr windspeed
+Sector: #70 2% exposure, 3 km/hr windspeed
+Sector: #470 3% exposure, 37 km/hr windspeed
+Sector: #218 5% exposure, 30 km/hr windspeed
+Sector: #352 6% exposure, 18 km/hr windspeed
+Sector: #250 6% exposure, 41 km/hr windspeed
+Sector: #434 8% exposure, 2 km/hr windspeed
+Sector: #17 9% exposure, 9 km/hr windspeed
+Sector: #74 10% exposure, 34 km/hr windspeed
+Sector: #490 11% exposure, 44 km/hr windspeed
+Sector: #462 12% exposure, 15 km/hr windspeed
+Sector: #361 13% exposure, 38 km/hr windspeed
+Sector: #430 13% exposure, 16 km/hr windspeed
+Sector: #266 13% exposure, 34 km/hr windspeed
+Sector: #402 21% exposure, 16 km/hr windspeed
+Sector: #45 23% exposure, 26 km/hr windspeed
+Sector: #285 24% exposure, 2 km/hr windspeed
+Sector: #92 25% exposure, 34 km/hr windspeed
+Sector: #325 26% exposure, 30 km/hr windspeed
+Sector: #274 26% exposure, 22 km/hr windspeed
+Sector: #196 26% exposure, 43 km/hr windspeed
+Sector: #69 27% exposure, 17 km/hr windspeed
+Sector: #399 28% exposure, 25 km/hr windspeed
+Sector: #458 31% exposure, 30 km/hr windspeed
+Sector: #470 31% exposure, 13 km/hr windspeed
+Sector: #144 33% exposure, 37 km/hr windspeed
+Sector: #391 33% exposure, 8 km/hr windspeed
+Sector: #342 34% exposure, 39 km/hr windspeed
+Sector: #407 34% exposure, 51 km/hr windspeed
+Sector: #54 35% exposure, 48 km/hr windspeed
+Sector: #400 35% exposure, 39 km/hr windspeed
+Sector: #456 35% exposure, 62 km/hr windspeed
+Sector: #130 41% exposure, 7 km/hr windspeed
+Sector: #348 41% exposure, 24 km/hr windspeed
+Sector: #167 41% exposure, 44 km/hr windspeed
+Sector: #283 43% exposure, 18 km/hr windspeed
+Sector: #71 43% exposure, 27 km/hr windspeed
+Sector: #194 44% exposure, 33 km/hr windspeed
+Sector: #36 44% exposure, 39 km/hr windspeed
+Sector: #324 45% exposure, 61 km/hr windspeed
+Sector: #436 48% exposure, 15 km/hr windspeed
+Sector: #101 48% exposure, 5 km/hr windspeed
+Sector: #393 49% exposure, 29 km/hr windspeed
+Sector: #320 50% exposure, 24 km/hr windspeed
+Sector: #493 53% exposure, 52 km/hr windspeed
+Sector: #470 53% exposure, 5 km/hr windspeed
+Sector: #336 53% exposure, 8 km/hr windspeed
+Sector: #368 53% exposure, 14 km/hr windspeed
+Sector: #297 54% exposure, 42 km/hr windspeed
+Sector: #142 55% exposure, 63 km/hr windspeed
+Sector: #332 56% exposure, 54 km/hr windspeed
+Sector: #455 57% exposure, 64 km/hr windspeed
+Sector: #192 59% exposure, 19 km/hr windspeed
+Sector: #13 59% exposure, 33 km/hr windspeed
+Sector: #304 60% exposure, 45 km/hr windspeed
+Sector: #304 60% exposure, 6 km/hr windspeed
+Sector: #247 61% exposure, 28 km/hr windspeed
+Sector: #222 61% exposure, 34 km/hr windspeed
+Sector: #241 62% exposure, 18 km/hr windspeed
+Sector: #472 64% exposure, 27 km/hr windspeed
+Sector: #35 65% exposure, 11 km/hr windspeed
+Sector: #64 65% exposure, 14 km/hr windspeed
+Sector: #219 65% exposure, 1 km/hr windspeed
+Sector: #125 66% exposure, 5 km/hr windspeed
+Sector: #461 67% exposure, 48 km/hr windspeed
+Sector: #229 68% exposure, 24 km/hr windspeed
+Sector: #45 68% exposure, 38 km/hr windspeed
+Sector: #402 70% exposure, 37 km/hr windspeed
+Sector: #48 72% exposure, 54 km/hr windspeed
+Sector: #401 74% exposure, 41 km/hr windspeed
+Sector: #273 74% exposure, 21 km/hr windspeed
+Sector: #134 77% exposure, 23 km/hr windspeed
+Sector: #284 79% exposure, 31 km/hr windspeed
+Sector: #228 80% exposure, 39 km/hr windspeed
+Sector: #218 81% exposure, 31 km/hr windspeed
+Sector: #401 81% exposure, 17 km/hr windspeed
+Sector: #391 82% exposure, 34 km/hr windspeed
+Sector: #258 84% exposure, 7 km/hr windspeed
+Sector: #391 85% exposure, 42 km/hr windspeed
+Sector: #423 85% exposure, 19 km/hr windspeed
+Sector: #443 86% exposure, 41 km/hr windspeed
+Sector: #321 86% exposure, 21 km/hr windspeed
+Sector: #439 87% exposure, 16 km/hr windspeed
+Sector: #415 88% exposure, 30 km/hr windspeed
+Sector: #248 89% exposure, 22 km/hr windspeed
+Sector: #213 89% exposure, 39 km/hr windspeed
+Sector: #429 91% exposure, 12 km/hr windspeed
+Sector: #107 91% exposure, 37 km/hr windspeed
+Sector: #73 91% exposure, 48 km/hr windspeed
+Sector: #50 92% exposure, 22 km/hr windspeed
+Sector: #322 93% exposure, 50 km/hr windspeed
+Sector: #417 93% exposure, 21 km/hr windspeed
+Sector: #161 93% exposure, 27 km/hr windspeed
+Sector: #76 94% exposure, 31 km/hr windspeed
+Sector: #40 94% exposure, 29 km/hr windspeed
+Sector: #310 98% exposure, 14 km/hr windspeed
+Sector: #14 98% exposure, 28 km/hr windspeed
+Sector: #272 99% exposure, 8 km/hr windspeed
+Sector: #60 99% exposure, 19 km/hr windspeed
+Sector: #451 99% exposure, 33 km/hr windspeed
+Data by Speed
+Sector: #219 65% exposure, 1 km/hr windspeed
+Sector: #285 24% exposure, 2 km/hr windspeed
+Sector: #434 8% exposure, 2 km/hr windspeed
+Sector: #70 2% exposure, 3 km/hr windspeed
+Sector: #470 53% exposure, 5 km/hr windspeed
+Sector: #125 66% exposure, 5 km/hr windspeed
+Sector: #101 48% exposure, 5 km/hr windspeed
+Sector: #304 60% exposure, 6 km/hr windspeed
+Sector: #130 41% exposure, 7 km/hr windspeed
+Sector: #258 84% exposure, 7 km/hr windspeed
+Sector: #391 33% exposure, 8 km/hr windspeed
+Sector: #336 53% exposure, 8 km/hr windspeed
+Sector: #272 99% exposure, 8 km/hr windspeed
+Sector: #17 9% exposure, 9 km/hr windspeed
+Sector: #35 65% exposure, 11 km/hr windspeed
+Sector: #429 91% exposure, 12 km/hr windspeed
+Sector: #258 1% exposure, 13 km/hr windspeed
+Sector: #470 31% exposure, 13 km/hr windspeed
+Sector: #64 65% exposure, 14 km/hr windspeed
+Sector: #310 98% exposure, 14 km/hr windspeed
+Sector: #368 53% exposure, 14 km/hr windspeed
+Sector: #462 12% exposure, 15 km/hr windspeed
+Sector: #436 48% exposure, 15 km/hr windspeed
+Sector: #439 87% exposure, 16 km/hr windspeed
+Sector: #430 13% exposure, 16 km/hr windspeed
+Sector: #402 21% exposure, 16 km/hr windspeed
+Sector: #69 27% exposure, 17 km/hr windspeed
+Sector: #401 81% exposure, 17 km/hr windspeed
+Sector: #241 62% exposure, 18 km/hr windspeed
+Sector: #352 6% exposure, 18 km/hr windspeed
+Sector: #283 43% exposure, 18 km/hr windspeed
+Sector: #192 59% exposure, 19 km/hr windspeed
+Sector: #60 99% exposure, 19 km/hr windspeed
+Sector: #423 85% exposure, 19 km/hr windspeed
+Sector: #417 93% exposure, 21 km/hr windspeed
+Sector: #273 74% exposure, 21 km/hr windspeed
+Sector: #321 86% exposure, 21 km/hr windspeed
+Sector: #248 89% exposure, 22 km/hr windspeed
+Sector: #274 26% exposure, 22 km/hr windspeed
+Sector: #50 92% exposure, 22 km/hr windspeed
+Sector: #134 77% exposure, 23 km/hr windspeed
+Sector: #229 68% exposure, 24 km/hr windspeed
+Sector: #348 41% exposure, 24 km/hr windspeed
+Sector: #320 50% exposure, 24 km/hr windspeed
+Sector: #399 28% exposure, 25 km/hr windspeed
+Sector: #45 23% exposure, 26 km/hr windspeed
+Sector: #71 43% exposure, 27 km/hr windspeed
+Sector: #472 64% exposure, 27 km/hr windspeed
+Sector: #161 93% exposure, 27 km/hr windspeed
+Sector: #14 98% exposure, 28 km/hr windspeed
+Sector: #247 61% exposure, 28 km/hr windspeed
+Sector: #40 94% exposure, 29 km/hr windspeed
+Sector: #393 49% exposure, 29 km/hr windspeed
+Sector: #415 88% exposure, 30 km/hr windspeed
+Sector: #325 26% exposure, 30 km/hr windspeed
+Sector: #458 31% exposure, 30 km/hr windspeed
+Sector: #218 5% exposure, 30 km/hr windspeed
+Sector: #76 94% exposure, 31 km/hr windspeed
+Sector: #284 79% exposure, 31 km/hr windspeed
+Sector: #218 81% exposure, 31 km/hr windspeed
+Sector: #194 44% exposure, 33 km/hr windspeed
+Sector: #451 99% exposure, 33 km/hr windspeed
+Sector: #13 59% exposure, 33 km/hr windspeed
+Sector: #391 82% exposure, 34 km/hr windspeed
+Sector: #266 13% exposure, 34 km/hr windspeed
+Sector: #92 25% exposure, 34 km/hr windspeed
+Sector: #74 10% exposure, 34 km/hr windspeed
+Sector: #222 61% exposure, 34 km/hr windspeed
+Sector: #144 33% exposure, 37 km/hr windspeed
+Sector: #470 3% exposure, 37 km/hr windspeed
+Sector: #107 91% exposure, 37 km/hr windspeed
+Sector: #402 70% exposure, 37 km/hr windspeed
+Sector: #361 13% exposure, 38 km/hr windspeed
+Sector: #45 68% exposure, 38 km/hr windspeed
+Sector: #342 34% exposure, 39 km/hr windspeed
+Sector: #213 89% exposure, 39 km/hr windspeed
+Sector: #400 35% exposure, 39 km/hr windspeed
+Sector: #228 80% exposure, 39 km/hr windspeed
+Sector: #36 44% exposure, 39 km/hr windspeed
+Sector: #443 86% exposure, 41 km/hr windspeed
+Sector: #401 74% exposure, 41 km/hr windspeed
+Sector: #250 6% exposure, 41 km/hr windspeed
+Sector: #391 85% exposure, 42 km/hr windspeed
+Sector: #297 54% exposure, 42 km/hr windspeed
+Sector: #196 26% exposure, 43 km/hr windspeed
+Sector: #490 11% exposure, 44 km/hr windspeed
+Sector: #167 41% exposure, 44 km/hr windspeed
+Sector: #304 60% exposure, 45 km/hr windspeed
+Sector: #461 67% exposure, 48 km/hr windspeed
+Sector: #54 35% exposure, 48 km/hr windspeed
+Sector: #73 91% exposure, 48 km/hr windspeed
+Sector: #322 93% exposure, 50 km/hr windspeed
+Sector: #407 34% exposure, 51 km/hr windspeed
+Sector: #493 53% exposure, 52 km/hr windspeed
+Sector: #48 72% exposure, 54 km/hr windspeed
+Sector: #332 56% exposure, 54 km/hr windspeed
+Sector: #324 45% exposure, 61 km/hr windspeed
+Sector: #456 35% exposure, 62 km/hr windspeed
+Sector: #142 55% exposure, 63 km/hr windspeed
+Sector: #455 57% exposure, 64 km/hr windspeed
+----------------------------------------------------------------------
+Averages per sector
+----------------------------------------------------------------------
+Sector: #1  -- no data -- 
+Sector: #2  -- no data -- 
+Sector: #3  -- no data -- 
+Sector: #4  -- no data -- 
+Sector: #5  -- no data -- 
+Sector: #6  -- no data -- 
+Sector: #7  -- no data -- 
+Sector: #8  -- no data -- 
+Sector: #9  -- no data -- 
+Sector: #10  -- no data -- 
+Sector: #11  -- no data -- 
+Sector: #12  -- no data -- 
+Sector: #13 59% exposure, 33 km/hr windspeed
+Sector: #14 98% exposure, 28 km/hr windspeed
+Sector: #15  -- no data -- 
+Sector: #16  -- no data -- 
+Sector: #17 9% exposure, 9 km/hr windspeed
+Sector: #18  -- no data -- 
+Sector: #19  -- no data -- 
+Sector: #20  -- no data -- 
+Sector: #21  -- no data -- 
+Sector: #22  -- no data -- 
+Sector: #23  -- no data -- 
+Sector: #24  -- no data -- 
+Sector: #25  -- no data -- 
+Sector: #26  -- no data -- 
+Sector: #27  -- no data -- 
+Sector: #28  -- no data -- 
+Sector: #29  -- no data -- 
+Sector: #30  -- no data -- 
+Sector: #31  -- no data -- 
+Sector: #32  -- no data -- 
+Sector: #33  -- no data -- 
+Sector: #34  -- no data -- 
+Sector: #35 65% exposure, 11 km/hr windspeed
+Sector: #36 44% exposure, 39 km/hr windspeed
+Sector: #37  -- no data -- 
+Sector: #38  -- no data -- 
+Sector: #39  -- no data -- 
+Sector: #40 94% exposure, 29 km/hr windspeed
+Sector: #41  -- no data -- 
+Sector: #42  -- no data -- 
+Sector: #43  -- no data -- 
+Sector: #44  -- no data -- 
+Sector: #45 45% exposure, 32 km/hr windspeed
+Sector: #46  -- no data -- 
+Sector: #47  -- no data -- 
+Sector: #48 72% exposure, 54 km/hr windspeed
+Sector: #49  -- no data -- 
+Sector: #50 92% exposure, 22 km/hr windspeed
+Sector: #51  -- no data -- 
+Sector: #52  -- no data -- 
+Sector: #53  -- no data -- 
+Sector: #54 35% exposure, 48 km/hr windspeed
+Sector: #55  -- no data -- 
+Sector: #56  -- no data -- 
+Sector: #57  -- no data -- 
+Sector: #58  -- no data -- 
+Sector: #59  -- no data -- 
+Sector: #60 99% exposure, 19 km/hr windspeed
+Sector: #61  -- no data -- 
+Sector: #62  -- no data -- 
+Sector: #63  -- no data -- 
+Sector: #64 65% exposure, 14 km/hr windspeed
+Sector: #65  -- no data -- 
+Sector: #66  -- no data -- 
+Sector: #67  -- no data -- 
+Sector: #68  -- no data -- 
+Sector: #69 27% exposure, 17 km/hr windspeed
+Sector: #70 2% exposure, 3 km/hr windspeed
+Sector: #71 43% exposure, 27 km/hr windspeed
+Sector: #72  -- no data -- 
+Sector: #73 91% exposure, 48 km/hr windspeed
+Sector: #74 10% exposure, 34 km/hr windspeed
+Sector: #75  -- no data -- 
+Sector: #76 94% exposure, 31 km/hr windspeed
+Sector: #77  -- no data -- 
+Sector: #78  -- no data -- 
+Sector: #79  -- no data -- 
+Sector: #80  -- no data -- 
+Sector: #81  -- no data -- 
+Sector: #82  -- no data -- 
+Sector: #83  -- no data -- 
+Sector: #84  -- no data -- 
+Sector: #85  -- no data -- 
+Sector: #86  -- no data -- 
+Sector: #87  -- no data -- 
+Sector: #88  -- no data -- 
+Sector: #89  -- no data -- 
+Sector: #90  -- no data -- 
+Sector: #91  -- no data -- 
+Sector: #92 25% exposure, 34 km/hr windspeed
+Sector: #93  -- no data -- 
+Sector: #94  -- no data -- 
+Sector: #95  -- no data -- 
+Sector: #96  -- no data -- 
+Sector: #97  -- no data -- 
+Sector: #98  -- no data -- 
+Sector: #99  -- no data -- 
+Sector: #100  -- no data -- 
+Sector: #101 48% exposure, 5 km/hr windspeed
+Sector: #102  -- no data -- 
+Sector: #103  -- no data -- 
+Sector: #104  -- no data -- 
+Sector: #105  -- no data -- 
+Sector: #106  -- no data -- 
+Sector: #107 91% exposure, 37 km/hr windspeed
+Sector: #108  -- no data -- 
+Sector: #109  -- no data -- 
+Sector: #110  -- no data -- 
+Sector: #111  -- no data -- 
+Sector: #112  -- no data -- 
+Sector: #113  -- no data -- 
+Sector: #114  -- no data -- 
+Sector: #115  -- no data -- 
+Sector: #116  -- no data -- 
+Sector: #117  -- no data -- 
+Sector: #118  -- no data -- 
+Sector: #119  -- no data -- 
+Sector: #120  -- no data -- 
+Sector: #121  -- no data -- 
+Sector: #122  -- no data -- 
+Sector: #123  -- no data -- 
+Sector: #124  -- no data -- 
+Sector: #125 66% exposure, 5 km/hr windspeed
+Sector: #126  -- no data -- 
+Sector: #127  -- no data -- 
+Sector: #128  -- no data -- 
+Sector: #129  -- no data -- 
+Sector: #130 41% exposure, 7 km/hr windspeed
+Sector: #131  -- no data -- 
+Sector: #132  -- no data -- 
+Sector: #133  -- no data -- 
+Sector: #134 77% exposure, 23 km/hr windspeed
+Sector: #135  -- no data -- 
+Sector: #136  -- no data -- 
+Sector: #137  -- no data -- 
+Sector: #138  -- no data -- 
+Sector: #139  -- no data -- 
+Sector: #140  -- no data -- 
+Sector: #141  -- no data -- 
+Sector: #142 55% exposure, 63 km/hr windspeed
+Sector: #143  -- no data -- 
+Sector: #144 33% exposure, 37 km/hr windspeed
+Sector: #145  -- no data -- 
+Sector: #146  -- no data -- 
+Sector: #147  -- no data -- 
+Sector: #148  -- no data -- 
+Sector: #149  -- no data -- 
+Sector: #150  -- no data -- 
+Sector: #151  -- no data -- 
+Sector: #152  -- no data -- 
+Sector: #153  -- no data -- 
+Sector: #154  -- no data -- 
+Sector: #155  -- no data -- 
+Sector: #156  -- no data -- 
+Sector: #157  -- no data -- 
+Sector: #158  -- no data -- 
+Sector: #159  -- no data -- 
+Sector: #160  -- no data -- 
+Sector: #161 93% exposure, 27 km/hr windspeed
+Sector: #162  -- no data -- 
+Sector: #163  -- no data -- 
+Sector: #164  -- no data -- 
+Sector: #165  -- no data -- 
+Sector: #166  -- no data -- 
+Sector: #167 41% exposure, 44 km/hr windspeed
+Sector: #168  -- no data -- 
+Sector: #169  -- no data -- 
+Sector: #170  -- no data -- 
+Sector: #171  -- no data -- 
+Sector: #172  -- no data -- 
+Sector: #173  -- no data -- 
+Sector: #174  -- no data -- 
+Sector: #175  -- no data -- 
+Sector: #176  -- no data -- 
+Sector: #177  -- no data -- 
+Sector: #178  -- no data -- 
+Sector: #179  -- no data -- 
+Sector: #180  -- no data -- 
+Sector: #181  -- no data -- 
+Sector: #182  -- no data -- 
+Sector: #183  -- no data -- 
+Sector: #184  -- no data -- 
+Sector: #185  -- no data -- 
+Sector: #186  -- no data -- 
+Sector: #187  -- no data -- 
+Sector: #188  -- no data -- 
+Sector: #189  -- no data -- 
+Sector: #190  -- no data -- 
+Sector: #191  -- no data -- 
+Sector: #192 59% exposure, 19 km/hr windspeed
+Sector: #193  -- no data -- 
+Sector: #194 44% exposure, 33 km/hr windspeed
+Sector: #195  -- no data -- 
+Sector: #196 26% exposure, 43 km/hr windspeed
+Sector: #197  -- no data -- 
+Sector: #198  -- no data -- 
+Sector: #199  -- no data -- 
+Sector: #200  -- no data -- 
+Sector: #201  -- no data -- 
+Sector: #202  -- no data -- 
+Sector: #203  -- no data -- 
+Sector: #204  -- no data -- 
+Sector: #205  -- no data -- 
+Sector: #206  -- no data -- 
+Sector: #207  -- no data -- 
+Sector: #208  -- no data -- 
+Sector: #209  -- no data -- 
+Sector: #210  -- no data -- 
+Sector: #211  -- no data -- 
+Sector: #212  -- no data -- 
+Sector: #213 89% exposure, 39 km/hr windspeed
+Sector: #214  -- no data -- 
+Sector: #215  -- no data -- 
+Sector: #216  -- no data -- 
+Sector: #217  -- no data -- 
+Sector: #218 43% exposure, 30 km/hr windspeed
+Sector: #219 65% exposure, 1 km/hr windspeed
+Sector: #220  -- no data -- 
+Sector: #221  -- no data -- 
+Sector: #222 61% exposure, 34 km/hr windspeed
+Sector: #223  -- no data -- 
+Sector: #224  -- no data -- 
+Sector: #225  -- no data -- 
+Sector: #226  -- no data -- 
+Sector: #227  -- no data -- 
+Sector: #228 80% exposure, 39 km/hr windspeed
+Sector: #229 68% exposure, 24 km/hr windspeed
+Sector: #230  -- no data -- 
+Sector: #231  -- no data -- 
+Sector: #232  -- no data -- 
+Sector: #233  -- no data -- 
+Sector: #234  -- no data -- 
+Sector: #235  -- no data -- 
+Sector: #236  -- no data -- 
+Sector: #237  -- no data -- 
+Sector: #238  -- no data -- 
+Sector: #239  -- no data -- 
+Sector: #240  -- no data -- 
+Sector: #241 62% exposure, 18 km/hr windspeed
+Sector: #242  -- no data -- 
+Sector: #243  -- no data -- 
+Sector: #244  -- no data -- 
+Sector: #245  -- no data -- 
+Sector: #246  -- no data -- 
+Sector: #247 61% exposure, 28 km/hr windspeed
+Sector: #248 89% exposure, 22 km/hr windspeed
+Sector: #249  -- no data -- 
+Sector: #250 6% exposure, 41 km/hr windspeed
+Sector: #251  -- no data -- 
+Sector: #252  -- no data -- 
+Sector: #253  -- no data -- 
+Sector: #254  -- no data -- 
+Sector: #255  -- no data -- 
+Sector: #256  -- no data -- 
+Sector: #257  -- no data -- 
+Sector: #258 42% exposure, 10 km/hr windspeed
+Sector: #259  -- no data -- 
+Sector: #260  -- no data -- 
+Sector: #261  -- no data -- 
+Sector: #262  -- no data -- 
+Sector: #263  -- no data -- 
+Sector: #264  -- no data -- 
+Sector: #265  -- no data -- 
+Sector: #266 13% exposure, 34 km/hr windspeed
+Sector: #267  -- no data -- 
+Sector: #268  -- no data -- 
+Sector: #269  -- no data -- 
+Sector: #270  -- no data -- 
+Sector: #271  -- no data -- 
+Sector: #272 99% exposure, 8 km/hr windspeed
+Sector: #273 74% exposure, 21 km/hr windspeed
+Sector: #274 26% exposure, 22 km/hr windspeed
+Sector: #275  -- no data -- 
+Sector: #276  -- no data -- 
+Sector: #277  -- no data -- 
+Sector: #278  -- no data -- 
+Sector: #279  -- no data -- 
+Sector: #280  -- no data -- 
+Sector: #281  -- no data -- 
+Sector: #282  -- no data -- 
+Sector: #283 43% exposure, 18 km/hr windspeed
+Sector: #284 79% exposure, 31 km/hr windspeed
+Sector: #285 24% exposure, 2 km/hr windspeed
+Sector: #286  -- no data -- 
+Sector: #287  -- no data -- 
+Sector: #288  -- no data -- 
+Sector: #289  -- no data -- 
+Sector: #290  -- no data -- 
+Sector: #291  -- no data -- 
+Sector: #292  -- no data -- 
+Sector: #293  -- no data -- 
+Sector: #294  -- no data -- 
+Sector: #295  -- no data -- 
+Sector: #296  -- no data -- 
+Sector: #297 54% exposure, 42 km/hr windspeed
+Sector: #298  -- no data -- 
+Sector: #299  -- no data -- 
+Sector: #300  -- no data -- 
+Sector: #301  -- no data -- 
+Sector: #302  -- no data -- 
+Sector: #303  -- no data -- 
+Sector: #304 60% exposure, 25 km/hr windspeed
+Sector: #305  -- no data -- 
+Sector: #306  -- no data -- 
+Sector: #307  -- no data -- 
+Sector: #308  -- no data -- 
+Sector: #309  -- no data -- 
+Sector: #310 98% exposure, 14 km/hr windspeed
+Sector: #311  -- no data -- 
+Sector: #312  -- no data -- 
+Sector: #313  -- no data -- 
+Sector: #314  -- no data -- 
+Sector: #315  -- no data -- 
+Sector: #316  -- no data -- 
+Sector: #317  -- no data -- 
+Sector: #318  -- no data -- 
+Sector: #319  -- no data -- 
+Sector: #320 50% exposure, 24 km/hr windspeed
+Sector: #321 86% exposure, 21 km/hr windspeed
+Sector: #322 93% exposure, 50 km/hr windspeed
+Sector: #323  -- no data -- 
+Sector: #324 45% exposure, 61 km/hr windspeed
+Sector: #325 26% exposure, 30 km/hr windspeed
+Sector: #326  -- no data -- 
+Sector: #327  -- no data -- 
+Sector: #328  -- no data -- 
+Sector: #329  -- no data -- 
+Sector: #330  -- no data -- 
+Sector: #331  -- no data -- 
+Sector: #332 56% exposure, 54 km/hr windspeed
+Sector: #333  -- no data -- 
+Sector: #334  -- no data -- 
+Sector: #335  -- no data -- 
+Sector: #336 53% exposure, 8 km/hr windspeed
+Sector: #337  -- no data -- 
+Sector: #338  -- no data -- 
+Sector: #339  -- no data -- 
+Sector: #340  -- no data -- 
+Sector: #341  -- no data -- 
+Sector: #342 34% exposure, 39 km/hr windspeed
+Sector: #343  -- no data -- 
+Sector: #344  -- no data -- 
+Sector: #345  -- no data -- 
+Sector: #346  -- no data -- 
+Sector: #347  -- no data -- 
+Sector: #348 41% exposure, 24 km/hr windspeed
+Sector: #349  -- no data -- 
+Sector: #350  -- no data -- 
+Sector: #351  -- no data -- 
+Sector: #352 6% exposure, 18 km/hr windspeed
+Sector: #353  -- no data -- 
+Sector: #354  -- no data -- 
+Sector: #355  -- no data -- 
+Sector: #356  -- no data -- 
+Sector: #357  -- no data -- 
+Sector: #358  -- no data -- 
+Sector: #359  -- no data -- 
+Sector: #360  -- no data -- 
+Sector: #361 13% exposure, 38 km/hr windspeed
+Sector: #362  -- no data -- 
+Sector: #363  -- no data -- 
+Sector: #364  -- no data -- 
+Sector: #365  -- no data -- 
+Sector: #366  -- no data -- 
+Sector: #367  -- no data -- 
+Sector: #368 53% exposure, 14 km/hr windspeed
+Sector: #369  -- no data -- 
+Sector: #370  -- no data -- 
+Sector: #371  -- no data -- 
+Sector: #372  -- no data -- 
+Sector: #373  -- no data -- 
+Sector: #374  -- no data -- 
+Sector: #375  -- no data -- 
+Sector: #376  -- no data -- 
+Sector: #377  -- no data -- 
+Sector: #378  -- no data -- 
+Sector: #379  -- no data -- 
+Sector: #380  -- no data -- 
+Sector: #381  -- no data -- 
+Sector: #382  -- no data -- 
+Sector: #383  -- no data -- 
+Sector: #384  -- no data -- 
+Sector: #385  -- no data -- 
+Sector: #386  -- no data -- 
+Sector: #387  -- no data -- 
+Sector: #388  -- no data -- 
+Sector: #389  -- no data -- 
+Sector: #390  -- no data -- 
+Sector: #391 66% exposure, 28 km/hr windspeed
+Sector: #392  -- no data -- 
+Sector: #393 49% exposure, 29 km/hr windspeed
+Sector: #394  -- no data -- 
+Sector: #395  -- no data -- 
+Sector: #396  -- no data -- 
+Sector: #397  -- no data -- 
+Sector: #398  -- no data -- 
+Sector: #399 28% exposure, 25 km/hr windspeed
+Sector: #400 35% exposure, 39 km/hr windspeed
+Sector: #401 77% exposure, 29 km/hr windspeed
+Sector: #402 45% exposure, 26 km/hr windspeed
+Sector: #403  -- no data -- 
+Sector: #404  -- no data -- 
+Sector: #405  -- no data -- 
+Sector: #406  -- no data -- 
+Sector: #407 34% exposure, 51 km/hr windspeed
+Sector: #408  -- no data -- 
+Sector: #409  -- no data -- 
+Sector: #410  -- no data -- 
+Sector: #411  -- no data -- 
+Sector: #412  -- no data -- 
+Sector: #413  -- no data -- 
+Sector: #414  -- no data -- 
+Sector: #415 88% exposure, 30 km/hr windspeed
+Sector: #416  -- no data -- 
+Sector: #417 93% exposure, 21 km/hr windspeed
+Sector: #418  -- no data -- 
+Sector: #419  -- no data -- 
+Sector: #420  -- no data -- 
+Sector: #421  -- no data -- 
+Sector: #422  -- no data -- 
+Sector: #423 85% exposure, 19 km/hr windspeed
+Sector: #424  -- no data -- 
+Sector: #425  -- no data -- 
+Sector: #426  -- no data -- 
+Sector: #427  -- no data -- 
+Sector: #428  -- no data -- 
+Sector: #429 91% exposure, 12 km/hr windspeed
+Sector: #430 13% exposure, 16 km/hr windspeed
+Sector: #431  -- no data -- 
+Sector: #432  -- no data -- 
+Sector: #433  -- no data -- 
+Sector: #434 8% exposure, 2 km/hr windspeed
+Sector: #435  -- no data -- 
+Sector: #436 48% exposure, 15 km/hr windspeed
+Sector: #437  -- no data -- 
+Sector: #438  -- no data -- 
+Sector: #439 87% exposure, 16 km/hr windspeed
+Sector: #440  -- no data -- 
+Sector: #441  -- no data -- 
+Sector: #442  -- no data -- 
+Sector: #443 86% exposure, 41 km/hr windspeed
+Sector: #444  -- no data -- 
+Sector: #445  -- no data -- 
+Sector: #446  -- no data -- 
+Sector: #447  -- no data -- 
+Sector: #448  -- no data -- 
+Sector: #449  -- no data -- 
+Sector: #450  -- no data -- 
+Sector: #451 99% exposure, 33 km/hr windspeed
+Sector: #452  -- no data -- 
+Sector: #453  -- no data -- 
+Sector: #454  -- no data -- 
+Sector: #455 57% exposure, 64 km/hr windspeed
+Sector: #456 35% exposure, 62 km/hr windspeed
+Sector: #457  -- no data -- 
+Sector: #458 31% exposure, 30 km/hr windspeed
+Sector: #459  -- no data -- 
+Sector: #460  -- no data -- 
+Sector: #461 67% exposure, 48 km/hr windspeed
+Sector: #462 12% exposure, 15 km/hr windspeed
+Sector: #463  -- no data -- 
+Sector: #464  -- no data -- 
+Sector: #465  -- no data -- 
+Sector: #466  -- no data -- 
+Sector: #467  -- no data -- 
+Sector: #468  -- no data -- 
+Sector: #469  -- no data -- 
+Sector: #470 29% exposure, 18 km/hr windspeed
+Sector: #471  -- no data -- 
+Sector: #472 64% exposure, 27 km/hr windspeed
+Sector: #473  -- no data -- 
+Sector: #474  -- no data -- 
+Sector: #475  -- no data -- 
+Sector: #476  -- no data -- 
+Sector: #477  -- no data -- 
+Sector: #478  -- no data -- 
+Sector: #479  -- no data -- 
+Sector: #480  -- no data -- 
+Sector: #481  -- no data -- 
+Sector: #482  -- no data -- 
+Sector: #483  -- no data -- 
+Sector: #484  -- no data -- 
+Sector: #485  -- no data -- 
+Sector: #486  -- no data -- 
+Sector: #487  -- no data -- 
+Sector: #488  -- no data -- 
+Sector: #489  -- no data -- 
+Sector: #490 11% exposure, 44 km/hr windspeed
+Sector: #491  -- no data -- 
+Sector: #492  -- no data -- 
+Sector: #493 53% exposure, 52 km/hr windspeed
+----------------------------------------------------------------------
+Histogram data for exposure
+----------------------------------------------------------------------
+1, 1
+2, 1
+3, 1
+4, 0
+5, 1
+6, 2
+7, 0
+8, 1
+9, 1
+10, 1
+11, 1
+12, 1
+13, 3
+14, 0
+15, 0
+16, 0
+17, 0
+18, 0
+19, 0
+20, 0
+21, 1
+22, 0
+23, 1
+24, 1
+25, 1
+26, 3
+27, 1
+28, 1
+29, 0
+30, 0
+31, 2
+32, 0
+33, 2
+34, 2
+35, 3
+36, 0
+37, 0
+38, 0
+39, 0
+40, 0
+41, 3
+42, 0
+43, 2
+44, 2
+45, 1
+46, 0
+47, 0
+48, 2
+49, 1
+50, 1
+51, 0
+52, 0
+53, 4
+54, 1
+55, 1
+56, 1
+57, 1
+58, 0
+59, 2
+60, 2
+61, 2
+62, 1
+63, 0
+64, 1
+65, 3
+66, 1
+67, 1
+68, 2
+69, 0
+70, 1
+71, 0
+72, 1
+73, 0
+74, 2
+75, 0
+76, 0
+77, 1
+78, 0
+79, 1
+80, 1
+81, 2
+82, 1
+83, 0
+84, 1
+85, 2
+86, 2
+87, 1
+88, 1
+89, 2
+90, 0
+91, 3
+92, 1
+93, 3
+94, 2
+95, 0
+96, 0
+97, 0
+98, 2
+99, 3
+----------------------------------------------------------------------
+Histogram data for speed
+----------------------------------------------------------------------
+1, 1
+2, 2
+3, 1
+4, 0
+5, 3
+6, 1
+7, 2
+8, 3
+9, 1
+10, 0
+11, 1
+12, 1
+13, 2
+14, 3
+15, 2
+16, 3
+17, 2
+18, 3
+19, 3
+20, 0
+21, 3
+22, 3
+23, 1
+24, 3
+25, 1
+26, 1
+27, 3
+28, 2
+29, 2
+30, 4
+31, 3
+32, 0
+33, 3
+34, 5
+35, 0
+36, 0
+37, 4
+38, 2
+39, 5
+40, 0
+41, 3
+42, 2
+43, 1
+44, 2
+45, 1
+46, 0
+47, 0
+48, 3
+49, 0
+50, 1
+51, 1
+52, 1
+53, 0
+54, 2
+55, 0
+56, 0
+57, 0
+58, 0
+59, 0
+60, 0
+61, 1
+62, 1
+63, 1
+64, 1
+----------------------------------------------------------------------
+Bad sectors
+----------------------------------------------------------------------
+
