@@ -20,7 +20,7 @@ linkedlist::~linkedlist()
 
 void linkedlist::addData(int sector, int exposure, int speed)
 {
-    node* curr =sectorHead;
+    //node* curr =sectorHead;
     node* newNode = new node;
     newNode->sectorData = sector;
     newNode->exposureData = exposure;
@@ -55,6 +55,7 @@ void linkedlist::removeData(int sector)
         curr =sectorHead;
         delete temp;
     }
+/*
     while(temp != nullptr && temp->sectorData != sector)
     {
         curr = temp;
@@ -62,4 +63,5 @@ void linkedlist::removeData(int sector)
     }
     curr->sectorNext = temp->sectorNext;
     delete temp;
+    */
 }
