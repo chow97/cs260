@@ -5,12 +5,13 @@ using namespace std;
 
 class node
 {
-    int sectorData;
-    node* sectorNext;
-    int exposureData;
-    node* exposureNext;
-    int speedData;
-    node* speedNext;
+    public:
+        int sectorData;
+        node* sectorNext;
+        int exposureData;
+        node* exposureNext;
+        int speedData;
+        node* speedNext;
 };
 
 class linkedlist
