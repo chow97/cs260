@@ -36,12 +36,13 @@ void linkedlist::addData(int sector, int exposure, int speed)
         exposureHead = newNode;
         speedHead = newNode;
     }
+	/*
     while(curr->sectorNext != nullptr)
     {
         curr = curr->sectorNext;
     }
     curr->sectorNext = newNode;
-    
+    */
 }
 
 void linkedlist::removeData(int sector)
