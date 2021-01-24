@@ -1,30 +1,19 @@
 #ifndef DATALOGGER_H
 #define DATALOGGER_H
 
-#include <iostream>
-
-using namespace std;
+#include "linkedlist.h"
 
 class datalogger
 {
-public:
-	datalogger();
-	~datalogger();
+	private:
+		linkedlist list;
 
-	void addData(int sector, int exposure, int speed);
-	bool containsSector(int sector);
-	void removeSector(int sector);
-	void listBadSectors;
-	
-
-private:
-	struct Node
-	{
-		int sector, exposure, speed;
-		Node* next;
-	};
-	Node* head;
+	public:
+		void addData(int,int,int);
+		void removeSector(int);
+		void printReport();
+		bool containsSector(int);
+		void printSectorList();
 
 };
-
 #endif

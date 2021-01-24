@@ -173,7 +173,7 @@ implementation requirements (in additional to what was described above).
       - printSectorList() -- print a list of all of the sectors in the logger
   - linkedlist -- This class should implement a linked list. This class should
     be distinct from the datalogger class.
-  - surveydata -- This class encapsulates the survey data (sector, exposure, speed).
+  - node -- This class encapsulates the survey data (sector, exposure, speed).
 
 - The datalogger will need to have a linkedlist class member but there should
   be no "linked list" knowledge in the datalogger. For example, the datalogger
