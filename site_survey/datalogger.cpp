@@ -16,7 +16,7 @@ datalogger::~datalogger()
 	}
 }
 
-void addData(int sector, int exposure, int speed)
+void datalogger::addData(int sector, int exposure, int speed)
 {
 	Node * curr = head;
 	Node * newNode = new Node();

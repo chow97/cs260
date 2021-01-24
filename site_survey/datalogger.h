@@ -3,7 +3,7 @@
 
 #include <iostream>
 
-using namspace std;
+using namespace std;
 
 class datalogger
 {
@@ -14,7 +14,8 @@ public:
 	void addData(int sector, int exposure, int speed);
 	bool containsSector(int sector);
 	void removeSector(int sector);
-//	void listBadSectors;
+	void listBadSectors;
+	
 
 private:
 	struct Node
