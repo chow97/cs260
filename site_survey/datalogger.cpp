@@ -20,6 +20,13 @@ bool datalogger::containsSector(int sector)
 
 }
 
-void datalogger::printReport(){}
+void datalogger::printReport()
+{
+	cout << "----------------------------------------------------------------------" << endl;
+    cout << "Data Values" << endl;
+    cout << "----------------------------------------------------------------------" << endl;
+	cout << "Data by Sector" << endl;
+	cout << "Sector: #" << list.getSectorHead() << endl;
+}
 
 void datalogger::printSectorList(){}

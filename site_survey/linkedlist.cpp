@@ -65,3 +65,13 @@ void linkedlist::removeData(int sector)
     delete temp;
     */
 }
+
+int linkedlist::getSectorHead()
+{
+    int val = 0;
+    if(sectorHead)
+    {
+        val = sectorHead->sectorData;
+    }
+    return val;
+}

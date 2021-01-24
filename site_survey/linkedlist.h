@@ -27,6 +27,8 @@ class linkedlist
         void addData(int sector, int exposure, int speed);
         void removeData(int sector);
 
+        int getSectorHead();
+
 };
 
 #endif
