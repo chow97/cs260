@@ -24,8 +24,8 @@ class linkedlist
         linkedlist();
         ~linkedlist();
 
-        void addData(int, int, int);
-        void removeData(int);
+        void addData(int sector, int exposure, int speed);
+        void removeData(int sector);
 
 };
 
