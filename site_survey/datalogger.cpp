@@ -26,7 +26,10 @@ void datalogger::printReport()
     cout << "Data Values" << endl;
     cout << "----------------------------------------------------------------------" << endl;
 	cout << "Data by Sector" << endl;
-	cout << "Sector: #" << list.getSectorHead() << endl;
+	list.printList();
+//	cout << "Sector: #" << list.getSectorHead() << " " << list.getExposureHead() << "% exposure, " << list.getSpeedHead() << " km/hr windspeed"<< endl;
+
+
 }
 
 void datalogger::printSectorList(){}

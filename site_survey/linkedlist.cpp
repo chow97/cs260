@@ -1,5 +1,7 @@
 #include "linkedlist.h"
 
+#include <iostream>
+
 linkedlist::linkedlist()
 {
     sectorHead = nullptr;
@@ -20,29 +22,52 @@ linkedlist::~linkedlist()
 
 void linkedlist::addData(int sector, int exposure, int speed)
 {
-    //node* curr =sectorHead;
     node* newNode = new node;
     newNode->sectorData = sector;
     newNode->exposureData = exposure;
     newNode->speedData = speed;
 
-    newNode->sectorNext =nullptr;
-    newNode->exposureNext =nullptr;
-    newNode->speedNext =nullptr;
+    newNode->sectorNext = nullptr;
+    newNode->exposureNext = nullptr;
+    newNode->speedNext = nullptr;
 
-    if (sectorHead == nullptr)
+    if (sectorHead == nullptr || sectorHead->sectorData >= newNode->sectorData)
     {
+        newNode->sectorNext = sectorHead;
         sectorHead = newNode;
+        newNode->exposureNext = exposureHead;
         exposureHead = newNode;
+        newNode->speedNext = speedHead;
         speedHead = newNode;
     }
-	/*
-    while(curr->sectorNext != nullptr)
+    else
     {
-        curr = curr->sectorNext;
+        node* curr = sectorHead;
+        //for sector
+        while(curr->sectorNext != nullptr && curr->sectorNext->sectorData <= newNode->sectorData)
+        {
+            curr = curr->sectorNext;           
+        }
+        newNode->sectorNext = curr->sectorNext;
+        curr->sectorNext = newNode;      
+
+        //for exposure
+         while(curr->exposureNext != nullptr && curr->exposureNext->exposureData <= newNode->exposureData)
+         {
+             curr = curr->exposureNext;
+         }
+         newNode->exposureNext = curr->exposureNext;
+         curr->exposureNext = newNode;
+
+         //for speed
+         while(curr->speedNext != nullptr && curr->speedNext->speedData <= newNode->speedData)
+         {
+             curr = curr->speedNext;
+         }
+         newNode->speedNext = curr->speedNext;
+         curr->speedNext = newNode;
     }
-    curr->sectorNext = newNode;
-    */
+
 }
 
 void linkedlist::removeData(int sector)
@@ -65,13 +90,48 @@ void linkedlist::removeData(int sector)
     delete temp;
     */
 }
-
+/*
 int linkedlist::getSectorHead()
 {
     int val = 0;
-    if(sectorHead)
+    node* curr = sectorHead;
+    while(curr != nullptr)
     {
         val = sectorHead->sectorData;
     }
     return val;
+}
+int linkedlist::getExposureHead()
+{
+    node* curr = exposureHead;
+    int val = 0;
+    while(curr != nullptr)
+    {
+        val = exposureHead->exposureData;
+    }
+    return val;
+}
+int linkedlist::getSpeedHead()
+{
+    node* curr = speedHead;
+    int val = 0;
+    while(curr != nullptr)
+    {
+        val = speedHead->speedData;
+    }
+    return val;
+}
+*/
+void linkedlist::printList()
+{
+    node* curr = sectorHead, exposureHead, speedHead;
+
+    while (curr != nullptr)
+    {
+        cout << curr->sectorData << "\t" << curr->exposureData<< "\t" << curr->speedData << endl;
+        curr = curr->sectorNext;
+        curr = curr->exposureNext;
+        curr = curr->speedNext;
+    }
+    
 }
