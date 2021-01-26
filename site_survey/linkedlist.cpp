@@ -44,11 +44,11 @@ bool linkedlist::insert (const surveyData& aData)
         newNode->sectorNext = curr->sectorNext;
         curr->sectorNext = newNode; 
     }
-        
+    //for exposure
 	newNode->data = surveyData(aData);
     newNode->exposureNext = NULL;
     
-    if(exposureHead == NULL ||exposureHead->data.getSector() >= newNode->data.getSector())
+    if(exposureHead == NULL ||exposureHead->data.getExposure() >= newNode->data.getExposure())
     {
         newNode->exposureNext = exposureHead;
         exposureHead = newNode;
@@ -56,7 +56,7 @@ bool linkedlist::insert (const surveyData& aData)
     else
     {
         node* curr = exposureHead;
-        while(curr->exposureNext != NULL && curr->exposureNext->data.getSector() <= newNode->data.getSector())
+        while(curr->exposureNext != NULL && curr->exposureNext->data.getExposure() <= newNode->data.getExposure())
         {
             curr = curr->exposureNext;           
         }
@@ -165,7 +165,7 @@ void linkedlist::removeData(int sector)
         curr =sectorHead;
         delete temp;
     }
-/*
+
     while(temp != nullptr && temp->sectorData != sector)
     {
         curr = temp;
