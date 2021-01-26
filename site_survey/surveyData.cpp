@@ -11,41 +11,14 @@ private:
 	char* exposure;
 	int speed;
 *************************/
-surveyData::surveyData():sector(0), exposure(0), speed(0)
-{
-}
 
-surveyData::surveyData(int sector, int exposure, int speed) :
-    sector(sector),
-    exposure(exposure),
-    speed(speed)
-{/*
+surveyData::surveyData(int sector, int exposure, int speed)
+{
     setSector(sector);
-    setExposure(exposure);*/
+    setExposure(exposure);
+    setSpeed(speed);
 }
 	
-surveyData::surveyData(const surveyData& student) : sector(NULL), exposure(NULL)
-{
-    setSector(student.sector);
-    setExposure(student.exposure);
-    setSpeed(student.speed);
-}
-
-const surveyData& surveyData::operator=(const surveyData& student)
-{
-    //if it is a self copy, don't do anything
-    if(this == &student)
-	return *this;
-    //make current object *this a copy of the passed in student
-    else
-    {
-	setSector(student.sector);
-	setExposure(student.exposure);
-	setSpeed(student.speed);
-	return *this;
-    }
-}
-
 surveyData::~surveyData()
 {/*
     if(sector)
