@@ -11,26 +11,29 @@ class linkedlist
 {
 public:
     linkedlist();
-//    linkedlist(const linkedlist& aList);
     ~linkedlist();
 
     const linkedlist& operator=(const linkedlist& aList);
 
 	bool insert(const surveyData& aData);
 	bool remove(int key);
-	bool retrieve(int key, surveyData& aData) const;
-	int getSize(void) const;
+	bool retrieve(surveyData& aData);
+	int getSize(void);
 
-	friend std::ostream& operator<<(std::ostream& out, const linkedlist& lst);
+	friend std::ostream& operator<<(std::ostream& out, const linkedlist& list);
 
 private:
 	struct node
 	{
 		surveyData data;
-		node * next;
+		node * sectorNext;
+        node * exposureNext;
+        node * speedNext;
 	};
 
-	node*	head;
+	node *	sectorHead;
+    node *	exposureHead;
+    node *	speedHead;
 	int		size;
 };
 

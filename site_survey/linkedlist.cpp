@@ -7,89 +7,81 @@
 
 linkedlist::linkedlist()
 {
-    head = NULL;
+    sectorHead = NULL;
     size = 0;
 
 }
-/*
-const linkedlist& linkedlist::operator= (const linkedlist& aList)
-{
-    if(this == &aList)
-	return *this;
-    else
-    {
-	//release dynamically allocated memory held by current object
-	node * curr = head;
-	while(head)
-	{
-	    curr = head->next;
-	    delete head;
-	    head = curr;
-	}
 
-	//make *this a deep copy of "aList"
-	if(!aList.head)
-	    head = NULL;
-	else
-	{
-	    //copy the first node
-	    head = new node;
-	    assert(head != NULL);
-	    head->item = aList.head->item;
-
-	    //copy the rest of the linkedlist
-	    node * destNode = head;
-	    node * srcNode = aList.head->next;
-
-	    while(srcNode)
-	    {
-		destNode->next = new node;
-		assert(destNode->next);
-		destNode = destNode->next;
-		destNode->item = srcNode->item;
-
-		srcNode = srcNode->next;
-	    }
-	    destNode->next = NULL;
-	}
-
-	return *this;
-    }
-}
-*/
 linkedlist::~linkedlist()
 {
-    node * curr = head;
-    while(head)
+    node * curr = sectorHead;
+    while(sectorHead)
     {
-	curr = head->next;
-	delete head;		//the destructor for individual surveyData (item) is invoked
-	head = curr;
+	curr = sectorHead->sectorNext;
+	delete sectorHead;		//the destructor for individual surveyData (item) is invoked
+	sectorHead = curr;
     } 
 }
 
 bool linkedlist::insert (const surveyData& aData)
 {
-    node * curr = head;
 	node * newNode = new node;
 	newNode->data = surveyData(aData);
-	newNode->next = head;
-    head = newNode;
+    newNode->sectorNext = NULL;
     
+    if(sectorHead == NULL ||sectorHead->data.getSector() >= newNode->data.getSector())
+    {
+        newNode->sectorNext = sectorHead;
+        sectorHead = newNode;
+    }
+    else
+    {
+        node* curr = sectorHead;
+        while(curr->sectorNext != NULL && curr->sectorNext->data.getSector() <= newNode->data.getSector())
+        {
+            curr = curr->sectorNext;           
+        }
+        newNode->sectorNext = curr->sectorNext;
+        curr->sectorNext = newNode; 
+    }
+        
+	newNode->data = surveyData(aData);
+    newNode->exposureNext = NULL;
+    
+    if(exposureHead == NULL ||exposureHead->data.getSector() >= newNode->data.getSector())
+    {
+        newNode->exposureNext = exposureHead;
+        exposureHead = newNode;
+    }
+    else
+    {
+        node* curr = exposureHead;
+        while(curr->exposureNext != NULL && curr->exposureNext->data.getSector() <= newNode->data.getSector())
+        {
+            curr = curr->exposureNext;           
+        }
+        newNode->exposureNext = curr->exposureNext;
+        curr->exposureNext = newNode; 
+    }
+}
+bool linkedlist::retrieve(surveyData & aData)
+{
 
 }
 
-ostream& operator<<(ostream& out, const linkedlist& lst)
+ostream& operator<<(ostream& out, const linkedlist& list)
 {
     linkedlist::node*		curr;
 
-    out << "Data in the linkedlist: " << endl << endl;
-    for(curr = lst.head; curr; curr = curr->next)
-	//we can use << on data object because we overload << in the data class
-	out << '\t' << curr->data << endl;
+    for(curr = list.sectorHead; curr; curr = curr->sectorNext)
+
+    out << "Sector: #" << curr->data.getSector() << " " 
+    << curr->data.getExposure() << "% exposure, " 
+    << curr->data.getSpeed() << " km/hr windspeed"<< endl;
 
     return out;
 }
+
 
 bool linkedlist::remove (int key)
 {}
