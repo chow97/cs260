@@ -1,7 +1,145 @@
 #include "linkedlist.h"
+#include <iostream>
+#include <fstream>
+#include <cassert>
 
 #include <iostream>
 
+linkedlist::linkedlist() : head(NULL), size(0)
+{
+}
+
+linkedlist::linkedlist(const linkedlist& aList)
+{
+    if(aList.head == NULL) //or if(!aList.head)
+	head = NULL;
+    else
+    {
+	//copy first node
+	head = new node;
+	assert(head != NULL); //check allocation
+	head->item = aList.head->item;
+
+	//copy the rest of the linkedlist
+	node * destNode = head;				//points to the last node in new linkedlist
+	node * srcNode = aList.head->next;  //points to node in aList
+	while(srcNode != NULL) //or while (srcNode)
+	{
+	    destNode->next = new node;
+	    assert(destNode->next != NULL); //check allocation
+	    destNode = destNode->next;
+	    destNode->item = srcNode->item;
+
+	    srcNode = srcNode->next;
+	}
+	destNode->next = NULL;
+    }		
+}
+const linkedlist& linkedlist::operator= (const linkedlist& aList)
+{
+    if(this == &aList)
+	return *this;
+    else
+    {
+	//release dynamically allocated memory held by current object
+	node * curr = head;
+	while(head)
+	{
+	    curr = head->next;
+	    delete head;
+	    head = curr;
+	}
+
+	//make *this a deep copy of "aList"
+	if(!aList.head)
+	    head = NULL;
+	else
+	{
+	    //copy the first node
+	    head = new node;
+	    assert(head != NULL);
+	    head->item = aList.head->item;
+
+	    //copy the rest of the linkedlist
+	    node * destNode = head;
+	    node * srcNode = aList.head->next;
+
+	    while(srcNode)
+	    {
+		destNode->next = new node;
+		assert(destNode->next);
+		destNode = destNode->next;
+		destNode->item = srcNode->item;
+
+		srcNode = srcNode->next;
+	    }
+	    destNode->next = NULL;
+	}
+
+	return *this;
+    }
+}
+
+linkedlist::~linkedlist()
+{
+    node * curr = head;
+    while(head)
+    {
+	curr = head->next;
+	delete head;		//the destructor for individual surveyData (item) is invoked
+	head = curr;
+    } 
+}
+
+bool linkedlist::insert (const surveyData& aData)
+{
+    node * prev = NULL;
+    node * curr = head; 
+
+    //traverse to find the position to insert
+    while (curr!=NULL && curr->item < aData)
+    {
+	prev = curr;
+	curr = curr->next;
+    }
+
+    //the surveyData already exists
+    if(curr && curr->item == aData)
+	return false;
+    //insert the surveyData here
+    else
+    {
+	//create new node to contain the surveyData
+	node * newNode = new node;
+	newNode->item = aData;
+	newNode->next = NULL;
+
+	//link the newNode into the linked linkedlist
+	newNode->next = curr;
+	if(prev == NULL)
+	    head = newNode;
+	else
+	    prev->next = newNode;
+	size++;
+	return true;
+    }
+}
+
+ostream& operator<<(ostream& out, const linkedlist& lst)
+{
+    linkedlist::node*		curr;
+
+    out << "Data in the linkedlist: " << endl << endl;
+    for(curr = lst.head; curr; curr = curr->next)
+	//we can use << on data object because we overload << in the data class
+	out << '\t' << curr->item << endl;
+
+    return out;
+}
+
+
+
+/*
 linkedlist::linkedlist()
 {
     sectorHead = nullptr;
@@ -89,8 +227,9 @@ void linkedlist::removeData(int sector)
     curr->sectorNext = temp->sectorNext;
     delete temp;
     */
+ /*  
 }
-/*
+
 int linkedlist::getSectorHead()
 {
     int val = 0;
@@ -121,7 +260,7 @@ int linkedlist::getSpeedHead()
     }
     return val;
 }
-*/
+
 void linkedlist::printList()
 {
     node* curr = sectorHead, exposureHead, speedHead;
@@ -135,3 +274,4 @@ void linkedlist::printList()
     }
     
 }
+*/
