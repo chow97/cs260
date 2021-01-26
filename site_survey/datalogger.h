@@ -2,6 +2,7 @@
 #define DATALOGGER_H
 
 #include "linkedlist.h"
+#include "surveyData.h"
 
 class datalogger
 {
