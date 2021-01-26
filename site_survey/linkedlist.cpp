@@ -73,12 +73,9 @@ bool linkedlist::insert (const surveyData& aData)
     node * curr = head;
 	node * newNode = new node;
 	newNode->data = surveyData(aData);
-	newNode->next = NULL;
-    while(curr->next != NULL)
-    {
-        curr = curr->next;
-    }
-    curr->next = newNode;
+	newNode->next = head;
+    head = newNode;
+    
 
 }
 
