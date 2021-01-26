@@ -8,6 +8,7 @@
 linkedlist::linkedlist()
 {
     sectorHead = NULL;
+    exposureHead = NULL;
     size = 0;
 
 }
@@ -63,12 +64,31 @@ bool linkedlist::insert (const surveyData& aData)
         newNode->exposureNext = curr->exposureNext;
         curr->exposureNext = newNode; 
     }
+    //for speed
+	newNode->data = surveyData(aData);
+    newNode->speedNext = NULL;
+    
+    if(speedHead == NULL ||speedHead->data.getSpeed() >= newNode->data.getSpeed())
+    {
+        newNode->speedNext = speedHead;
+        speedHead = newNode;
+    }
+    else
+    {
+        node* curr = speedHead;
+        while(curr->speedNext != NULL && curr->speedNext->data.getSpeed() <= newNode->data.getSpeed())
+        {
+            curr = curr->speedNext;           
+        }
+        newNode->speedNext = curr->speedNext;
+        curr->speedNext = newNode; 
+    }
 }
 bool linkedlist::retrieve(surveyData & aData)
 {
 
 }
-
+/*
 ostream& operator<<(ostream& out, const linkedlist& list)
 {
     linkedlist::node*		curr;
@@ -81,7 +101,38 @@ ostream& operator<<(ostream& out, const linkedlist& list)
 
     return out;
 }
+*/
+void linkedlist::printSector()
+{
+    node * curr;
 
+    for(curr = sectorHead; curr; curr = curr->sectorNext)
+
+    cout << "Sector: #" << curr->data.getSector() << " " 
+    << curr->data.getExposure() << "% exposure, " 
+    << curr->data.getSpeed() << " km/hr windspeed"<< endl;
+}
+
+void linkedlist::printExposure()
+{
+    node * curr;
+
+    for(curr = exposureHead; curr; curr = curr->exposureNext)
+
+    cout << "Sector: #" << curr->data.getSector() << " " 
+    << curr->data.getExposure() << "% exposure, " 
+    << curr->data.getSpeed() << " km/hr windspeed"<< endl;
+}
+void linkedlist::printSpeed()
+{
+    node * curr;
+
+    for(curr = speedHead; curr; curr = curr->speedNext)
+
+    cout << "Sector: #" << curr->data.getSector() << " " 
+    << curr->data.getExposure() << "% exposure, " 
+    << curr->data.getSpeed() << " km/hr windspeed"<< endl;
+}
 
 bool linkedlist::remove (int key)
 {}

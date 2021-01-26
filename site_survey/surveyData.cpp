@@ -91,6 +91,7 @@ bool operator==(const surveyData& d1, const surveyData& d2)
 	return false;
 }
 */
+/*
 ostream& operator<<(ostream& out, const surveyData& student)
 {
     out << setw(20) << student.sector
@@ -98,3 +99,4 @@ ostream& operator<<(ostream& out, const surveyData& student)
 	<< setw(8) << fixed << setprecision(2) << student.speed;
     return out;
 }
+*/

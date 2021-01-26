@@ -13,11 +13,14 @@ public:
     linkedlist();
     ~linkedlist();
 
-    const linkedlist& operator=(const linkedlist& aList);
+    //const linkedlist& operator=(const linkedlist& aList);
 
 	bool insert(const surveyData& aData);
 	bool remove(int key);
 	bool retrieve(surveyData& aData);
+    void printSector();
+    void printExposure();
+    void printSpeed();
 	int getSize(void);
 
 	friend std::ostream& operator<<(std::ostream& out, const linkedlist& list);
