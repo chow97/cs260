@@ -6,7 +6,8 @@
 class surveyData
 {
 public:
-	surveyData(int sector, int pccId, int speed);
+	surveyData();
+	surveyData(int sector, int exposure, int speed);
 	~surveyData();						//destructor: release the dynamically allocated memory
 
 	int getSector() const;

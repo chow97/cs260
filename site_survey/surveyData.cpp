@@ -11,7 +11,12 @@ private:
 	char* exposure;
 	int speed;
 *************************/
-
+surveyData::surveyData()
+{
+    sector = 0;
+	exposure = 0;
+	speed = 0;
+}
 surveyData::surveyData(int sector, int exposure, int speed)
 {
     setSector(sector);

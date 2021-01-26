@@ -11,7 +11,7 @@ class linkedlist
 {
 public:
     linkedlist();
-    linkedlist(const linkedlist& aList);
+//    linkedlist(const linkedlist& aList);
     ~linkedlist();
 
     const linkedlist& operator=(const linkedlist& aList);
@@ -26,7 +26,7 @@ public:
 private:
 	struct node
 	{
-		surveyData item;
+		surveyData data;
 		node * next;
 	};
 

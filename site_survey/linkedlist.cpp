@@ -5,36 +5,13 @@
 
 #include <iostream>
 
-linkedlist::linkedlist() : head(NULL), size(0)
+linkedlist::linkedlist()
 {
+    head = NULL;
+    size = 0;
+
 }
-
-linkedlist::linkedlist(const linkedlist& aList)
-{
-    if(aList.head == NULL) //or if(!aList.head)
-	head = NULL;
-    else
-    {
-	//copy first node
-	head = new node;
-	assert(head != NULL); //check allocation
-	head->item = aList.head->item;
-
-	//copy the rest of the linkedlist
-	node * destNode = head;				//points to the last node in new linkedlist
-	node * srcNode = aList.head->next;  //points to node in aList
-	while(srcNode != NULL) //or while (srcNode)
-	{
-	    destNode->next = new node;
-	    assert(destNode->next != NULL); //check allocation
-	    destNode = destNode->next;
-	    destNode->item = srcNode->item;
-
-	    srcNode = srcNode->next;
-	}
-	destNode->next = NULL;
-    }		
-}
+/*
 const linkedlist& linkedlist::operator= (const linkedlist& aList)
 {
     if(this == &aList)
@@ -79,7 +56,7 @@ const linkedlist& linkedlist::operator= (const linkedlist& aList)
 	return *this;
     }
 }
-
+*/
 linkedlist::~linkedlist()
 {
     node * curr = head;
@@ -95,7 +72,7 @@ bool linkedlist::insert (const surveyData& aData)
 {
     node * curr = head;
 	node * newNode = new node;
-	newNode->item = surveyData(aData);
+	newNode->data = surveyData(aData);
 	newNode->next = NULL;
     while(curr->next != NULL)
     {
@@ -112,7 +89,7 @@ ostream& operator<<(ostream& out, const linkedlist& lst)
     out << "Data in the linkedlist: " << endl << endl;
     for(curr = lst.head; curr; curr = curr->next)
 	//we can use << on data object because we overload << in the data class
-	out << '\t' << curr->item << endl;
+	out << '\t' << curr->data << endl;
 
     return out;
 }
