@@ -43,7 +43,7 @@ int surveyData::getExposure() const
     return exposure;
 }
 
-int surveyData::getSpeed(void) const
+int surveyData::getSpeed() const
 {
     return speed;
 }

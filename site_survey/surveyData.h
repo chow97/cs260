@@ -12,22 +12,16 @@ public:
 
 	int getSector() const;
 	int getExposure() const;
-	int getSpeed(void) const;
+	int getSpeed() const;
 
 	void setSector(int sector);
 	void setExposure(int exposure);
 	void setSpeed(int speed);
-
-//	const surveyData& operator=(const surveyData& student);	 //overloading assignment operator
-	friend std::ostream& operator<<(std::ostream& out, const surveyData& student);
 
 private:
 	int	sector;
 	int	exposure;
 	int	speed;
 };
-/*
-bool operator< (const surveyData& d1, const surveyData& d2);
-bool operator== (const surveyData& d1, const surveyData& d2);
-*/
+
 #endif

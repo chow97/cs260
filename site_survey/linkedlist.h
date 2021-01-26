@@ -15,7 +15,7 @@ public:
 
     //const linkedlist& operator=(const linkedlist& aList);
 
-	bool insert(const surveyData& aData);
+	void insert(const surveyData& aData);
 	bool remove(int key);
 	bool retrieve(surveyData& aData);
     void printSector();
@@ -23,7 +23,7 @@ public:
     void printSpeed();
 	int getSize(void);
 
-	friend std::ostream& operator<<(std::ostream& out, const linkedlist& list);
+//	friend std::ostream& operator<<(std::ostream& out, const linkedlist& list);
 
 private:
 	struct node

@@ -9,6 +9,7 @@ linkedlist::linkedlist()
 {
     sectorHead = NULL;
     exposureHead = NULL;
+    speedHead = NULL;
     size = 0;
 
 }
@@ -24,9 +25,10 @@ linkedlist::~linkedlist()
     } 
 }
 
-bool linkedlist::insert (const surveyData& aData)
+void linkedlist::insert (const surveyData& aData)
 {
 	node * newNode = new node;
+    //for sector
 	newNode->data = surveyData(aData);
     newNode->sectorNext = NULL;
     
