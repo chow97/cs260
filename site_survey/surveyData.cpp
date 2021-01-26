@@ -11,19 +11,19 @@ private:
 	char* exposure;
 	int speed;
 *************************/
-surveyData::surveyData():sector(NULL), exposure(NULL), speed(0)
+surveyData::surveyData():sector(0), exposure(0), speed(0)
 {
 }
-/*
+
 surveyData::surveyData(int sector, int exposure, int speed) :
-    sector(NULL),
-    exposure(NULL),
+    sector(sector),
+    exposure(exposure),
     speed(speed)
-{
+{/*
     setSector(sector);
-    setExposure(exposure);
+    setExposure(exposure);*/
 }
-*/	
+	
 surveyData::surveyData(const surveyData& student) : sector(NULL), exposure(NULL)
 {
     setSector(student.sector);
@@ -45,23 +45,24 @@ const surveyData& surveyData::operator=(const surveyData& student)
 	return *this;
     }
 }
-/*
+
 surveyData::~surveyData()
-{
+{/*
     if(sector)
 	delete[] sector;
     if(exposure)
 	delete[] exposure;
+    */
 }
-*/
+
 int surveyData::getSector() const
 {
-    return(this->sector);
+    return sector;
 }
 
 int surveyData::getExposure() const
 {
-    return(this->exposure);
+    return exposure;
 }
 
 int surveyData::getSpeed(void) const
@@ -83,7 +84,7 @@ void surveyData::setSpeed(int speed)
 {
     this->speed = speed;
 }
-
+/*
 bool operator<(const surveyData& d1, const surveyData& d2)
 {
     int sector1;
@@ -111,7 +112,7 @@ bool operator==(const surveyData& d1, const surveyData& d2)
     else
 	return false;
 }
-
+*/
 ostream& operator<<(ostream& out, const surveyData& student)
 {
     out << setw(20) << student.sector

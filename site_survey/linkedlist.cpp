@@ -93,36 +93,16 @@ linkedlist::~linkedlist()
 
 bool linkedlist::insert (const surveyData& aData)
 {
-    node * prev = NULL;
-    node * curr = head; 
-
-    //traverse to find the position to insert
-    while (curr!=NULL && curr->item < aData)
-    {
-	prev = curr;
-	curr = curr->next;
-    }
-
-    //the surveyData already exists
-    if(curr && curr->item == aData)
-	return false;
-    //insert the surveyData here
-    else
-    {
-	//create new node to contain the surveyData
+    node * curr = head;
 	node * newNode = new node;
 	newNode->item = aData;
 	newNode->next = NULL;
-
-	//link the newNode into the linked linkedlist
-	newNode->next = curr;
-	if(prev == NULL)
-	    head = newNode;
-	else
-	    prev->next = newNode;
-	size++;
-	return true;
+    while(curr->next != NULL)
+    {
+        curr = curr->next;
     }
+    curr->next = newNode;
+
 }
 
 ostream& operator<<(ostream& out, const linkedlist& lst)
@@ -137,7 +117,8 @@ ostream& operator<<(ostream& out, const linkedlist& lst)
     return out;
 }
 
-
+bool linkedlist::remove (int key)
+{}
 
 /*
 linkedlist::linkedlist()

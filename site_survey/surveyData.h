@@ -27,7 +27,8 @@ private:
 	int	exposure;
 	int	speed;
 };
+/*
 bool operator< (const surveyData& d1, const surveyData& d2);
 bool operator== (const surveyData& d1, const surveyData& d2);
-
+*/
 #endif
