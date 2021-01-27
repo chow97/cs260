@@ -158,7 +158,7 @@ void linkedlist::average()
     node * last = sectorHead;
     node * curr = sectorHead;
     node* temp;
-    int count, avg;
+ //   int count;
 
     while(last->sectorNext != NULL)
     {
@@ -167,7 +167,7 @@ void linkedlist::average()
 
     for (int i = 1; i <= last->data.getSector(); i++)
     {
-        count, avg = 0;
+       // count = 1;
         
 
         if (i == curr->data.getSector() && curr->data.getSector() != curr->sectorNext->data.getSector())
@@ -178,16 +178,21 @@ void linkedlist::average()
             curr = curr->sectorNext;
         }
         else if(i == curr->data.getSector() && curr->data.getSector() == curr->sectorNext->data.getSector())
-        {/*
-            temp = curr->sectorNext;
-            while(curr->data.getSector() == temp->data.getSector())
+        {
+            int count = 1;
+            int avgExposure = 0;
+            node* temp = curr;
+            curr = curr->sectorNext;
+            while (temp->data.getSector() == curr->data.getSector())
             {
+                avgExposure = temp->data.getExposure() + curr->data.getExposure();
+                temp = curr;
+                curr = curr->sectorNext;
                 count++;
-                temp = temp->sectorNext;
             }
-            curr = temp->sectorNext;
-            */
-           curr = curr->sectorNext->sectorNext;
+            cout << "Sector: #" << temp->data.getSector() << " " 
+            << avgExposure / count << "% exposure, " 
+            << curr->data.getSector() << " km/hr windspeed"<< endl;;
         }
         else
         {
@@ -197,7 +202,26 @@ void linkedlist::average()
     }
 
 }
+/*
+void linkedlist::getAverage(node * curr)
+{
+    int count = 1;
+    int avgExposure = 0;
+    node* temp = curr;
+    curr = curr->sectorNext;
+    while (temp->data.getSector() == curr->data.getSector())
+    {
+        avgExposure = temp->data.getExposure() + curr->data.getExposure();
+        temp = curr;
+        curr = curr->sectorNext;
+        count++;
+    }
+    cout << "Sector: #" << temp->data.getSector() << " " 
+    << avgExposure / count << "% exposure, " 
+    << curr->data.getSector() << " km/hr windspeed"<< endl;
 
+}
+*/
 /*
 void linkedlist::duplicate()
 {
