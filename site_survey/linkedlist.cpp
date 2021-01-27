@@ -157,6 +157,8 @@ void linkedlist::average()
 {
     node * last = sectorHead;
     node * curr = sectorHead;
+    node* temp;
+    int count, avg;
 
     while(last->sectorNext != NULL)
     {
@@ -165,18 +167,31 @@ void linkedlist::average()
 
     for (int i = 1; i <= last->data.getSector(); i++)
     {
-        if(i != curr->data.getSector())
-        {
-            cout << "Sector: #" << i << " "
-            << "  -- no data -- " << endl;
-        }
-        else
+        count, avg = 0;
+        
+
+        if (i == curr->data.getSector() && curr->data.getSector() != curr->sectorNext->data.getSector())
         {
             cout << "Sector: #" << curr->data.getSector() << " " 
             << curr->data.getExposure() << "% exposure, " 
             << curr->data.getSpeed() << " km/hr windspeed"<< endl;
+            curr = curr->sectorNext;
         }
-        curr = curr->sectorNext;
+        else if(i == curr->data.getSector() && curr->data.getSector() == curr->sectorNext->data.getSector())
+        {
+            temp = curr->sectorNext;
+            while(curr->data.getSector() == temp->data.getSector())
+            {
+                count++;
+                temp = temp->sectorNext;
+            }
+            curr = temp->sectorNext;
+        }
+        else
+        {
+            cout << "Sector: #" << i << " " << "  -- no data -- " << endl;
+        }
+       // curr = curr->sectorNext;
     }
 
 }
