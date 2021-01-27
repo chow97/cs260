@@ -25,25 +25,20 @@ surveyData::surveyData(int sector, int exposure, int speed)
 }
 	
 surveyData::~surveyData()
-{/*
-    if(sector)
-	delete[] sector;
-    if(exposure)
-	delete[] exposure;
-    */
+{
 }
 
-int surveyData::getSector() const
+int surveyData::getSector()
 {
     return sector;
 }
 
-int surveyData::getExposure() const
+int surveyData::getExposure() 
 {
     return exposure;
 }
 
-int surveyData::getSpeed() const
+int surveyData::getSpeed() 
 {
     return speed;
 }

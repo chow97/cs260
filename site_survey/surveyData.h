@@ -8,11 +8,11 @@ class surveyData
 public:
 	surveyData();
 	surveyData(int sector, int exposure, int speed);
-	~surveyData();						//destructor: release the dynamically allocated memory
+	~surveyData();
 
-	int getSector() const;
-	int getExposure() const;
-	int getSpeed() const;
+	int getSector();
+	int getExposure();
+	int getSpeed();
 
 	void setSector(int sector);
 	void setExposure(int exposure);

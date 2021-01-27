@@ -178,6 +178,7 @@ void linkedlist::average()
         else if(/*i == curr->data.getSector() && */curr->data.getSector() == curr->sectorNext->data.getSector())
         {
             
+            /*
             int count = 1;
             int avgExposure = 0;
             
@@ -194,7 +195,7 @@ void linkedlist::average()
             cout << "Sector: #" << temp->data.getSector() << " " 
             << avgExposure / count << "% exposure, " 
             << curr->data.getSector() << " km/hr windspeed"<< endl;
-            
+            */
         }
         else
         {
