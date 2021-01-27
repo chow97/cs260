@@ -178,7 +178,7 @@ void linkedlist::average()
             curr = curr->sectorNext;
         }
         else if(i == curr->data.getSector() && curr->data.getSector() == curr->sectorNext->data.getSector())
-        {
+        {/*
             temp = curr->sectorNext;
             while(curr->data.getSector() == temp->data.getSector())
             {
@@ -186,6 +186,8 @@ void linkedlist::average()
                 temp = temp->sectorNext;
             }
             curr = temp->sectorNext;
+            */
+           curr = curr->sectorNext->sectorNext;
         }
         else
         {
