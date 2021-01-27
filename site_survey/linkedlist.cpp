@@ -86,24 +86,41 @@ void linkedlist::insert (const surveyData& aData)
         curr->speedNext = newNode; 
     }
 }
-bool linkedlist::retrieve(surveyData & aData)
+void linkedlist::remove(int sector)
 {
+    node* curr = sectorHead;
+    node* temp = curr;
+    if(sectorHead->data.getSector() == sector)
+    {
+        sectorHead = temp->sectorNext;
+        curr =sectorHead;
+        delete temp;
+    }
 
+    while(temp != NULL && temp->data.getSector() != sector)
+    {
+        curr = temp;
+        temp = temp->sectorNext;
+    }
+    curr->sectorNext = temp->sectorNext;
+    delete temp;
+ 
 }
-/*
-ostream& operator<<(ostream& out, const linkedlist& list)
+bool linkedlist::retrieve(int sector)
 {
-    linkedlist::node*		curr;
-
-    for(curr = list.sectorHead; curr; curr = curr->sectorNext)
-
-    out << "Sector: #" << curr->data.getSector() << " " 
-    << curr->data.getExposure() << "% exposure, " 
-    << curr->data.getSpeed() << " km/hr windspeed"<< endl;
-
-    return out;
+    //search for the data to be retrieved
+    node * curr;
+    for(curr=sectorHead; curr; curr=curr->sectorNext)
+    {
+	    if(curr->data.getSector() == sector)
+	    {
+	        return true;
+	    }
+    }
+    //data is not in the list
+    return false;
 }
-*/
+
 void linkedlist::printSector()
 {
     node * curr;
@@ -136,8 +153,69 @@ void linkedlist::printSpeed()
     << curr->data.getSpeed() << " km/hr windspeed"<< endl;
 }
 
-bool linkedlist::remove (int key)
-{}
+void linkedlist::average()
+{
+    node * last = sectorHead;
+    node * curr = sectorHead;
+
+    while(last->sectorNext != NULL)
+    {
+        last = last->sectorNext;
+    }
+
+    for (int i = 1; i <= last->data.getSector(); i++)
+    {
+        if(i != curr->data.getSector())
+        {
+            cout << "Sector: #" << i << " "
+            << "  -- no data -- " << endl;
+        }
+        else
+        {
+            cout << "Sector: #" << curr->data.getSector() << " " 
+            << curr->data.getExposure() << "% exposure, " 
+            << curr->data.getSpeed() << " km/hr windspeed"<< endl;
+        }
+        curr = curr->sectorNext;
+    }
+
+}
+
+/*
+void linkedlist::duplicate()
+{
+    node* temp = sectorHead;
+    node* curr = sectorHead->sectorNext;
+    int count, avg = 0;
+    while(temp->sectorNext != NULL)
+    {
+        count = 0;
+        curr = temp->sectorNext;
+        while(curr->sectorNext != NULL)
+        {
+            if(curr->data.getSector() == temp->data.getSector())
+            {
+                count++;
+                avg = curr->data.getExposure() + temp->data.getExposure();
+            }
+            curr = curr->sectorNext;
+        }
+        if(count>1)
+        {
+            cout << curr->data.getSector() << avg / count << endl;
+        }
+        temp = temp->sectorNext;
+    }
+}
+  
+   */ 
+
+
+void linkedlist::printMatch()
+{
+
+    
+}
 
 /*
 linkedlist::linkedlist()
@@ -156,56 +234,6 @@ linkedlist::~linkedlist()
         delete curr;
         curr = sectorHead;
     }
-}
-
-void linkedlist::addData(int sector, int exposure, int speed)
-{
-    node* newNode = new node;
-    newNode->sectorData = sector;
-    newNode->exposureData = exposure;
-    newNode->speedData = speed;
-
-    newNode->sectorNext = nullptr;
-    newNode->exposureNext = nullptr;
-    newNode->speedNext = nullptr;
-
-    if (sectorHead == nullptr || sectorHead->sectorData >= newNode->sectorData)
-    {
-        newNode->sectorNext = sectorHead;
-        sectorHead = newNode;
-        newNode->exposureNext = exposureHead;
-        exposureHead = newNode;
-        newNode->speedNext = speedHead;
-        speedHead = newNode;
-    }
-    else
-    {
-        node* curr = sectorHead;
-        //for sector
-        while(curr->sectorNext != nullptr && curr->sectorNext->sectorData <= newNode->sectorData)
-        {
-            curr = curr->sectorNext;           
-        }
-        newNode->sectorNext = curr->sectorNext;
-        curr->sectorNext = newNode;      
-
-        //for exposure
-         while(curr->exposureNext != nullptr && curr->exposureNext->exposureData <= newNode->exposureData)
-         {
-             curr = curr->exposureNext;
-         }
-         newNode->exposureNext = curr->exposureNext;
-         curr->exposureNext = newNode;
-
-         //for speed
-         while(curr->speedNext != nullptr && curr->speedNext->speedData <= newNode->speedData)
-         {
-             curr = curr->speedNext;
-         }
-         newNode->speedNext = curr->speedNext;
-         curr->speedNext = newNode;
-    }
-
 }
 
 void linkedlist::removeData(int sector)

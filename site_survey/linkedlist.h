@@ -16,12 +16,16 @@ public:
     //const linkedlist& operator=(const linkedlist& aList);
 
 	void insert(const surveyData& aData);
-	bool remove(int key);
-	bool retrieve(surveyData& aData);
+	void remove(int sector);
+	bool retrieve(int sector);
+    void average();
+    void getAverage();
+    void printMatch();
     void printSector();
     void printExposure();
     void printSpeed();
 	int getSize(void);
+    void duplicate();
 
 //	friend std::ostream& operator<<(std::ostream& out, const linkedlist& list);
 
