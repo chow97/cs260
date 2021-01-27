@@ -41,7 +41,7 @@ private:
 	node *	sectorHead;
     node *	exposureHead;
     node *	speedHead;
-    void  getAverage(node * curr); 
+    //node*  getAverage(node * curr); 
 	int		size;
 };
 

@@ -157,7 +157,6 @@ void linkedlist::average()
 {
     node * last = sectorHead;
     node * curr = sectorHead;
-    node* temp;
  //   int count;
 
     while(last->sectorNext != NULL)
@@ -168,7 +167,6 @@ void linkedlist::average()
     for (int i = 1; i <= last->data.getSector(); i++)
     {
        // count = 1;
-        
 
         if (i == curr->data.getSector() && curr->data.getSector() != curr->sectorNext->data.getSector())
         {
@@ -177,10 +175,12 @@ void linkedlist::average()
             << curr->data.getSpeed() << " km/hr windspeed"<< endl;
             curr = curr->sectorNext;
         }
-        else if(i == curr->data.getSector() && curr->data.getSector() == curr->sectorNext->data.getSector())
+        else if(/*i == curr->data.getSector() && */curr->data.getSector() == curr->sectorNext->data.getSector())
         {
+            
             int count = 1;
             int avgExposure = 0;
+            
             node* temp = curr;
             curr = curr->sectorNext;
             while (temp->data.getSector() == curr->data.getSector())
@@ -190,20 +190,21 @@ void linkedlist::average()
                 curr = curr->sectorNext;
                 count++;
             }
+            
             cout << "Sector: #" << temp->data.getSector() << " " 
             << avgExposure / count << "% exposure, " 
-            << curr->data.getSector() << " km/hr windspeed"<< endl;;
+            << curr->data.getSector() << " km/hr windspeed"<< endl;
+            
         }
         else
         {
             cout << "Sector: #" << i << " " << "  -- no data -- " << endl;
         }
-       // curr = curr->sectorNext;
     }
 
 }
 /*
-void linkedlist::getAverage(node * curr)
+struct node * getAverage(node * curr)
 {
     int count = 1;
     int avgExposure = 0;
@@ -221,8 +222,8 @@ void linkedlist::getAverage(node * curr)
     << curr->data.getSector() << " km/hr windspeed"<< endl;
 
 }
-*/
-/*
+
+
 void linkedlist::duplicate()
 {
     node* temp = sectorHead;
