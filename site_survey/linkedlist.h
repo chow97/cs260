@@ -19,8 +19,8 @@ public:
 	void remove(int sector);
 	bool retrieve(int sector);
     void average();
-    //void getAverage(node * sectorHead);
-    void printMatch();
+    int getAverageExposure(int sector);
+    void printMatch(int sector);
     void printSector();
     void printExposure();
     void printSpeed();
