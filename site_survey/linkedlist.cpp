@@ -125,39 +125,42 @@ void linkedlist::printSector()
     node * curr;
 
     for(curr = sectorHead; curr; curr = curr->sectorNext)
-
-    cout << "Sector: #" << curr->data.getSector() << " " 
-    << curr->data.getExposure() << "% exposure, " 
-    << curr->data.getSpeed() << " km/hr windspeed"<< endl;
+    {
+        cout << "Sector: #" << curr->data.getSector() << " " 
+        << curr->data.getExposure() << "% exposure, " 
+        << curr->data.getSpeed() << " km/hr windspeed"<< endl;
+    }
 }
 
 void linkedlist::printExposure()
 {
 
     for(node * curr = exposureHead; curr; curr = curr->exposureNext)
-
-    cout << "Sector: #" << curr->data.getSector() << " " 
-    << curr->data.getExposure() << "% exposure, " 
-    << curr->data.getSpeed() << " km/hr windspeed"<< endl;
+    {
+        cout << "Sector: #" << curr->data.getSector() << " " 
+        << curr->data.getExposure() << "% exposure, " 
+        << curr->data.getSpeed() << " km/hr windspeed"<< endl;
+    }
 }
 void linkedlist::printSpeed()
 {
     for(node * curr = speedHead; curr; curr = curr->speedNext)
-
-    cout << "Sector: #" << curr->data.getSector() << " " 
-    << curr->data.getExposure() << "% exposure, " 
-    << curr->data.getSpeed() << " km/hr windspeed"<< endl;
+    {
+        cout << "Sector: #" << curr->data.getSector() << " " 
+        << curr->data.getExposure() << "% exposure, " 
+        << curr->data.getSpeed() << " km/hr windspeed"<< endl;
+    }
 }
 
 void linkedlist::average()
 {
-    node* lastNode = sectorHead;
-    while (lastNode->sectorNext != NULL)
+    node* last = sectorHead;
+    while (last->sectorNext != NULL)
     {
-        lastNode = lastNode->sectorNext;
+        last = last->sectorNext;
     }
-    
-    for (int i = 1; i <= lastNode->data.getSector(); i++)
+
+    for (int i = 1; i <= last->data.getSector(); i++)
     {
         if (retrieve(i))
         {
@@ -168,49 +171,59 @@ void linkedlist::average()
             cout << "Sector: #" << i << " " << "  -- no data -- " << endl;
         }
     }
+    cout << "Sector: #" << last->data.getSector() << " "
+    << last->data.getExposure() << "% exposure, "
+    << last->data.getSector() << " km/hr windspeed"<< endl;  
 }
 
 void linkedlist::printMatch(int sector)
 {
     node* curr = sectorHead;
-    while (curr != NULL)
+    while (curr->sectorNext != NULL)
     {
-        if (curr->data.getSector() == sector)
+        if (curr->data.getSector() == sector && curr->sectorNext->data.getSector() != sector)
         {
-            if (curr->data.getSector() == curr->sectorNext->data.getSector())
-            {
-                cout << "Sector: #" << curr->data.getSector() << " " 
-            << getAverageExposure(curr->data.getSector()) << "% exposure, " 
-            << curr->data.getSector() << " km/hr windspeed"<< endl;
-            }
-            
-            cout << "Sector: #" << curr->data.getSector() << " " 
-            << curr->data.getExposure() << "% exposure, " 
-            << curr->data.getSector() << " km/hr windspeed"<< endl;
-        }              
-        curr = curr->sectorNext;
+            cout << "Sector: #" << sector << " " 
+            << getAverageExposure(sector) << "% exposure, " 
+            << getAverageSpeed(sector) << " km/hr windspeed"<< endl;
+        }
+        curr = curr->sectorNext;   
     }
-    
-    
-    
 }
 int linkedlist::getAverageExposure(int sector)
 {
-    node *curr = sectorHead;
-    int sum, count = 0;
-    while (curr != NULL)
+    int sum = 0;
+    int count = 0; 
+    node* curr = sectorHead;
+    while (curr->sectorNext != NULL)
     {
         if (curr->data.getSector() == sector)
         {
-            sum += curr->data.getExposure();
+            sum = sum + curr->data.getExposure();
             count++;
         }
-  
         curr = curr->sectorNext;
     }
-    return sum / count;
+    int avg = sum / count;
+    return avg;
+}
 
-    
+int linkedlist::getAverageSpeed(int sector)
+{
+    int sum = 0;
+    int count = 0; 
+    node* curr = sectorHead;
+    while (curr->sectorNext != NULL)
+    {
+        if (curr->data.getSector() == sector)
+        {
+            sum = sum + curr->data.getSpeed();
+            count++;
+        }
+        curr = curr->sectorNext;
+    }
+    int avg = sum / count;
+    return avg;
 }
 
 /*

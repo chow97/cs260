@@ -20,6 +20,7 @@ public:
 	bool retrieve(int sector);
     void average();
     int getAverageExposure(int sector);
+    int getAverageSpeed(int sector);
     void printMatch(int sector);
     void printSector();
     void printExposure();
