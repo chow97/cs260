@@ -23,6 +23,9 @@ linkedlist::~linkedlist()
         delete sectorHead;
         sectorHead = curr;
     }   
+	sectorHead = NULL;
+	exposureHead = NULL;
+	speedHead = NULL;
 }
 
 void linkedlist::insert (const surveyData& aData)
