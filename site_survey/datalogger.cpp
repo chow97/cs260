@@ -52,5 +52,5 @@ void datalogger::printReport()
 
 void datalogger::printSectorList()
 {
-	list.printBadSector();
+	list.printSector();
 }
