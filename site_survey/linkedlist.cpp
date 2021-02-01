@@ -125,7 +125,7 @@ bool linkedlist::constainsSectorNumber(int sector)
 void linkedlist::printSector()
 {
     node * curr = sectorHead;
-    /*if((curr->data.getExposure() < 0) || (curr->data.getSpeed() < 0))
+    if((curr->data.getExposure() < 0) || (curr->data.getSpeed() < 0))
     {
         cout << curr->data.getSector();
         curr = curr->sectorNext;
@@ -138,35 +138,19 @@ void linkedlist::printSector()
         cout << endl;
     }
     else
-    {*/
+    {
         for(curr = sectorHead; curr; curr = curr->sectorNext)
         {
             cout << "Sector: #" << curr->data.getSector() << " " 
             << curr->data.getExposure() << "% exposure, " 
             << curr->data.getSpeed() << " km/hr windspeed"<< endl;
         }
-   // }  
-}
-
-void linkedlist::printBadSector()
-{
-    node* curr = sectorHead;
-    cout << curr->data.getSector();
-    curr = curr->sectorNext;
-    while (curr != NULL)
-    {
-        cout << ", ";
-        cout << curr->data.getSector();  
-        curr = curr->sectorNext;
-    }
-    cout << endl;
-    
+    }  
 }
 
 
 void linkedlist::printExposure()
 {
-
     for(node * curr = exposureHead; curr; curr = curr->exposureNext)
     {
         cout << "Sector: #" << curr->data.getSector() << " " 
@@ -174,6 +158,7 @@ void linkedlist::printExposure()
         << curr->data.getSpeed() << " km/hr windspeed"<< endl;
     }
 }
+
 void linkedlist::printSpeed()
 {
     for(node * curr = speedHead; curr; curr = curr->speedNext)
