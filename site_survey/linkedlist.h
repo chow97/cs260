@@ -17,18 +17,24 @@ public:
 
 	void insert(const surveyData& aData);
 	void remove(int sector);
-	bool retrieve(int sector);
-    void average();
-    int getAverageExposure(int sector);
-    int getAverageSpeed(int sector);
-    void printMatch(int sector);
+	bool constainsSectorNumber(int sector);
     void printSector();
     void printExposure();
     void printSpeed();
-	int getSize(void);
-    void duplicate();
+    //Average
+    void average();
+    int getAverageExposure(int sector);
+    int getAverageSpeed(int sector);
+    void printMatchAvg(int sector);
+    //histogram for exposure
+    void histogramExposure();
+    bool containsExposure(int exposure);
+	void countExposure(int exposure);
+    //histogram for speed
+    void histogramSpeed();
+    bool containsSpeed(int speed);
+	void countSpeed(int speed);
 
-//	friend std::ostream& operator<<(std::ostream& out, const linkedlist& list);
 
 private:
 	struct node

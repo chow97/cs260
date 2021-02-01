@@ -106,7 +106,7 @@ void linkedlist::remove(int sector)
     delete temp;
  
 }
-bool linkedlist::retrieve(int sector)
+bool linkedlist::constainsSectorNumber(int sector)
 {
     //search if the data matches
     for(node * curr=sectorHead; curr; curr=curr->sectorNext)
@@ -162,9 +162,9 @@ void linkedlist::average()
 
     for (int i = 1; i <= last->data.getSector(); i++)
     {
-        if (retrieve(i))
+        if (constainsSectorNumber(i))
         {
-            printMatch(i);
+            printMatchAvg(i);
         }
         else
         {
@@ -176,7 +176,7 @@ void linkedlist::average()
     << last->data.getSector() << " km/hr windspeed"<< endl;  
 }
 
-void linkedlist::printMatch(int sector)
+void linkedlist::printMatchAvg(int sector)
 {
     node* curr = sectorHead;
     while (curr->sectorNext != NULL)
@@ -224,6 +224,98 @@ int linkedlist::getAverageSpeed(int sector)
     }
     int avg = sum / count;
     return avg;
+}
+
+bool linkedlist::containsExposure(int exposure)
+{
+    for (node* curr = exposureHead; curr != NULL; curr = curr->exposureNext)
+    {
+        if (curr->data.getExposure() == exposure)
+        {
+            return true;
+        } 
+    }
+    return false;    
+}
+void linkedlist::histogramExposure()
+{
+    node* last = exposureHead;
+    while (last->exposureNext != NULL)
+    {
+        last = last->exposureNext;
+    }
+    
+    for (int i = 1; i <= last->data.getExposure(); i++)
+    {
+        if (containsExposure(i))
+        {
+            countExposure(i);
+        }
+        else
+        {
+            cout << i << ", " << 0 << endl;
+        }
+    }
+    
+}
+void linkedlist::countExposure(int exposure)
+{
+    int count = 0;
+    for (node* curr = exposureHead; curr != NULL; curr = curr->exposureNext)
+    {
+        if (curr->data.getExposure() == exposure)
+        {
+            count++;
+        }
+        
+    }
+    cout << exposure << ", " << count << endl;
+}
+
+bool linkedlist::containsSpeed(int speed)
+{
+    for (node* curr = speedHead; curr != NULL; curr = curr->speedNext)
+    {
+        if (curr->data.getSpeed() == speed)
+        {
+            return true;
+        } 
+    }
+    return false;    
+}
+void linkedlist::histogramSpeed()
+{
+    node* last = speedHead;
+    while (last->speedNext != NULL)
+    {
+        last = last->speedNext;
+    }
+    
+    for (int i = 1; i <= last->data.getSpeed(); i++)
+    {
+        if (containsSpeed(i))
+        {
+            countSpeed(i);
+        }
+        else
+        {
+            cout << i << ", " << 0 << endl;
+        }
+    }
+    
+}
+void linkedlist::countSpeed(int speed)
+{
+    int count = 0;
+    for (node* curr = speedHead; curr != NULL; curr = curr->speedNext)
+    {
+        if (curr->data.getSpeed() == speed)
+        {
+            count++;
+        }
+        
+    }
+    cout << speed << ", " << count << endl;
 }
 
 /*

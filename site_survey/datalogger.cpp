@@ -15,9 +15,9 @@ void datalogger::removeSector(int sector)
 	list.remove(sector);
 }
 
-bool datalogger::containsSector(int sector)
+void datalogger::containsSector(int sector)
 {
-	list.retrieve(sector);
+	list.constainsSectorNumber(sector);
 }
 
 
@@ -36,8 +36,14 @@ void datalogger::printReport()
 	cout << "Averages per sector" << endl;
 	cout << "----------------------------------------------------------------------" << endl;
 	list.average();
-//	list.printList();
-//	cout << "Sector: #" << list.getSectorHead() << " " << list.getExposureHead() << "% exposure, " << list.getSpeedHead() << " km/hr windspeed"<< endl;
+	cout << "----------------------------------------------------------------------" << endl;
+	cout << "Histogram data for exposure" << endl;
+	cout << "----------------------------------------------------------------------" << endl;
+	list.histogramExposure();
+	cout << "----------------------------------------------------------------------" << endl;
+	cout << "Histogram data for speed" << endl;
+	cout << "----------------------------------------------------------------------" << endl;
+	list.histogramSpeed();
 
 
 }

@@ -13,7 +13,7 @@ class datalogger
 		void addData(int sector,int exposure,int speed);
 		void removeSector(int sector);
 		void printReport();
-		bool containsSector(int sector);
+		void containsSector(int sector);
 		void printSectorList();
 
 };
