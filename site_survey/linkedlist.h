@@ -20,7 +20,7 @@ public:
 	bool constainsSectorNumber(int sector);
     void printSector();
     bool isEmpty();
-    //void printBadSector();
+    void printBadSector();
     void printExposure();
     void printSpeed();
     //Average

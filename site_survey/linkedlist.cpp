@@ -19,11 +19,11 @@ linkedlist::~linkedlist()
     if (!isEmpty())
     {
         node * curr = sectorHead;
-        while(sectorHead)
+        while(curr != NULL)
         {
-	        curr = sectorHead->sectorNext;
+            node* next = curr->sectorNext;
 	        delete sectorHead;		//the destructor for individual surveyData (item) is invoked
-	        sectorHead = curr;
+	        curr = next;
         }
     }
     
@@ -108,7 +108,6 @@ void linkedlist::remove(int sector)
             curr = curr->sectorNext;
     }
     temp->sectorNext = curr->sectorNext;
-    delete (temp);
 }
 
 bool linkedlist::constainsSectorNumber(int sector)
@@ -128,7 +127,7 @@ bool linkedlist::constainsSectorNumber(int sector)
 void linkedlist::printSector()
 {
     node * curr = sectorHead;
-    if((curr->data.getExposure() < 0) || (curr->data.getSpeed() < 0))
+    /*if((curr->data.getExposure() < 0) || (curr->data.getSpeed() < 0))
     {
         cout << curr->data.getSector();
         curr = curr->sectorNext;
@@ -141,16 +140,16 @@ void linkedlist::printSector()
         cout << endl;
     }
     else
-    {
+    {*/
         for(curr = sectorHead; curr; curr = curr->sectorNext)
         {
             cout << "Sector: #" << curr->data.getSector() << " " 
             << curr->data.getExposure() << "% exposure, " 
             << curr->data.getSpeed() << " km/hr windspeed"<< endl;
         }
-    }  
+   // }  
 }
-/*
+
 void linkedlist::printBadSector()
 {
     node* curr = sectorHead;
@@ -165,7 +164,7 @@ void linkedlist::printBadSector()
     cout << endl;
     
 }
-*/
+
 
 void linkedlist::printExposure()
 {
