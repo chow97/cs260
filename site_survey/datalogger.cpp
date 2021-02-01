@@ -15,9 +15,9 @@ void datalogger::removeSector(int sector)
 	list.remove(sector);
 }
 
-void datalogger::containsSector(int sector)
+bool datalogger::containsSector(int sector)
 {
-	list.constainsSectorNumber(sector);
+	return list.constainsSectorNumber(sector); 
 }
 
 
