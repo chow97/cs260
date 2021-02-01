@@ -16,13 +16,18 @@ linkedlist::linkedlist()
 
 linkedlist::~linkedlist()
 {
-    node * curr = sectorHead;
-    while(sectorHead)
+    if (!isEmpty())
     {
-	curr = sectorHead->sectorNext;
-	delete sectorHead;		//the destructor for individual surveyData (item) is invoked
-	sectorHead = curr;
-    } 
+        node * curr = sectorHead;
+        while(sectorHead)
+        {
+	        curr = sectorHead->sectorNext;
+	        delete sectorHead;		//the destructor for individual surveyData (item) is invoked
+	        sectorHead = curr;
+        }
+    }
+    
+     
 }
 
 void linkedlist::insert (const surveyData& aData)
@@ -103,7 +108,9 @@ void linkedlist::remove(int sector)
             curr = curr->sectorNext;
     }
     temp->sectorNext = curr->sectorNext;
+    delete (temp);
 }
+
 bool linkedlist::constainsSectorNumber(int sector)
 {
     //search if the data matches
@@ -344,4 +351,15 @@ void linkedlist::countSpeed(int speed)
         
     }
     cout << speed << ", " << count << endl;
+}
+bool linkedlist::isEmpty()
+{
+    if (sectorHead == NULL)
+    {
+        return true;
+    }
+    else
+    {
+        return false;
+    }
 }

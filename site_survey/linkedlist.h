@@ -16,10 +16,10 @@ public:
     //const linkedlist& operator=(const linkedlist& aList);
 
 	void insert(const surveyData& aData);
-    void insertBad(const surveyData& aData);
 	void remove(int sector);
 	bool constainsSectorNumber(int sector);
     void printSector();
+    bool isEmpty();
     //void printBadSector();
     void printExposure();
     void printSpeed();
