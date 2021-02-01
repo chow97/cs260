@@ -8,7 +8,7 @@ using namespace std;
 void datalogger::addData(int sector, int exposure, int speed)
 {
 
-		list.insert(surveyData(sector, exposure, speed));
+	list.insert(surveyData(sector, exposure, speed));
 
 }
 
@@ -52,5 +52,5 @@ void datalogger::printReport()
 
 void datalogger::printSectorList()
 {
-	list.printSector();
+	list.printBadSector();
 }

@@ -89,22 +89,20 @@ void linkedlist::insert (const surveyData& aData)
 void linkedlist::remove(int sector)
 {
     node* curr = sectorHead;
-    node* temp = curr;
+    node* temp = NULL;
     if(sectorHead->data.getSector() == sector)
     {
-        sectorHead = temp->sectorNext;
-        curr =sectorHead;
-        delete temp;
+        sectorHead = curr->sectorNext;
+        delete curr;
     }
 
-    while(temp != NULL && temp->data.getSector() != sector)
+    while(curr != NULL && curr->data.getSector() != sector)
     {
-        curr = temp;
-        temp = temp->sectorNext;
+
+            temp = curr;
+            curr = curr->sectorNext;
     }
-    curr->sectorNext = temp->sectorNext;
-    delete temp;
- 
+    temp->sectorNext = curr->sectorNext;
 }
 bool linkedlist::constainsSectorNumber(int sector)
 {
@@ -130,6 +128,20 @@ void linkedlist::printSector()
         << curr->data.getExposure() << "% exposure, " 
         << curr->data.getSpeed() << " km/hr windspeed"<< endl;
     }
+}
+void linkedlist::printBadSector()
+{
+    node* curr = sectorHead;
+    cout << curr->data.getSector();
+    curr = curr->sectorNext;
+    while (curr != NULL)
+    {
+        cout << ", ";
+        cout << curr->data.getSector();  
+        curr = curr->sectorNext;
+    }
+    cout << endl;
+    
 }
 
 void linkedlist::printExposure()

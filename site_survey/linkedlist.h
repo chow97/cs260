@@ -20,6 +20,7 @@ public:
 	void remove(int sector);
 	bool constainsSectorNumber(int sector);
     void printSector();
+    void printBadSector();
     void printExposure();
     void printSpeed();
     //Average
