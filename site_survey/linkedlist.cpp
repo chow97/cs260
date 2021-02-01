@@ -16,18 +16,13 @@ linkedlist::linkedlist()
 
 linkedlist::~linkedlist()
 {
-    if (!isEmpty())
+    node * curr = sectorHead;
+    while(sectorHead != NULL)
     {
-        node * curr = sectorHead;
-        while(curr != NULL)
-        {
-            node* next = curr->sectorNext;
-	        delete curr;		//the destructor for individual surveyData (item) is invoked
-	        curr = next;
-        }
-    }
-    
-     
+        curr = curr->sectorNext;
+        delete sectorHead;
+        sectorHead = curr;
+    }   
 }
 
 void linkedlist::insert (const surveyData& aData)
