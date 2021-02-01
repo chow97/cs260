@@ -22,7 +22,7 @@ linkedlist::~linkedlist()
         while(curr != NULL)
         {
             node* next = curr->sectorNext;
-	        delete sectorHead;		//the destructor for individual surveyData (item) is invoked
+	        delete curr;		//the destructor for individual surveyData (item) is invoked
 	        curr = next;
         }
     }
