@@ -7,7 +7,9 @@ using namespace std;
 
 void datalogger::addData(int sector, int exposure, int speed)
 {
-	list.insert(surveyData(sector, exposure, speed));
+
+		list.insert(surveyData(sector, exposure, speed));
+
 }
 
 void datalogger::removeSector(int sector)
@@ -27,7 +29,7 @@ void datalogger::printReport()
     cout << "Data Values" << endl;
     cout << "----------------------------------------------------------------------" << endl;
 	cout << "Data by Sector" << endl;
-	list.printSector();
+	printSectorList();
 	cout << "Data by Exposure" << endl;
 	list.printExposure();
 	cout << "Data by Speed" << endl;
@@ -48,4 +50,7 @@ void datalogger::printReport()
 
 }
 
-void datalogger::printSectorList(){}
+void datalogger::printSectorList()
+{
+	list.printSector();
+}

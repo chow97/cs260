@@ -16,6 +16,7 @@ public:
     //const linkedlist& operator=(const linkedlist& aList);
 
 	void insert(const surveyData& aData);
+    void insertBad(const surveyData& aData);
 	void remove(int sector);
 	bool constainsSectorNumber(int sector);
     void printSector();
@@ -40,6 +41,7 @@ private:
 	struct node
 	{
 		surveyData data;
+        surveyData badSectorData;
 		node * sectorNext;
         node * exposureNext;
         node * speedNext;
