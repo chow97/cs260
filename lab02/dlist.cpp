@@ -17,10 +17,8 @@ void printNth(node * head,int n)
     if (++count == n)
     {
         cout << "\nPrinting node number " << n << ": " << head->data;  
-        return printNth(head->next, n);
     } 
-    
-    
+    printNth(head->next, n);  
 }
 int listLength(node* head)
 {
