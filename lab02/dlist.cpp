@@ -8,13 +8,12 @@ void printNth(node * head,int n)
     {
         return;
     }
-    cout << "\nPrinting node number " << n << ": ";
     if (head->next == NULL || n == 1)
     {
-        cout << head->data;
+        cout << "\nPrinting node number " << n + count << ": " << head->data;
         return;
     }
-
+    count++;
     printNth(head->next, n - 1);  
 }
 
