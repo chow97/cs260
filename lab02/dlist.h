@@ -6,6 +6,7 @@
 #include <cctype>
 #include <cstdlib>
 
+using namespace std;
 
 struct node
 {
@@ -18,6 +19,7 @@ struct node
 void build(node * & head);  //supplied
 void display(node * head);  //supplied
 void destroy(node * &head); //supplied
+void printNth(node * head,int n);
 
 /* *****************YOUR TURN! ******************************** */
 /* place your prototype here */
