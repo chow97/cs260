@@ -8,15 +8,16 @@ void printNth(node * head,int n)
     {
         return;
     }
-    if (n >= listLength(head))
-    {
-        cout << "\nPrinting the last node: " << head->data;
-        return;
-    }
+    
 
     if (++count == n)
     {
-        cout << "\nPrinting node number " << n << ": " << head->data;  
+        cout << "\nPrinting node number " << n << ": " << head->data;
+        if (n >= listLength(head))
+        {
+        cout << "\nPrinting the last node: " << head->data;
+        return;
+        }  
     } 
     printNth(head->next, n);  
 }
