@@ -8,9 +8,10 @@ void printNth(node * head,int n)
     {
         return;
     }
+    cout << "\nPrinting node number " << n << ": ";
     if (head->next == NULL || n == 1)
     {
-        cout << "\nPrinting node number " << n << ": " << head->data;
+        cout << head->data;
         return;
     }
 
