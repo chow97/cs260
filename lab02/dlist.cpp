@@ -8,10 +8,10 @@ void printNth(node * head,int n)
     {
         return;
     }
-    
+
     if (++count == n)
     {
         cout << "Printing " << n << "th node" << head->data;
     }    
-    printNth(head, n);
+    printNth(head->next, n);
 }
