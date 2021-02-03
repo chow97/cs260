@@ -19,8 +19,11 @@ struct node
 void build(node * & head);  //supplied
 void display(node * head);  //supplied
 void destroy(node * &head); //supplied
-void printNth(node * head,int n);
+
+
 
 /* *****************YOUR TURN! ******************************** */
 /* place your prototype here */
+void printNth(node * head,int n);
+int listLength(node* head);
 #endif
