@@ -10,18 +10,9 @@ void printNth(node * head,int n)
     }
     if (head->next == NULL || n == 1)
     {
-        cout << "\nPrinting the last node: " << head->data;
-        return;
-    } 
-/*
-    if (++count == n)
-    {
         cout << "\nPrinting node number " << n << ": " << head->data;
         return;
-    } 
-    */
-
-    
+    }
 
     printNth(head->next, n - 1);  
 }
