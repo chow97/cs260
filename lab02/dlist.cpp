@@ -11,7 +11,7 @@ void printNth(node * head,int n)
 
     if (++count == n)
     {
-        cout << "Printing " << n << "th node" << head->data;
+        cout << "Printing " << n << "th node: " << head->data;
     }    
     printNth(head->next, n);
 }
