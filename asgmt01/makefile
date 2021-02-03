@@ -1,7 +1,7 @@
 OBJS	= process.o datalogger.o linkedlist.o surveyData.o
 SOURCE	= process.cpp datalogger.cpp linkedlist.cpp surveyData.cpp
 HEADER	= datalogger.h linkedlist.h surveyData.h
-OUT	= process
+OUT	= try
 CC	 = g++
 FLAGS	 = -g -c -Wall
 LFLAGS	 = 

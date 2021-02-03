@@ -101,6 +101,7 @@ void linkedlist::remove(int sector)
 
     while(curr != NULL && curr->data.getSector() != sector)
     {
+
             temp = curr;
             curr = curr->sectorNext;
     }
@@ -124,7 +125,7 @@ bool linkedlist::constainsSectorNumber(int sector)
 void linkedlist::printSector()
 {
     node * curr = sectorHead;
-    if(curr->data.getExposure() < 0 || curr->data.getSpeed() < 0)
+    if((curr->data.getExposure() < 0) || (curr->data.getSpeed() < 0))
     {
         cout << curr->data.getSector();
         curr = curr->sectorNext;
