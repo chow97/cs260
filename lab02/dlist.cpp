@@ -13,7 +13,7 @@ void printNth(node * head,int n)
         cout << "\nPrinting the last node: " << head->data;
     }
 
-    else if (++count == n)
+    if (++count == n)
     {
         cout << "\nPrinting node number " << n << ": " << head->data;  
     } 
@@ -30,5 +30,4 @@ int listLength(node* head)
     {
         return 1 + listLength(head->next);
     }
-    
 }
