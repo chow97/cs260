@@ -16,14 +16,4 @@ void printNth(node * head,int n)
 
     printNth(head->next, n - 1);  
 }
-int listLength(node* head)
-{
-    if (head == NULL)
-    {
-        return 0;
-    }
-    else
-    {
-        return 1 + listLength(head->next);
-    }
-}
+
