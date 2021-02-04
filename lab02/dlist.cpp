@@ -23,8 +23,8 @@ void insertAtN(node *& head,int n,int value)
     {
         node* temp = new node();
         temp->data = value;
-        temp->previous->next = temp;
-        temp->next->previous = temp;
+        head->next = temp;
+        temp->previous = head;
         return;
     }
     insertAtN(head->next, n - 1, value);
