@@ -9,6 +9,7 @@ int main()
 
     //PLEASE PUT YOUR CODE HERE to call the function assigned
     printNth(head, 5);
+    insertAtN(head, 2, 5);
 
     display(head);
     destroy(head);    
