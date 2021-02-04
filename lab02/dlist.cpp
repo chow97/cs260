@@ -29,7 +29,7 @@ void insertAtN(node *& head,int n,int value)
         temp->next = head;
         temp->previous->next = temp;
         temp->next->previous = temp;
-        cout << "\nAdded "<< value << " to number " << n + count << ": \n"; 
+        cout << "\nAdded "<< value << " to node number " << n + count << ": \n"; 
         return;
     }
     //insert at beginning
