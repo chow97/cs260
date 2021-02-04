@@ -19,6 +19,7 @@ void printNth(node * head,int n)
 
 void insertAtN(node *& head,int n,int value)
 {
+    //insert at nth node
     if (n == 1)
     {
         node* temp = new node();
@@ -27,6 +28,7 @@ void insertAtN(node *& head,int n,int value)
         temp->next = head;
         temp->previous->next = temp;
         temp->next->previous = temp;
+        cout << "\nAdded "<< value << " to number " << n << ": \n"; 
         return;
     }
     //insert at beginning
@@ -38,6 +40,7 @@ void insertAtN(node *& head,int n,int value)
         temp->next = head;
         head->previous = temp;
         head = temp;
+        cout << "\nAdded "<< value << " to first node" << ": \n";
         return;
     }
     //insert at end
@@ -48,6 +51,7 @@ void insertAtN(node *& head,int n,int value)
         temp->previous = head;
         temp->next = NULL;
         head->next = temp;
+        cout << "\nAdded "<< value << " to last node" << ": \n";
         return;
     }
     
