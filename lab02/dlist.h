@@ -25,5 +25,5 @@ void destroy(node * &head); //supplied
 /* *****************YOUR TURN! ******************************** */
 /* place your prototype here */
 void printNth(node * head,int n);
-int listLength(node* head);
+void insertAtN(node *& head,int n,int value);
 #endif

@@ -3,7 +3,7 @@
 //put the implmenetation of the required functions here
 void printNth(node * head,int n)
 {
-    int count = 0;
+    static int count = 0;
     if (head == NULL)
     {
         return;
@@ -17,3 +17,16 @@ void printNth(node * head,int n)
     printNth(head->next, n - 1);  
 }
 
+void insertAtN(node *& head,int n,int value)
+{
+    if (n == 1)
+    {
+        node* temp = new node();
+        temp->data = value;
+        temp->previous->next = temp;
+        temp->next->previous = temp;
+        return;
+    }
+    insertAtN(head->next, n - 1, value);
+    
+}
