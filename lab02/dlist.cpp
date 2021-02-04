@@ -24,10 +24,9 @@ void insertAtN(node *& head,int n,int value)
         node* temp = new node();
         temp->data = value;
         temp->previous = head->previous;
-        head->previous->next = temp;
         temp->next = head;
-        head->previous = temp;
-
+        temp->previous->next=temp;
+        temp->next->previous=temp;
 
         return;
     }
