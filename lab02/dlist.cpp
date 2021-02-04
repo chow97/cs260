@@ -29,7 +29,7 @@ void insertAtN(node *& head,int n,int value)
         temp->next = head;
         temp->previous->next = temp;
         temp->next->previous = temp;
-        cout << "\nAdded "<< value << " to node number " << n + count << ": \n"; 
+        cout << "\n\nAdded "<< value << " to node number " << n + count << ": \n"; 
         return;
     }
     //insert at beginning
@@ -41,7 +41,7 @@ void insertAtN(node *& head,int n,int value)
         temp->next = head;
         head->previous = temp;
         head = temp;
-        cout << "\nAdded "<< value << " to first node" << ": \n";
+        cout << "\n\nAdded "<< value << " to first node" << ": \n";
         return;
     }
     //insert at end
@@ -52,7 +52,7 @@ void insertAtN(node *& head,int n,int value)
         temp->previous = head;
         temp->next = NULL;
         head->next = temp;
-        cout << "\nAdded "<< value << " to last node" << ": \n";
+        cout << "\n\nAdded "<< value << " to last node" << ": \n";
         return;
     }
     count++;
