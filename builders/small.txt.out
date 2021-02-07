@@ -1,0 +1,697 @@
+======================================================================
+=== Cycle: 1
+======================================================================
+
+Dispatching new commands
+------------------------
+Builder #5: Received request to build a solar energy collector in sector 21
+Builder #5: Received request to build a wind turbine in sector 21
+Builder #2: Received request to build a water harvester in sector 25
+Builder #2: Received request to build a solar energy collector in sector 25
+Builder #2: Received request to build a wind turbine in sector 25
+
+Activating each builder
+-----------------------
+Builder #2: Moving to sector 25
+Builder #2: Building a water harvester in sector 25
+Builder #5: Moving to sector 21
+Builder #5: Building a solar energy collector in sector 21
+
+======================================================================
+=== Cycle: 2
+======================================================================
+
+Dispatching new commands
+------------------------
+Builder #3: Received request to build a water harvester in sector 32
+Builder #4: Received request to build a water harvester in sector 39
+Builder #4: Received request to build a solar energy collector in sector 39
+Builder #1: Received request to build a wind turbine in sector 1
+Builder #1: Received request to build a water harvester in sector 1
+
+Activating each builder
+-----------------------
+Builder #1: Moving to sector 1
+Builder #1: Building a wind turbine in sector 1
+Builder #2: Building a solar energy collector in sector 25
+Builder #3: Moving to sector 32
+Builder #3: Building a water harvester in sector 32
+Builder #4: Moving to sector 39
+Builder #4: Building a water harvester in sector 39
+Builder #5: Building a wind turbine in sector 21
+
+======================================================================
+=== Cycle: 3
+======================================================================
+
+Dispatching new commands
+------------------------
+Builder #1: Received request to build a water harvester in sector 1
+Builder #5: Received request to build a water harvester in sector 22
+Builder #5: Received request to build a wind turbine in sector 22
+Builder #5: Received request to build a solar energy collector in sector 22
+Builder #2: Received request to build a solar energy collector in sector 33
+
+Activating each builder
+-----------------------
+Builder #1: Building a water harvester in sector 1
+Builder #2: Building a wind turbine in sector 25
+Builder #4: Building a solar energy collector in sector 39
+Builder #5: Moving to sector 22
+Builder #5: Building a water harvester in sector 22
+
+======================================================================
+=== Cycle: 4
+======================================================================
+
+Dispatching new commands
+------------------------
+Builder #2: Received request to build a solar energy collector in sector 33
+Builder #2: Received request to build a wind turbine in sector 33
+Builder #3: Received request to build a solar energy collector in sector 2
+Builder #4: Received request to build a solar energy collector in sector 47
+Builder #4: Received request to build a wind turbine in sector 47
+
+Activating each builder
+-----------------------
+Builder #1: Building a water harvester in sector 1
+Builder #2: Moving to sector 33
+Builder #2: Building a solar energy collector in sector 33
+Builder #3: Moving to sector 2
+Builder #3: Building a solar energy collector in sector 2
+Builder #4: Moving to sector 47
+Builder #4: Building a solar energy collector in sector 47
+Builder #5: Building a wind turbine in sector 22
+
+======================================================================
+=== Cycle: 5
+======================================================================
+
+Dispatching new commands
+------------------------
+Builder #1: Received request to build a wind turbine in sector 7
+Builder #1: Received request to build a wind turbine in sector 7
+Builder #5: Received request to build a water harvester in sector 9
+Builder #5: Received request to build a water harvester in sector 9
+Builder #2: Received request to build a solar energy collector in sector 11
+
+Activating each builder
+-----------------------
+Builder #1: Moving to sector 7
+Builder #1: Building a wind turbine in sector 7
+Builder #2: Building a solar energy collector in sector 33
+Builder #4: Building a wind turbine in sector 47
+Builder #5: Building a solar energy collector in sector 22
+
+======================================================================
+=== Cycle: 6
+======================================================================
+
+Dispatching new commands
+------------------------
+Builder #3: Received request to build a water harvester in sector 14
+Builder #4: Received request to build a wind turbine in sector 4
+Builder #4: Received request to build a solar energy collector in sector 4
+Builder #4: Received request to build a wind turbine in sector 4
+Builder #1: Received request to build a solar energy collector in sector 5
+
+Activating each builder
+-----------------------
+Builder #1: Building a wind turbine in sector 7
+Builder #2: Building a wind turbine in sector 33
+Builder #3: Moving to sector 14
+Builder #3: Building a water harvester in sector 14
+Builder #4: Moving to sector 4
+Builder #4: Building a wind turbine in sector 4
+Builder #5: Moving to sector 9
+Builder #5: Building a water harvester in sector 9
+
+======================================================================
+=== Cycle: 7
+======================================================================
+
+Dispatching new commands
+------------------------
+Builder #1: Received request to build a solar energy collector in sector 5
+Builder #5: Received request to build a water harvester in sector 19
+Builder #5: Received request to build a wind turbine in sector 19
+Builder #5: Received request to build a solar energy collector in sector 19
+Builder #2: Received request to build a water harvester in sector 27
+
+Activating each builder
+-----------------------
+Builder #1: Moving to sector 5
+Builder #1: Building a solar energy collector in sector 5
+Builder #2: Moving to sector 11
+Builder #2: Building a solar energy collector in sector 11
+Builder #4: Building a solar energy collector in sector 4
+Builder #5: Building a water harvester in sector 9
+
+======================================================================
+=== Cycle: 8
+======================================================================
+
+Dispatching new commands
+------------------------
+Builder #2: Received request to build a water harvester in sector 27
+Builder #3: Received request to build a wind turbine in sector 30
+Builder #3: Received request to build a water harvester in sector 30
+Builder #3: Received request to build a wind turbine in sector 30
+Builder #4: Received request to build a wind turbine in sector 24
+
+Activating each builder
+-----------------------
+Builder #1: Building a solar energy collector in sector 5
+Builder #2: Moving to sector 27
+Builder #2: Building a water harvester in sector 27
+Builder #3: Moving to sector 30
+Builder #3: Building a wind turbine in sector 30
+Builder #4: Building a wind turbine in sector 4
+Builder #5: Moving to sector 19
+Builder #5: Building a water harvester in sector 19
+
+======================================================================
+=== Cycle: 9
+======================================================================
+
+Dispatching new commands
+------------------------
+Builder #4: Received request to build a wind turbine in sector 24
+Builder #1: Received request to build a wind turbine in sector 8
+Builder #5: Received request to build a wind turbine in sector 45
+Builder #5: Received request to build a water harvester in sector 45
+Builder #2: Received request to build a solar energy collector in sector 29
+
+Activating each builder
+-----------------------
+Builder #1: Moving to sector 8
+Builder #1: Building a wind turbine in sector 8
+Builder #2: Building a water harvester in sector 27
+Builder #3: Building a water harvester in sector 30
+Builder #4: Moving to sector 24
+Builder #4: Building a wind turbine in sector 24
+Builder #5: Building a wind turbine in sector 19
+
+======================================================================
+=== Cycle: 10
+======================================================================
+
+Dispatching new commands
+------------------------
+Builder #3: Received request to build a solar energy collector in sector 15
+Builder #3: Received request to build a wind turbine in sector 15
+Builder #3: Received request to build a water harvester in sector 15
+Builder #4: Received request to build a solar energy collector in sector 38
+Builder #1: Received request to build a wind turbine in sector 6
+
+Activating each builder
+-----------------------
+Builder #1: Moving to sector 6
+Builder #1: Building a wind turbine in sector 6
+Builder #2: Moving to sector 29
+Builder #2: Building a solar energy collector in sector 29
+Builder #3: Building a wind turbine in sector 30
+Builder #4: Building a wind turbine in sector 24
+Builder #5: Building a solar energy collector in sector 19
+
+======================================================================
+=== Cycle: 11
+======================================================================
+
+Dispatching new commands
+------------------------
+Builder #1: Received request to build a solar energy collector in sector 6
+Builder #5: Received request to build a solar energy collector in sector 36
+Builder #5: Received request to build a water harvester in sector 36
+Builder #5: Received request to build a solar energy collector in sector 36
+Builder #2: Received request to build a solar energy collector in sector 16
+
+Activating each builder
+-----------------------
+Builder #1: Building a solar energy collector in sector 6
+Builder #2: Moving to sector 16
+Builder #2: Building a solar energy collector in sector 16
+Builder #3: Moving to sector 15
+Builder #3: Building a solar energy collector in sector 15
+Builder #4: Moving to sector 38
+Builder #4: Building a solar energy collector in sector 38
+Builder #5: Moving to sector 45
+Builder #5: Building a wind turbine in sector 45
+
+======================================================================
+=== Cycle: 12
+======================================================================
+
+Dispatching new commands
+------------------------
+Builder #2: Received request to build a wind turbine in sector 16
+Builder #3: Received request to build a solar energy collector in sector 31
+Builder #3: Received request to build a wind turbine in sector 31
+Builder #3: Received request to build a solar energy collector in sector 31
+Builder #4: Received request to build a water harvester in sector 40
+
+Activating each builder
+-----------------------
+Builder #2: Building a wind turbine in sector 16
+Builder #3: Building a wind turbine in sector 15
+Builder #4: Moving to sector 40
+Builder #4: Building a water harvester in sector 40
+Builder #5: Building a water harvester in sector 45
+
+======================================================================
+=== Cycle: 13
+======================================================================
+
+Dispatching new commands
+------------------------
+Builder #1: Received request to build a wind turbine in sector 17
+Builder #1: Received request to build a water harvester in sector 17
+Builder #1: Received request to build a wind turbine in sector 17
+Builder #5: Received request to build a water harvester in sector 26
+Builder #5: Received request to build a wind turbine in sector 26
+
+Activating each builder
+-----------------------
+Builder #1: Moving to sector 17
+Builder #1: Building a wind turbine in sector 17
+Builder #3: Building a water harvester in sector 15
+Builder #5: Moving to sector 36
+Builder #5: Building a solar energy collector in sector 36
+
+======================================================================
+=== Cycle: 14
+======================================================================
+
+Dispatching new commands
+------------------------
+Builder #5: Received request to build a wind turbine in sector 26
+Builder #2: Received request to build a water harvester in sector 20
+Builder #2: Received request to build a water harvester in sector 20
+Builder #2: Received request to build a water harvester in sector 20
+Builder #3: Received request to build a wind turbine in sector 48
+
+Activating each builder
+-----------------------
+Builder #1: Building a water harvester in sector 17
+Builder #2: Moving to sector 20
+Builder #2: Building a water harvester in sector 20
+Builder #3: Moving to sector 31
+Builder #3: Building a solar energy collector in sector 31
+Builder #5: Building a water harvester in sector 36
+
+======================================================================
+=== Cycle: 15
+======================================================================
+
+Dispatching new commands
+------------------------
+Builder #3: Received request to build a water harvester in sector 48
+Builder #4: Received request to build a wind turbine in sector 18
+Builder #1: Received request to build a wind turbine in sector 3
+Builder #1: Received request to build a wind turbine in sector 3
+Builder #1: Received request to build a water harvester in sector 3
+
+Activating each builder
+-----------------------
+Builder #1: Building a wind turbine in sector 17
+Builder #2: Building a water harvester in sector 20
+Builder #3: Building a wind turbine in sector 31
+Builder #4: Moving to sector 18
+Builder #4: Building a wind turbine in sector 18
+Builder #5: Building a solar energy collector in sector 36
+
+======================================================================
+=== Cycle: 16
+======================================================================
+
+Dispatching new commands
+------------------------
+Builder #5: Received request to build a solar energy collector in sector 34
+Builder #2: Received request to build a solar energy collector in sector 42
+Builder #2: Received request to build a solar energy collector in sector 42
+Builder #3: Received request to build a wind turbine in sector 13
+Builder #3: Received request to build a solar energy collector in sector 13
+
+Activating each builder
+-----------------------
+Builder #1: Moving to sector 3
+Builder #1: Building a wind turbine in sector 3
+Builder #2: Building a water harvester in sector 20
+Builder #3: Building a solar energy collector in sector 31
+Builder #5: Moving to sector 26
+Builder #5: Building a water harvester in sector 26
+
+======================================================================
+=== Cycle: 17
+======================================================================
+
+Dispatching new commands
+------------------------
+Builder #3: Received request to build a wind turbine in sector 13
+Builder #4: Received request to build a solar energy collector in sector 44
+Builder #4: Received request to build a solar energy collector in sector 44
+Builder #1: Received request to build a water harvester in sector 23
+Builder #1: Received request to build a wind turbine in sector 23
+
+Activating each builder
+-----------------------
+Builder #1: Building a wind turbine in sector 3
+Builder #2: Moving to sector 42
+Builder #2: Building a solar energy collector in sector 42
+Builder #3: Moving to sector 48
+Builder #3: Building a wind turbine in sector 48
+Builder #4: Moving to sector 44
+Builder #4: Building a solar energy collector in sector 44
+Builder #5: Building a wind turbine in sector 26
+
+======================================================================
+=== Cycle: 18
+======================================================================
+
+Dispatching new commands
+------------------------
+Builder #1: Received request to build a wind turbine in sector 23
+Builder #5: Received request to build a wind turbine in sector 28
+Builder #2: Received request to build a water harvester in sector 49
+Builder #2: Received request to build a water harvester in sector 49
+Builder #3: Received request to build a wind turbine in sector 37
+
+Activating each builder
+-----------------------
+Builder #1: Building a water harvester in sector 3
+Builder #2: Building a solar energy collector in sector 42
+Builder #3: Building a water harvester in sector 48
+Builder #4: Building a solar energy collector in sector 44
+Builder #5: Building a wind turbine in sector 26
+
+======================================================================
+=== Cycle: 19
+======================================================================
+
+Dispatching new commands
+------------------------
+Builder #3: Received request to build a water harvester in sector 37
+Builder #4: Received request to build a wind turbine in sector 12
+Builder #4: Received request to build a water harvester in sector 12
+Builder #4: Received request to build a wind turbine in sector 12
+Builder #1: Received request to build a solar energy collector in sector 10
+
+Activating each builder
+-----------------------
+Builder #1: Moving to sector 23
+Builder #1: Building a water harvester in sector 23
+Builder #2: Moving to sector 49
+Builder #2: Building a water harvester in sector 49
+Builder #3: Moving to sector 13
+Builder #3: Building a wind turbine in sector 13
+Builder #4: Moving to sector 12
+Builder #4: Building a wind turbine in sector 12
+Builder #5: Moving to sector 34
+Builder #5: Building a solar energy collector in sector 34
+
+======================================================================
+=== Cycle: 20
+======================================================================
+
+Dispatching new commands
+------------------------
+Builder #5: Received request to build a water harvester in sector 35
+Builder #5: Received request to build a water harvester in sector 35
+Builder #5: Received request to build a water harvester in sector 35
+Builder #2: Received request to build a water harvester in sector 46
+Builder #2: Received request to build a water harvester in sector 46
+
+Activating each builder
+-----------------------
+Builder #1: Building a wind turbine in sector 23
+Builder #2: Building a water harvester in sector 49
+Builder #3: Building a solar energy collector in sector 13
+Builder #4: Building a water harvester in sector 12
+Builder #5: Moving to sector 28
+Builder #5: Building a wind turbine in sector 28
+
+======================================================================
+=== Cycle: 21
+======================================================================
+
+Dispatching new commands
+------------------------
+Builder #3: Received request to build a wind turbine in sector 43
+Builder #3: Received request to build a water harvester in sector 43
+Builder #3: Received request to build a solar energy collector in sector 43
+Builder #4: Received request to build a water harvester in sector 41
+Builder #1: Received request to build a water harvester in sector 50
+
+Activating each builder
+-----------------------
+Builder #1: Building a wind turbine in sector 23
+Builder #2: Moving to sector 46
+Builder #2: Building a water harvester in sector 46
+Builder #3: Building a wind turbine in sector 13
+Builder #4: Building a wind turbine in sector 12
+Builder #5: Moving to sector 35
+Builder #5: Building a water harvester in sector 35
+
+======================================================================
+=== Cycle: 22
+======================================================================
+
+Dispatching new commands
+------------------------
+Builder #1: Received request to build a water harvester in sector 50
+
+Activating each builder
+-----------------------
+Builder #1: Moving to sector 10
+Builder #1: Building a solar energy collector in sector 10
+Builder #2: Building a water harvester in sector 46
+Builder #3: Moving to sector 37
+Builder #3: Building a wind turbine in sector 37
+Builder #4: Moving to sector 41
+Builder #4: Building a water harvester in sector 41
+Builder #5: Building a water harvester in sector 35
+
+======================================================================
+=== Cycle: 23
+======================================================================
+
+Dispatching new commands
+------------------------
+No more commands to read
+
+Activating each builder
+-----------------------
+Builder #1: Moving to sector 50
+Builder #1: Building a water harvester in sector 50
+Builder #3: Building a water harvester in sector 37
+Builder #5: Building a water harvester in sector 35
+
+======================================================================
+=== Cycle: 24
+======================================================================
+
+Dispatching new commands
+------------------------
+No more commands to read
+
+Activating each builder
+-----------------------
+Builder #1: Building a water harvester in sector 50
+Builder #3: Moving to sector 43
+Builder #3: Building a wind turbine in sector 43
+
+======================================================================
+=== Cycle: 25
+======================================================================
+
+Dispatching new commands
+------------------------
+No more commands to read
+
+Activating each builder
+-----------------------
+Builder #3: Building a water harvester in sector 43
+
+======================================================================
+=== Cycle: 26
+======================================================================
+
+Dispatching new commands
+------------------------
+No more commands to read
+
+Activating each builder
+-----------------------
+Builder #3: Building a solar energy collector in sector 43
+
+======================================================================
+=== Cycle: 27
+======================================================================
+
+Dispatching new commands
+------------------------
+No more commands to read
+
+Activating each builder
+-----------------------
+No builders have any pending commands this cycle
+
+Recalling each builder
+----------------------
+Builder #1: Connected to water harvester in sector 50
+Builder #1: Connected to water harvester in sector 50
+Builder #1: Moving to sector 10
+Builder #1: Connected to solar energy collector in sector 10
+Builder #1: Moving to sector 23
+Builder #1: Connected to wind turbine in sector 23
+Builder #1: Connected to wind turbine in sector 23
+Builder #1: Connected to water harvester in sector 23
+Builder #1: Moving to sector 3
+Builder #1: Connected to water harvester in sector 3
+Builder #1: Connected to wind turbine in sector 3
+Builder #1: Connected to wind turbine in sector 3
+Builder #1: Moving to sector 17
+Builder #1: Connected to wind turbine in sector 17
+Builder #1: Connected to water harvester in sector 17
+Builder #1: Connected to wind turbine in sector 17
+Builder #1: Moving to sector 6
+Builder #1: Connected to solar energy collector in sector 6
+Builder #1: Connected to wind turbine in sector 6
+Builder #1: Moving to sector 8
+Builder #1: Connected to wind turbine in sector 8
+Builder #1: Moving to sector 5
+Builder #1: Connected to solar energy collector in sector 5
+Builder #1: Connected to solar energy collector in sector 5
+Builder #1: Moving to sector 7
+Builder #1: Connected to wind turbine in sector 7
+Builder #1: Connected to wind turbine in sector 7
+Builder #1: Moving to sector 1
+Builder #1: Connected to water harvester in sector 1
+Builder #1: Connected to water harvester in sector 1
+Builder #1: Connected to wind turbine in sector 1
+Builder #1: Arrived back at base.
+Builder #2: Connected to water harvester in sector 46
+Builder #2: Connected to water harvester in sector 46
+Builder #2: Moving to sector 49
+Builder #2: Connected to water harvester in sector 49
+Builder #2: Connected to water harvester in sector 49
+Builder #2: Moving to sector 42
+Builder #2: Connected to solar energy collector in sector 42
+Builder #2: Connected to solar energy collector in sector 42
+Builder #2: Moving to sector 20
+Builder #2: Connected to water harvester in sector 20
+Builder #2: Connected to water harvester in sector 20
+Builder #2: Connected to water harvester in sector 20
+Builder #2: Moving to sector 16
+Builder #2: Connected to wind turbine in sector 16
+Builder #2: Connected to solar energy collector in sector 16
+Builder #2: Moving to sector 29
+Builder #2: Connected to solar energy collector in sector 29
+Builder #2: Moving to sector 27
+Builder #2: Connected to water harvester in sector 27
+Builder #2: Connected to water harvester in sector 27
+Builder #2: Moving to sector 11
+Builder #2: Connected to solar energy collector in sector 11
+Builder #2: Moving to sector 33
+Builder #2: Connected to wind turbine in sector 33
+Builder #2: Connected to solar energy collector in sector 33
+Builder #2: Connected to solar energy collector in sector 33
+Builder #2: Moving to sector 25
+Builder #2: Connected to wind turbine in sector 25
+Builder #2: Connected to solar energy collector in sector 25
+Builder #2: Connected to water harvester in sector 25
+Builder #2: Arrived back at base.
+Builder #3: Connected to solar energy collector in sector 43
+Builder #3: Connected to water harvester in sector 43
+Builder #3: Connected to wind turbine in sector 43
+Builder #3: Moving to sector 37
+Builder #3: Connected to water harvester in sector 37
+Builder #3: Connected to wind turbine in sector 37
+Builder #3: Moving to sector 13
+Builder #3: Connected to wind turbine in sector 13
+Builder #3: Connected to solar energy collector in sector 13
+Builder #3: Connected to wind turbine in sector 13
+Builder #3: Moving to sector 48
+Builder #3: Connected to water harvester in sector 48
+Builder #3: Connected to wind turbine in sector 48
+Builder #3: Moving to sector 31
+Builder #3: Connected to solar energy collector in sector 31
+Builder #3: Connected to wind turbine in sector 31
+Builder #3: Connected to solar energy collector in sector 31
+Builder #3: Moving to sector 15
+Builder #3: Connected to water harvester in sector 15
+Builder #3: Connected to wind turbine in sector 15
+Builder #3: Connected to solar energy collector in sector 15
+Builder #3: Moving to sector 30
+Builder #3: Connected to wind turbine in sector 30
+Builder #3: Connected to water harvester in sector 30
+Builder #3: Connected to wind turbine in sector 30
+Builder #3: Moving to sector 14
+Builder #3: Connected to water harvester in sector 14
+Builder #3: Moving to sector 2
+Builder #3: Connected to solar energy collector in sector 2
+Builder #3: Moving to sector 32
+Builder #3: Connected to water harvester in sector 32
+Builder #3: Arrived back at base.
+Builder #4: Connected to water harvester in sector 41
+Builder #4: Moving to sector 12
+Builder #4: Connected to wind turbine in sector 12
+Builder #4: Connected to water harvester in sector 12
+Builder #4: Connected to wind turbine in sector 12
+Builder #4: Moving to sector 44
+Builder #4: Connected to solar energy collector in sector 44
+Builder #4: Connected to solar energy collector in sector 44
+Builder #4: Moving to sector 18
+Builder #4: Connected to wind turbine in sector 18
+Builder #4: Moving to sector 40
+Builder #4: Connected to water harvester in sector 40
+Builder #4: Moving to sector 38
+Builder #4: Connected to solar energy collector in sector 38
+Builder #4: Moving to sector 24
+Builder #4: Connected to wind turbine in sector 24
+Builder #4: Connected to wind turbine in sector 24
+Builder #4: Moving to sector 4
+Builder #4: Connected to wind turbine in sector 4
+Builder #4: Connected to solar energy collector in sector 4
+Builder #4: Connected to wind turbine in sector 4
+Builder #4: Moving to sector 47
+Builder #4: Connected to wind turbine in sector 47
+Builder #4: Connected to solar energy collector in sector 47
+Builder #4: Moving to sector 39
+Builder #4: Connected to solar energy collector in sector 39
+Builder #4: Connected to water harvester in sector 39
+Builder #4: Arrived back at base.
+Builder #5: Connected to water harvester in sector 35
+Builder #5: Connected to water harvester in sector 35
+Builder #5: Connected to water harvester in sector 35
+Builder #5: Moving to sector 28
+Builder #5: Connected to wind turbine in sector 28
+Builder #5: Moving to sector 34
+Builder #5: Connected to solar energy collector in sector 34
+Builder #5: Moving to sector 26
+Builder #5: Connected to wind turbine in sector 26
+Builder #5: Connected to wind turbine in sector 26
+Builder #5: Connected to water harvester in sector 26
+Builder #5: Moving to sector 36
+Builder #5: Connected to solar energy collector in sector 36
+Builder #5: Connected to water harvester in sector 36
+Builder #5: Connected to solar energy collector in sector 36
+Builder #5: Moving to sector 45
+Builder #5: Connected to water harvester in sector 45
+Builder #5: Connected to wind turbine in sector 45
+Builder #5: Moving to sector 19
+Builder #5: Connected to solar energy collector in sector 19
+Builder #5: Connected to wind turbine in sector 19
+Builder #5: Connected to water harvester in sector 19
+Builder #5: Moving to sector 9
+Builder #5: Connected to water harvester in sector 9
+Builder #5: Connected to water harvester in sector 9
+Builder #5: Moving to sector 22
+Builder #5: Connected to solar energy collector in sector 22
+Builder #5: Connected to wind turbine in sector 22
+Builder #5: Connected to water harvester in sector 22
+Builder #5: Moving to sector 21
+Builder #5: Connected to wind turbine in sector 21
+Builder #5: Connected to solar energy collector in sector 21
+Builder #5: Arrived back at base.
+

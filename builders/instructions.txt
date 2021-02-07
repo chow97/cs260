@@ -1,0 +1,207 @@
+================================================================================
+========================================================= Overview and Objective 
+
+For this assignment you will write a program that implements the functionality
+for a fictional machine on Mars called a builder. The "background.txt" file
+gives a very short story (~1100 words) that provides some context for where
+this data is coming from and how it's being used. Reading the story is just
+for fun and is optional.  Each builder receives commands and builds
+structures. More specific details are provided below.
+
+The objective of this assignment is to learn how to implement a stack and get
+more practice with linked lists. Each of your builder objects will contain a
+stack and a linked list. 
+
+Stacks are very useful and frequently used data structures. There is not much
+variation in how they are implemented (i.e., they almost always have the same
+set of methods) but there is much variety in how they are used. The stack
+implementation you will create for this program is quite standard.
+
+Since the objectives include learning how to implement a stack and practicing
+a linked list, you cannot use a premade stack or linked list (e.g. the STL
+stack or list classes).
+
+Your program will be evaluated based on both how it runs as well as how it was
+designed and coded. Pay attention to the "rubric.txt" file to see how it will
+be evaluated.
+
+Along with these instructions, I have provided data files and the EXACT
+expected output that corresponds to those data files. It is important that
+your program output matches EXACTLY. This includes spelling, whitespace, and
+punctuation.
+
+The rest of this document provides more details about the assignment. If you
+have any questions, be sure to post in the discussion group or send me
+email. Do not wait until the last minute to start this assignment.
+
+================================================================================
+======================================================================== Details 
+
+The following sections provides details about the requirements for the
+assignment.
+
+------------------------------------------------------------------- Builders.cpp
+
+The builders.cpp (a file I provide) runs the main loop for the program. This
+main loop repeatedly goes through two phases: dispatch and work. During the
+dispatch phase, the main loop reads building requests from a datafile and
+sends those requests to the appropriate builder. The dispatch phase only sends
+a limited number of requests per each main loop iteration. During the work
+phase the main loop gives each builder a chance to build one item from its own
+work list. The main loop keeps iterating until there are no more building
+requests (i.e., we've reached the end of the datafile) AND all the builder
+objects have finished processing all their pending requests.
+
+After the loop ends, the main program sends each builder a request to return
+back to the base. 
+
+You should read through builders.cpp to get a clear understanding of how the
+main program works so that you will better understand how to interface your
+classes to that code.
+
+------------------------------------------------------------------------ Builder
+
+Each builder receives commands to build certain structures in certain
+sectors. The builder receives commands via the addRequest() method. The
+requests are stored in a linked list in the builder. New requests must be
+placed at the front of the list. Each request specifies a sector and type of
+structure to build. The builder doesn't build the structure as soon as it gets
+the request, instead the builder stores the request in the linked list so that
+it can be built later. Whenever the builder receives a request, it should
+print out a message in the following format:
+
+Builder #5: Received request to build a solar energy collector in sector 21
+
+Each builder also is given a chance, once per main loop iteration in
+builders.cpp, to do some work. This happens when doCycle() is called. When
+doCycle() is called on the builder, the builder must process the oldest
+building request and create that structure. Note that since all requests are
+added to the front of the list, the oldest request is at the back of the list
+so the builder should remove items from the back of the list. If the structure
+is to be created in the same sector in which the previous structure for that
+builder was built, then just build it. Otherwise, the builder must travel to
+the new sector first. Traveling to sectors and building structures are
+indicated by printing messages as follows:
+
+Builder #2: Moving to sector 25
+Builder #2: Building a water harvester in sector 25
+
+When doCycle() is called, it is possible that there are no pending requests
+for a builder (that is, the linked list is empty). In that case the builder
+should do nothing. The doCycle() method should return 'true' if any structures
+are built and 'false' otherwise. This return value is used by the main program
+to determine when all builders are done doing work.
+
+Finally, when the main program has determined that all work is complete, it
+will request each builder to return home by calling the returnHome()
+method. When this happens, the builder should backtrack through the list of
+structures that it built, in reverse order. The builder is connecting the
+structures together so that the water or energy that the structure harvests is
+delivered to the base station. While returning the builder should print
+messages to the screen as follows:
+
+Builder #1: Connected to water harvester in sector 50
+Builder #1: Connected to water harvester in sector 50
+Builder #1: Moving to sector 10
+Builder #1: Connected to solar energy collector in sector 10
+Builder #1: Moving to sector 23
+Builder #1: Connected to wind turbine in sector 23
+
+See the output in the provided output files for the exact messages for
+receiving requests, building structures, and returning to home.
+
+----------------------------------------------------------------- structure_type
+
+I have provided two files, structuretype.h/cpp, that define an enumerated type
+(enum) for the different structure types. Along with the basic enum, I provide
+some convenience methods for converting between strings and enum values.
+
+---------------------------------------------------------- External Requirements
+
+- The main driver (builders.cpp) will provide commands and initiate build
+  cycles for the builders. Each builder needs to store the incoming commands
+  until they are processed and also needs to build the required structures
+  during the building cycle.
+- Structures need to be built in the same order that the commands are sent to
+  a particular builder.
+- Each builder must keep track of the path it follows during its mission so it
+  can find its way home when the returnHome() command is issued.
+- The output from your program must match the output files exactly.
+
+
+================================================================================
+========================================================================= Design
+
+The design of your program is just as important as the functionality of the
+program. The following sections define the design guidelines and some of the
+implementation requirements (in additional to what was described above).
+
+-------------------------------------------------------------- Design Guidelines 
+
+Your program should use good design methodologies so you should have separate
+classes for each of the following:
+
+- builder -- This class represents a builder. Each builder has a builder
+  number (an integer) and a stack and a linked list. You are free to add
+  additional data members as needed. Each builder also has the addRequest(),
+  doCycle(), and returnHome() methods that work as described above.
+
+- stack -- This class implements a stack. This should be implemented
+  using a linked list.
+
+- linkedlist -- This class implements a linkedlist that allows items to be
+  inserted at the front of the list and removed from the back.
+
+- event -- This class is a simple encapsulation of an "event". That is, a
+  sector and building type to be built.
+
+-------------------------------------------------------------------- Other Files
+
+I have provided a main program in builders.cpp. This program only knows about
+the builder class and the structuretype enum. The structuretype enum is
+provided for you. It is in structuretype.h and structuretype.cpp.
+
+I have also provided two test programs: teststack.cpp and
+testlinkedlist.cpp. These are for your use. You are not required to use them
+but they will be helpful for developing and debugging your stack and
+linkedlist classes. The teststack.cpp and testlinkedlist.cpp files are setup
+for my testing and you will likely need to update them to work with your
+classes. They are provided just to give you a headstart with testing.
+
+---------------------------------------------------------- Internal Requirements
+
+- The program must use the supplied builders.cpp file, unmodified, as the
+  main driver.
+- Each builder must have its own and stack and linkedlist.
+- The stack must be implemented with a linked-based implementation (not
+  array-based).
+- No memory leaks.
+- The entire program must run in less than 1 second using the commands in
+  huge.txt.
+
+================================================================================
+======================================================== Turnin and Extra Credit
+
+You must use the "turnin" program to turn in your assignment. DO NOT USE D2L
+TO TURN IN YOUR ASSIGNMENT. Assignments turned in using D2L will not be
+counted. For information on using the "turnin" program see
+~mike.noel/classes/all/turnin.txt for information on using the "turnin"
+program.
+
+IMPORTANT: If the program fails to compile, crashes, or hangs then the program
+automatically gets a 0.
+
+It is possible to earn 1 point of extra credit for this assignment. In order
+to earn the extra credit point you need to implement a buildermgr class that
+works with extra_builders.cpp. The buildermgr takes some of the functionality
+that is in builders.cpp and encapsulates it in a "builder manager". You will
+need to study extra_builders.cpp to see what the interface should be. Note
+that doing the extra credit should be IN ADDITION to doing the basic
+program. Even after doing the extra credit, your main program (using
+builders.cpp) should still work correctly.
+
+The extra credit point will give you 1 extra point on this assignment only. It
+will not allow you to exceed to maximum points for the assignment.
+
+
+

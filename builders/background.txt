@@ -1,0 +1,126 @@
+Director Goliss looked out her room's large window at the Martian
+landscape. Her room was the only one with a panoramic view of the building
+site. Directorship did have some priviledges. But the responsibilities were
+huge too. Large automated 'earth' mover and construction machines sat idle and
+silent, scattered over the relatively flat area just outside of the
+preparation team's site. Up until this morning the robotic machines were
+running around the clock building the colony streets and buildings in
+preparation for the arrival of the full colony ships. She had halted the
+machines this morning. The new from Van Halen wasn't good.
+
+"What a waste of time," she said to herself. "We need these machines
+running. We don't have a moment to waste."  Her eyes dropped to the tablet she
+was holding in her hands and she reviewed the message from last night. No
+change. Still bad news.
+
+"Well, time to tell the troops." She left her quarters and headed towards the
+common room.
+
+Paul waited with the rest of the crew in the common room getting ready for the
+Director's daily briefing. He sat next to Addie, the superstar programmer from
+the trip out to Mars. She really was good at what she did. He hoped he could
+keep up with her.
+
+Conversation from the other prep team members in the room was lively and
+spirits were high. So far the progress for all teams, except food production,
+had been great. Paul gathered bits of information from the conversations
+floating across the room and it was clear that many of the groups were even
+ahead of schedule.
+
+The group quieted down when the Director walked in. She strode towards the
+front of the room. Paul said something to her as she walked by and she smiled
+a response back to him. Samantha, from Communications, intercepted
+her. Something was bothering the wildly gesticulating communications scientist
+but it wasn't clear what she's saying. Paul smiled, it was Samantha. She was
+always high-strung. Maybe the baud rate back to Earth dropped by a few bits
+per second. In the middle of a particularly large hand gesture Director Goliss
+held up her own hand to make Samantha stop. She smiled at her but then stepped
+past her to get up to where she could start the meeting. Samantha plopped back
+into her seat with a pout.
+
+"Good morning, everyone," the director started. "I see that you are all, well
+almost all in a good mood." She glanced towards Samantha. "I can understand
+why, based on the reports I've been seeing. Many of you are ahead of
+schedule. If you don't mind the pun I'll say that it's clear that 'Bon Jovi
+Rocks!'" A smattering of groans and chuckles rippled through the room.
+
+"First off I want to say Happy Birthday to our birthday boy today. Bryce,
+Happy Birthday." The shaggy haired man from HR stood up waving at everyone. He
+looked like a sterotypical 'surfer dude' from San Diego, his hometown. "Yo
+dudes!" He flashed a sly smile around the room. "Hey. Free cake today. It's on
+me!".
+
+"All of the food is free here," Robert called from across the room. Bryce
+shruged and smiled, "Still doesn't change what I said. Free cake today, even
+if it is recyled." Everyone laughed, even the director, as Bryce sat back
+down.
+
+"I also want to congratulate our software team on doing an excellent job on
+the site survey software. Van Halen said that they were able to get exactly
+the data that they needed." She looked at Paul and Addie, making small
+applause. Various utterances of "Good job" or "Way to go" came at them
+from others in the room.
+
+"I'm afraid that's where the good news ends. Some of you may have noticed that
+the building machines stopped this morning. Last night I received a message
+from Van Halen and it's not good. The original plans for the early staging
+locations, like our lovely home here, expected that there would be a lot more
+resources available and within easy reach. It turns out that that's not
+true. At the rate we are consuming water and energy, we aren't collecting
+enough of those same resources to keep the station viable. It has always been
+a part of the plan to build out resource harvesters but we thought we had more
+time. Turns out we don't. As of this morning, all other construction has been
+halted so that we can focus all resources on building water, and energy
+stations." Many of the team members gasped at this news.
+
+Vita, from the construction team, immediately jumped up. "What are we going to
+do? We can't have the colony construction stopped. We need to have the
+buildings ready by the time the full colony ships arrive!"
+
+The director waved Vita down with a calming gesture. "Yes, I know. But if we
+run out of water and energy before then, we'll all die and that won't help
+either. We have options. Van Halen is developing a plan for locating sites to
+build solar collectors, water harvesters, and wind turbines. We're going to
+retrofit our builders to build those structures. Van Halen thinks they'll be
+ready in a couple weeks. We should have our builders changed by then."
+
+The directory looked at Paul and Addie. "I'm afraid that the missing piece is
+software again. We'll need to rewrite the software in each of the builders to
+be able to recieve commands from Van Halen and initiate the building of the
+structures. We'll also need the software to track the path that a builder
+follows so that it can build cables and pipes from all of the stations back
+here."
+
+A few people nodded in agreement and more than a few glanced in Paul and
+Addie's direction.
+
+"Yes. Of course," Paul replied. "We'll start as soon as we get the details."
+He was excited but you also felt a sense of responsibility.
+
+Samantha piped up, "What if the software isn't finished in time? What are we
+going to do?" She asked the director and then glared at Paul and Addie. Vita
+also looked in their direction. "I have to have the building robots started
+again. And I mean building the colony buildings, like dormatories and
+stuff. Right away!"
+
+"Well, first of all, I have high confidence in the team." Director Goliss
+replied. "But secondly, we have to restart building in four weeks if we're
+going to have any chance at being ready. That gives us two weeks to get the
+machines retrofitted and the software written, then another week of building,
+then the fourth week to convert the builders back to their original
+function. If the software, or any of that, doesn't work out, we'll just have
+to restart building and find a different way to get the water and energy we
+need." She smiled at the two developers. "No pressure, right?"
+
+The Director continued, "I think that's everything for today. I'll need each
+of the non-software teams to start working on the builders. Please pitch in
+wherever you can." She paused for a few seconds. "Are there any questions?"
+
+Paul notice that the team's mood was much more serious now than when the
+meeting started. Vita muttered something about "two weeks". Everyone was
+looking a little nervous. Samantha started to raise her hand to ask a question
+but changed her mind.
+
+"Ok. Then that's the meeting. I'll talk to each of you later. And Happy
+Birthday Bryce."
+
