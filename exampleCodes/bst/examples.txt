@@ -1,0 +1,15 @@
+1) traverse the tree  (inorder.cpp)
+2) print tree with indentation (print_level.cpp) 
+  1
+  -2
+  --4
+  --5
+  -3
+  --6
+  --7
+3) count the number of leaves (countleaves.cpp)
+4) copy a tree (copytree.cpp)
+5) insert into a tree (add.cpp)
+6) get max (getmax.cpp)
+
+
