@@ -1,0 +1,73 @@
+Proficiency Test Midterm
+
+Start with the code in
+~mike.noel/classes/cs260/teacher/exams/sample_midterm. You will want to copy
+the files into a directory of your own.
+
+File supplied.o contains code that can build, display, duplicate, and destroy
+a doubly linked list. 
+
+For this test, you will need to write the following functions in dlist.cpp,
+add function prototypes for them to dlist.h and invoke the functions in
+main.cpp. You should label the output of your test, such as "the list after
+removal:" etc.
+
+	  int count(node * head)        
+
+	  Recursively count and return the number of nodes in the doubly linked list.
+
+	  int removeValue(node *& head,int value)    
+
+	  Recursively remove all the nodes that have the value "value" in the doubly linked
+	  list and return the number of nodes removed.
+
+You must use the functions with these exact function prototypes. Use the
+supplied makefile for the project to build it. Please don't forget the
+supplied.o when generating the executable.
+
+Run your program in valgrind and make sure there are no memory leaks. Assuming
+the executable file is named main you can use the following command to check
+for leaks:
+
+valgrind --tool=memcheck --leak-check=full ./main
+
+======================================
+DO NOT TURN IN THE SAMPLE TEST!
+DO NOT TURN IN THE SAMPLE TEST!
+DO NOT TURN IN THE SAMPLE TEST!
+
+I'm including the turnin instructions here so you see how this works but DO
+NOT TURN IN THE SAMPLE TEST! If you do, I won't know the difference between
+your sample and the midterm.
+
+||For test submission, use the 'turnin' program to turnin the dlist.cpp,
+||dlist.h, and main.cpp files (you can run it three times, as below, or put all
+||the files in a zip and run it once).
+||
+||~mike.noel/bin/turnin cs260 dlist.h
+||~mike.noel/bin/turnin cs260 dlist.cpp
+||~mike.noel/bin/turnin cs260 main.cpp
+
+DO NOT TURN IN THE SAMPLE TEST!
+DO NOT TURN IN THE SAMPLE TEST!
+DO NOT TURN IN THE SAMPLE TEST!
+
+======================================
+
+If you do not turn in ALL of your source files or if I'm unable to compile the
+code you submit then you will receive a very low score on the final exam.
+
+The grading criteria are:
+
+5pts The program compiles
+3pts The program runs without crashing or hanging
+2pts No memory errors or memory leaks
+5pts Correct functionality (2pts for countEven, 3pts for removeEven)
+5pts Recursive implementation (2pts for countEven, 3pts for removeEven)
+
+You can get partial credit so be sure to turn in whatever you have by the end
+of the testing time period.
+
+
+ 
+
