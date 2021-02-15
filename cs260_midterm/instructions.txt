@@ -1,0 +1,61 @@
+Proficiency Test Midterm
+
+********************************************************************************
+VERY IMPORTANT: This text is administered under a very tight time limit
+timeline. Unless you have PRIOR approval, you are required to complete with
+the time limit. If your submission exceeds the time limit, even by 1 minute,
+you will receive a 0 on the exam. This time limit is enforced strictly.
+********************************************************************************
+
+The file "supplied.o" contains code that can build, display, duplicate, and
+destroy a doubly linked list.
+
+For this test, you will need to write the following functions in dlist.cpp,
+add function prototypes for them to dlist.h and invoke the functions in
+main.cpp. You should label the output of your test, such as "the list after
+removal:" etc.
+
+	  int countEven(node * head)        
+
+	  Recursively compute and return the number of nodes that contain an even
+	  number in the doubly linked list.
+
+	  int removeEven(node *& head)    
+
+	  Recursively remove all the nodes that contain even number in the doubly linked
+	  list and return the number of nodes removed.
+
+You must use the functions with these exact function prototypes. Use the
+supplied makefile for the project to build it. Please don't forget the
+supplied.o when generating the executable.
+
+Run your program in valgrind and make sure there are no memory leaks. Assuming
+the executable file is named main you can use the following command to check
+for leaks:
+
+valgrind --tool=memcheck --leak-check=full ./main
+
+For test submission, use tar to combine your files into a single bundle:
+
+tar cvf midterm.tar dlist.h dlist.cpp main.cpp
+
+After that, use the 'turnin' program to turnin the tar file.
+
+If you do not turn in ALL of your source files or if I'm unable to compile the
+code you submit then you will receive a very low score on the final exam.
+
+The grading criteria are:
+
+5pts The program compiles
+3pts The program runs without crashing or hanging
+2pts No memory errors or memory leaks
+5pts Correct functionality (2pts for countEven, 3pts for removeEven)
+5pts Recursive implementation (2pts for countEven, 3pts for removeEven)
+
+You can get partial credit so be sure to turn in whatever you have by the end
+of the testing time period. Even if your program crashes, you can still get
+partial credit.
+
+
+ 
+
