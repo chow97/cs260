@@ -1,0 +1,51 @@
+This file explains how to start either the midterm or final proficiency exam
+for cs162, cs260, or cs261.
+
+These instructions will only work if the particular exam is currently
+available. Please see D2L for the exam schedule.
+
+Taking the exam requires the ability to use basic linux commands, a text
+editor, and the g++ command line compiler. The following steps assume that you
+have that knowledge. The steps also assume that you know how to use the
+"turnin" command.
+
+You should read all of the steps before beginning any of them. If you have any
+questions about the steps or the exam ask the question BEFORE you start. Once
+you have started the exam you are on a strict 1 hour time limit and I can only
+answer limited questions.
+
+-------------------------------------------------------------------------------
+
+Note the the examples in the following steps use "cs999" for your class and
+"midterm" for your exam. You should use your actual class (cs162, cs260, or
+cs261) and your actual exam (midterm, final).
+
+Step 1: Create a directory for your exam files.  
+
+  example: mkdir cs999_midterm
+
+Step 2: Enter the directory made in step 1.
+
+  example: cd cs999_midterm
+
+Step 3: Run ~mike.noel/bin/gef <course> <exam> <dir>. 
+
+  example: ~mike.noel/bin/gef cs999 midterm .
+
+When you run step 3, the gef program will ask you to acknowledge that you will
+follow the exam rules. After you enter 'yes', the gef program will download
+the selected exam files into the directory you specified ("." in the above
+example). If you didn't enter 'yes' or if an error happened during Step 3, you
+will not be able to do the following steps.
+
+Step 4: Use tar to extract the exam files.
+
+  example: tar xvf midterm_files.tar
+
+Step 5: You are now doing the test. Read and follow the instructions in
+instructions.txt.
+
+Step 6: When you are done, use the turnin command to submit your results.
+
+
+
