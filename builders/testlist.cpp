@@ -15,9 +15,9 @@ void dumpList(linkedlist &ll)
     cout << "Dumping the linkedlist" << endl;
     while (!ll.isEmpty())
     {
-	event result;
-	ll.removeBack(result);
-	printEvent(result);
+	    event result;
+	    ll.removeBack(result);
+	    printEvent(result);
     }
 }
 
@@ -34,6 +34,5 @@ int main()
     ll.insertFront(e1);
     ll.insertFront(e2);
     dumpList(ll);
-    
     return 0;
 }

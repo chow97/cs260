@@ -4,5 +4,7 @@ using namespace std;
 
 bool stack::push()
 {
+    stack * temp = new stack();
     
+
 }
