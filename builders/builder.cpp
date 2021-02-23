@@ -10,8 +10,8 @@ int builder::setBuilderNum(int n)
 void builder::addRequest(int sector, structure_type type)
 {
     list.insertFront(event(sector, type));
-    std::cout << "Builder #" << builderNum << ":  Received request to build a " 
-    << str(type) << " in sector " << sector << std::endl;
+    cout << "Builder #" << builderNum << ":  Received request to build a " 
+    << str(type) << " in sector " << sector << endl;
 }
 
 bool builder::doCycle()
@@ -25,12 +25,16 @@ bool builder::doCycle()
         if(currentSector != list.lastSector())
         {
             currentSector = list.lastSector();
-            std::cout << "\nBuilder #" << builderNum << ": Moving to sector " << currentSector << std::endl;
+            cout << "\nBuilder #" << builderNum << ": Moving to sector " << currentSector << endl;cout << "\nBuilder #" << builderNum << ": Building a " << str(list.lastType()) 
+            << " in sector " << currentSector << endl;
+            list.removeBack();
+            myStack.push(currentSector);
+            return true;
         }
         else
         {
-            std::cout << "\nBuilder #" << builderNum << ": Building a " << str(list.lastType()) 
-            << " in sector " << currentSector << std::endl;
+            cout << "\nBuilder #" << builderNum << ": Building a " << str(list.lastType()) 
+            << " in sector " << currentSector << endl;
             list.removeBack();
             myStack.push(currentSector);
             return true;
@@ -46,9 +50,6 @@ void builder::returnHome()
         {
             currentSector = myStack.peek();
             cout << "\nBuilder #" << builderNum << ": Moving to sector " << currentSector << endl;
-            cout << "\nBuilder #" << builderNum << " Connected to " << str(list.lastType()) 
-            << " in sector " << currentSector << endl;
-            myStack.pop();
         }
         else
         {
