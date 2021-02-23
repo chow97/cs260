@@ -10,7 +10,7 @@ event::event()
     type = UNK;
 }
 
-event::event(const int sector, const structure_type type)
+event::event(int sector, structure_type type)
 {
     setSector(sector);
     setType(type);
@@ -38,3 +38,6 @@ void event::setType(structure_type type)
     this->type = type;
 }
 
+void event::print() const{
+    cout << "Sector: " << sector << " Structure: " << type << endl;
+}

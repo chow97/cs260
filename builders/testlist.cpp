@@ -16,23 +16,27 @@ void dumpList(linkedlist &ll)
     while (!ll.isEmpty())
     {
 	    event result;
-	    ll.removeBack(result);
-	    printEvent(result);
+	    //ll.removeBack(result);
+	    //printEvent(result);
+        ll.print();
     }
 }
 
 int main()
 {
     linkedlist ll;
+    event e;
     event e1(1,WIND);
     event e2(2,WATER);
 
     cout << "dump list before adding" << endl;
-    dumpList(ll);
+    //dumpList(ll);
     ll.insertFront(e1);
-    dumpList(ll);
+    //dumpList(ll);
     ll.insertFront(e1);
     ll.insertFront(e2);
-    dumpList(ll);
+    ll.removeBack();
+    //dumpList(ll);
+    ll.print();
     return 0;
 }

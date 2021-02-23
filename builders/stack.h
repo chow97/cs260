@@ -1,20 +1,29 @@
+//file: stack.h
 #ifndef STACK_H
 #define STACK_H
-
+#include "structuretype.h"
 #include "event.h"
 
-class stack
+class stack 
 {
-    public:
-        stack();
-        ~stack();
+public:
+    stack(); 
+    ~stack();
 
-        bool push();
-        bool pop();
-        bool peek();
-        bool isEmpty();
 
-    
+    void push(int);
+    void pop();
+
+    int peek();
+    bool isEmpty(void)const;
+
+
+private:	
+    struct node
+    {
+	int data;
+	node * next;
+    };
+    node * top;
 };
-
 #endif

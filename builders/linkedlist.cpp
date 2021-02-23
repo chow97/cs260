@@ -19,7 +19,7 @@ linkedlist::~linkedlist()
 	head = NULL;
 }
 
-void linkedlist::insertFront(const event &data)
+void linkedlist::insertFront(const event& data)
 {
     node * newNode = new node;
     newNode->item = event(data);
@@ -28,8 +28,18 @@ void linkedlist::insertFront(const event &data)
     newNode->next = head;
     head = newNode;
 }
+void linkedlist::print()
+{
+    node* curr = head;
+    cout << curr->item.getSector() << ", " << str(curr->item.getType()) << endl;
+    while(curr->next != NULL)
+    {
+        curr = curr->next;
+        cout << curr->item.getSector() << ", " << str(curr->item.getType()) << endl;
+    }
 
-void linkedlist::removeBack(event)
+}
+void linkedlist::removeBack()
 {
     if (head->next == NULL) 
     { 
@@ -37,15 +47,16 @@ void linkedlist::removeBack(event)
     } 
     else 
     {
-    node *nextToEnd = head;
-    node *end = head->next;
-    while (end->next != NULL) {
-        nextToEnd = end;
-        end = end->next;
+        node *nextToEnd = head;
+        node *end = head->next;
+        while (end->next != NULL) 
+        {
+            nextToEnd = end;
+            end = end->next;
+        }
+        delete end;
+        nextToEnd->next = NULL;
     }
-    delete end;
-    nextToEnd->next = NULL;
-}
 }
 
 bool linkedlist::isEmpty()
@@ -58,4 +69,23 @@ bool linkedlist::isEmpty()
     {
         return false;
     }
+}
+int linkedlist::lastSector()
+{
+    node* curr = head;
+    while(curr->next != NULL)
+    {
+        curr = curr->next;
+    }
+    return curr->item.getSector();
+}
+
+structure_type linkedlist::lastType()
+{
+    node* curr = head;
+    while(curr->next != NULL)
+    {
+        curr = curr->next;
+    }
+    return curr->item.getType();
 }

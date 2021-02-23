@@ -10,11 +10,12 @@ class event
     
     public:
         event();
-        event(const int sector, const structure_type type);
+        event(int sector, structure_type type);
         ~event();
         int getSector();
         structure_type getType();
         void setSector(int sector);
         void setType(structure_type type);
+        void print() const;
 };
 #endif

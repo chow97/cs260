@@ -1,5 +1,5 @@
-OBJS	= testlist.o event.o linkedlist.o structuretype.o
-SOURCE	= testlist.cpp event.cpp linkedlist.cpp structuretype.cpp
+OBJS	= builders.o event.o linkedlist.o structuretype.o
+SOURCE	= builders.cpp event.cpp linkedlist.cpp structuretype.cpp
 HEADER	= event.h linkedlist.h structuretype.h
 OUT	= try
 CC	 = g++
@@ -9,8 +9,8 @@ LFLAGS	 =
 all: $(OBJS)
 	$(CC) -g $(OBJS) -o $(OUT) $(LFLAGS)
 
-testlist.o: testlist.cpp
-	$(CC) $(FLAGS) testlist.cpp 
+builders.o: builders.cpp
+	$(CC) $(FLAGS) builders.cpp 
 
 event.o: event.cpp
 	$(CC) $(FLAGS) event.cpp 

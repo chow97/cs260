@@ -1,5 +1,10 @@
 #ifndef BUILDER_H
 #define BUILDER_H
+#include <iostream>
+#include "linkedlist.h"
+#include "stack.h"
+
+//using namespace std;
 
 class builder
 {
@@ -11,6 +16,8 @@ class builder
     private:
         int builderNum;
         int currentSector;
-        //stack myStack;
+        stack myStack;
+        linkedlist list;
+        
 };
 #endif

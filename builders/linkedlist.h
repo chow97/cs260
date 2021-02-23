@@ -11,9 +11,12 @@ class linkedlist
         linkedlist();
         ~linkedlist();
 
-        void insertFront(const event &data);
-        void removeBack(event);
+        void insertFront(const event& data);
+        void removeBack();
         bool isEmpty();
+        void print();
+        int lastSector();
+        structure_type lastType();
     
     private:
         struct node
