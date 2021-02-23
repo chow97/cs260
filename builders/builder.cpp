@@ -25,7 +25,16 @@ bool builder::doCycle()
         if(currentSector != list.lastSector())
         {
             currentSector = list.lastSector();
-            cout << "\nBuilder #" << builderNum << ": Building a " << str(list.lastType()) 
+            cout << "Builder #" << builderNum << ": Moving to sector " << currentSector << endl;
+            cout << "Builder #" << builderNum << ": Building a " << str(list.lastType()) 
+            << " in sector " << currentSector << endl;
+            list.removeBack();
+            myStack.push(currentSector);
+            return true;
+        }
+        else
+        {
+            cout << "Builder #" << builderNum << ": Building a " << str(list.lastType()) 
             << " in sector " << currentSector << endl;
             list.removeBack();
             myStack.push(currentSector);
@@ -41,11 +50,11 @@ void builder::returnHome()
         if(currentSector != myStack.peek())
         {
             currentSector = myStack.peek();
-            cout << "\nBuilder #" << builderNum << ": Moving to sector " << currentSector << endl;
+            cout << "Builder #" << builderNum << ": Moving to sector " << currentSector << endl;
         }
         else
         {
-            cout << "\nBuilder #" << builderNum << " Connected to " << str(list.lastType()) 
+            cout << "Builder #" << builderNum << " Connected to " << str(list.lastType()) 
             << " in sector " << currentSector << endl;
             myStack.pop();
         }
