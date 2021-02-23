@@ -11,7 +11,7 @@ void builder::addRequest(int sector, structure_type type)
 {
     list.insertFront(event(sector, type));
     std::cout << "Builder #" << builderNum << ":  Received request to build a " 
-    << str(list.lastType()) << " in sector " << sector << std::endl;
+    << str(type) << " in sector " << sector << std::endl;
 }
 
 bool builder::doCycle()
