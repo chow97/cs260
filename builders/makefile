@@ -1,6 +1,6 @@
-OBJS	= builders.o event.o linkedlist.o structuretype.o stack.o
-SOURCE	= builders.cpp event.cpp linkedlist.cpp structuretype.cpp stack.cpp
-HEADER	= event.h linkedlist.h structuretype.h stack.h
+OBJS	= builders.o event.o linkedlist.o structuretype.o stack.o builder.o
+SOURCE	= builders.cpp event.cpp linkedlist.cpp structuretype.cpp stack.cpp builder.cpp
+HEADER	= event.h linkedlist.h structuretype.h stack.h builder.h
 OUT	= try
 CC	 = g++
 FLAGS	 = -g -c -Wall
@@ -23,6 +23,9 @@ structuretype.o: structuretype.cpp
 
 stack.o: stack.cpp
 	$(CC) $(FLAGS) stack.cpp 
+
+builder.o: builder.cpp
+	$(CC) $(FLAGS) builder.cpp 
 
 
 clean:
