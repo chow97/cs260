@@ -4,10 +4,11 @@
 #include "linkedlist.h"
 #include "stack.h"
 
-//using namespace std;
+using namespace std;
 
 class builder
 {
+
     public:
         int setBuilderNum(int);
         void addRequest(int, structure_type);
