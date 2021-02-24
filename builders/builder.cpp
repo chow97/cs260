@@ -29,6 +29,7 @@ bool builder::doCycle()
             cout << "Builder #" << builderNum << ": Building a " << str(list.lastType()) 
             << " in sector " << list.lastSector() << endl;
             list.removeBack();
+            myStack.push(currentSector);
             return true;
         }
         if(currentSector == list.lastSector())
