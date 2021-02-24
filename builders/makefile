@@ -1,7 +1,7 @@
 OBJS	= builders.o event.o linkedlist.o structuretype.o stack.o builder.o
 SOURCE	= builders.cpp event.cpp linkedlist.cpp structuretype.cpp stack.cpp builder.cpp
 HEADER	= event.h linkedlist.h structuretype.h stack.h builder.h
-OUT	= try
+OUT	= builders
 CC	 = g++
 FLAGS	 = -g -c -Wall
 LFLAGS	 = 
