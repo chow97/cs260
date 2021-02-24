@@ -22,7 +22,7 @@ bool builder::doCycle()
     }
     else
     {
-        while(currentSector != list.lastSector())
+        while(currentSector == list.lastSector())
         {
             cout << "Builder #" << builderNum << ": Building a " 
             << str(list.lastType()) << " in sector " << currentSector << endl;
