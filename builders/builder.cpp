@@ -54,7 +54,7 @@ void builder::returnHome()
         }
         else
         {
-            cout << "Builder #" << builderNum << " Connected to " << str(myStack.peekType()) 
+            cout << "Builder #" << builderNum << ": Connected to " << str(myStack.peekType()) 
             << " in sector " << myStack.peekSector() << endl;
             myStack.pop();
         }
