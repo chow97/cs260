@@ -24,14 +24,16 @@ bool builder::doCycle()
     {
         while(currentSector != list.lastSector())
         {
-            currentSector = list.lastSector();
-            cout << "Builder #" << builderNum << ": Moving to sector " << currentSector << endl;
+            cout << "Builder #" << builderNum << ": Building a " 
+            << str(list.lastType()) << " in sector " << currentSector << endl;
+            
+            list.removeBack();
+            myStack.push(currentSector);
+            return true;
         }
-        cout << "Builder #" << builderNum << ": Building a " << str(list.lastType()) 
-        << " in sector " << currentSector << endl;
-        list.removeBack();
-        myStack.push(currentSector);
-        return true;
+        currentSector = list.lastSector();
+        cout << "Builder #" << builderNum << ": Moving to sector " << currentSector << endl;
+        
         /*
         if(currentSector != list.lastSector())
         {
