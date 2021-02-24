@@ -28,16 +28,16 @@ bool builder::doCycle()
             cout << "Builder #" << builderNum << ": Moving to sector " << currentSector << endl;
             cout << "Builder #" << builderNum << ": Building a " << str(list.lastType()) 
             << " in sector " << list.lastSector() << endl;
+            myStack.push(event(currentSector, list.lastType()));
             list.removeBack();
-            myStack.push(currentSector);
             return true;
         }
         if(currentSector == list.lastSector())
         {
             cout << "Builder #" << builderNum << ": Building a " << str(list.lastType()) 
             << " in sector " << list.lastSector() << endl;
+            myStack.push(event(currentSector, list.lastType()));
             list.removeBack();
-            myStack.push(currentSector);
             return true;
         }
     }
@@ -47,15 +47,15 @@ void builder::returnHome()
 {
     while(!myStack.isEmpty())
     {
-        if(currentSector != myStack.peek())
+        if(currentSector != myStack.peekSector())
         {
-            currentSector = myStack.peek();
-            cout << "Builder #" << builderNum << ": Moving to sector " << currentSector << endl;
+            currentSector = myStack.peekSector();
+            cout << "Builder #" << builderNum << ": Moving to sector " << myStack.peekSector() << endl;
         }
         else
         {
-            cout << "Builder #" << builderNum << " Connected to " << str(list.lastType()) 
-            << " in sector " << currentSector << endl;
+            cout << "Builder #" << builderNum << " Connected to " << str(myStack.peekType()) 
+            << " in sector " << myStack.peekSector() << endl;
             myStack.pop();
         }
     }

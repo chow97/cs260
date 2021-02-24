@@ -13,17 +13,18 @@ class stack
         ~stack();
 
 
-        void push(int);
+        void push(const event& data);
         void pop();
 
-        int peek();
+        int peekSector();
+        structure_type peekType();
         bool isEmpty(void)const;
 
 
     private:	
         struct node
         {
-        int data;
+        event data;
         node * next;
         };
         node * top;

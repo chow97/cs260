@@ -19,11 +19,11 @@ stack::~stack()
     top = NULL;
 }
 
-void stack::push(const int data)
+void stack::push(const event& data)
 {
     //create new node
     node * newNode = new node;
-    newNode->data = data;
+    newNode->data = event(data);
     newNode->next = NULL;
 
     //add on top
@@ -46,11 +46,18 @@ bool stack::isEmpty () const
     return top==NULL;
 }
 
-int stack::peek ()
+int stack::peekSector()
 {
     if(!isEmpty())
     {
-        return top->data;
+        return top->data.getSector();
+    }
+}
+structure_type stack::peekType()
+{
+    if(!isEmpty())
+    {
+        return top->data.getType();
     }
 }
 /*
