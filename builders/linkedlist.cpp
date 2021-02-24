@@ -44,6 +44,7 @@ void linkedlist::removeBack()
     if (head->next == NULL) 
     { 
         delete head; 
+        head = NULL;
     } 
     else 
     {
