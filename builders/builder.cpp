@@ -44,7 +44,6 @@ bool builder::doCycle()
 
 void builder::returnHome()
 {
-    /*
     while(!myStack.isEmpty())
     {
         if(currentSector != myStack.peek())
@@ -59,5 +58,4 @@ void builder::returnHome()
             myStack.pop();
         }
     }
-    */
 }
