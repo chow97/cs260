@@ -59,5 +59,5 @@ void builder::returnHome()
             myStack.pop();
         }
     }
-    cout << "Builder #" << currentSector << ": Arrived back at base." << endl;
+    cout << "Builder #" << builderNum << ": Arrived back at base." << endl;
 }
