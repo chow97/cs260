@@ -46,7 +46,7 @@ Hash::Hash(const Hash& aTable):capacity(aTable.capacity)
 	}
 }
 
-
+/*
 const Hash& Hash::operator= (const Hash& aTable)
 {
 	if(this == &aTable)
@@ -87,6 +87,7 @@ const Hash& Hash::operator= (const Hash& aTable)
 		return *this;
 	}
 }
+*/
 
 
 void Hash::destroyTable ()
