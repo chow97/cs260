@@ -6,6 +6,7 @@
 #include <iostream>
 
 using namespace std;
+const static int DEFAULT_CAPACITY = 9973;
 
 class Hash
 {
@@ -28,10 +29,10 @@ private:
 	node ** table;
 	int capacity;
 	int size;
-	const static int DEFAULT_CAPACITY = 9973;
+	
 
 	void destroyTable();
-	//int calculateIndex(char * id);
-	unsigned long calculateIndex(const char* id) const;
+	int calculateIndex(char * id);
+	//unsigned long calculateIndex(const char* id) const;
 };
 #endif

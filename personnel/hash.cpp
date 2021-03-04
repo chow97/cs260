@@ -103,7 +103,7 @@ person * Hash::retrieve(char *  id)
 	}
 }
 */
-/*
+
 int Hash::calculateIndex (char * id)
 {
 	// something is very wrong with this hash function -- what?
@@ -116,7 +116,7 @@ int Hash::calculateIndex (char * id)
 	}
 	return hashValue % capacity;
 }
-*/
+/*
 unsigned long Hash::calculateIndex(const char* id) const {
     unsigned long hash = 0;
     for(; *id; ++id) {
@@ -130,7 +130,7 @@ unsigned long Hash::calculateIndex(const char* id) const {
 
     return hash % capacity;
 }
-
+*/
 ostream& operator<<(ostream& out, Hash& h)
 {
 	int i;
