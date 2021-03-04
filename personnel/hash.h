@@ -14,9 +14,9 @@ public:
 	//Hash(const Hash& aTable);
 	~Hash();
 
-	void insert(char const * const key, const person& aData);
-	bool remove(char const * const key);
-	person * retrieve(char const *  key);
+	void insert(char * key, const person& aData);
+	//bool remove(char const * key);
+	person * retrieve(char *  key);
 	int getSize(void)const;
 	friend ostream& operator<<(ostream& out, Hash& h);
 private:
