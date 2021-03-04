@@ -3,8 +3,7 @@ using namespace std;
 
 void personmgr::addPerson(const person& aData) 
 {
-    Hash *h = new Hash();
-    h->insert(aData);
+    h.insert(aData);
 }
 
 person * personmgr::findPerson(char* id) 
