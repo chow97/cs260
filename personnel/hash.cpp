@@ -81,7 +81,7 @@ void Hash::insert (char * id, const person& aData)
 	newNode->next = table[index];
 	table[index] = newNode;
 }
-
+/*
 person * Hash::retrieve(char *  id)
 {
 	//calculate the retrieval position (the index of the array)
@@ -102,6 +102,7 @@ person * Hash::retrieve(char *  id)
 			curr = curr->next;
 	}
 }
+*/
 /*
 int Hash::calculateIndex (char * id)
 {
