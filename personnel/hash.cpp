@@ -11,7 +11,7 @@ Hash::Hash() :
 		table[i] = NULL;
 	}
 }
-/*
+
 Hash::Hash(const Hash& aTable):capacity(aTable.capacity), size(aTable.size)
 {
 	table = new node*[capacity];
@@ -41,7 +41,7 @@ Hash::Hash(const Hash& aTable):capacity(aTable.capacity), size(aTable.size)
 		}
 	}
 }
-*/
+
 
 void Hash::destroyTable ()
 {
@@ -68,18 +68,27 @@ Hash::~Hash()
 	destroyTable(); 
 }
 
-void Hash::insert (char * id, const person& aData)
+void Hash::insert (const person& aData)
 {
+	char * id = aData.getId();
 	//calculate the insertion position (the index of the array)
 	int index = calculateIndex(id);
 
 	//create a new node to hold data
-	node * newNode = new node;
-	newNode->item = person(aData);
+	node * newNode = new node(aData);
 
 	//insert the new node at the beginning of the linked list
-	newNode->next = table[index];
-	table[index] = newNode;
+	if (table[index] = NULL)
+	{
+		table[index] = newNode;
+	}
+	else
+	{
+		newNode->next = table[index];
+		table[index] = newNode;
+	}
+	
+	
 }
 /*
 person * Hash::retrieve(char *  id)
@@ -102,7 +111,7 @@ person * Hash::retrieve(char *  id)
 			curr = curr->next;
 	}
 }
-*/
+
 
 int Hash::calculateIndex (char * id)
 {
@@ -115,22 +124,18 @@ int Hash::calculateIndex (char * id)
 		hashValue += int(id[i]) * int(id[i]);
 	}
 	return hashValue % capacity;
-}
-/*
-unsigned long Hash::calculateIndex(const char* id) const {
-    unsigned long hash = 0;
-    for(; *id; ++id) {
-        hash += *id;
-        hash += (hash << 10);
-        hash ^= (hash >> 6);
-    }
-    hash += (hash << 3);
-    hash ^= (hash >> 11);
-    hash += (hash << 15);
+}*/
 
-    return hash % capacity;
+unsigned long Hash::calculateIndex(char *id)
+{
+	unsigned long hash = 5381;
+	int c;
+
+	while (c = *id++)
+		hash = ((hash << 5) + hash) + c; /* hash * 33 + c */
+
+	return hash;
 }
-*/
 ostream& operator<<(ostream& out, Hash& h)
 {
 	int i;

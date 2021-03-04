@@ -6,16 +6,16 @@
 #include <iostream>
 
 using namespace std;
-const static int DEFAULT_CAPACITY = 9973;
+
 
 class Hash
 {
 public:
     Hash();
-	//Hash(const Hash& aTable);
+	Hash(const Hash& aTable);
 	~Hash();
 
-	void insert(char * id, const person& aData);
+	void insert(const person& aData);
 	//bool remove(char const * id);
 	person * retrieve(char *  id);
 	int getSize(void)const;
@@ -25,14 +25,16 @@ private:
 	{
 		person item;
 		node * next;
+		node(const person& aData) : item(aData), next(NULL) {}
 	};
 	node ** table;
 	int capacity;
 	int size;
+	const static int DEFAULT_CAPACITY = 9973;
 	
 
 	void destroyTable();
-	int calculateIndex(char * id);
-	//unsigned long calculateIndex(const char* id) const;
+	//int calculateIndex(char * id);
+	unsigned long calculateIndex(char *id);
 };
 #endif
