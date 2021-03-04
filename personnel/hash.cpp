@@ -76,16 +76,7 @@ void Hash::insert (char const * const key, const person& aData)
 	table[index] = newNode;
 	size++;
 }
-size_t Hash::calculateIndex (char const *  key)
-{
-	// something is very wrong with this hash function -- what?
-	size_t length = strlen(key);
-	size_t hashValue = 0;
 
-	for(size_t i=0; i<length; i++)
-		hashValue += key[i];
-	return hashValue % capacity;
-}
 person * Hash::retrieve(char const *  key)
 {
 	//calculate the retrieval position (the index of the array)
@@ -105,4 +96,31 @@ person * Hash::retrieve(char const *  key)
 		else
 			curr = curr->next;
 	}
+}
+
+size_t Hash::calculateIndex (char const *  key)
+{
+	// something is very wrong with this hash function -- what?
+	size_t length = strlen(key);
+	size_t hashValue = 0;
+
+	for(size_t i=0; i<length; i++)
+		hashValue += key[i];
+	return hashValue % capacity;
+}
+
+ostream& operator<<(ostream& out, Hash& h)
+{
+	int i;
+	Hash::node * curr;
+
+	cout << "Data in the table: " << endl << endl;
+	for(i=0; i < h.capacity; i++)
+	{
+		for(curr = h.table[i]; curr; curr = curr->next)		
+			//we can use << on data object because we overload << in the data class
+			cout << '\t' << curr->item << endl;
+	}
+
+	return out;
 }

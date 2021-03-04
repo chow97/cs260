@@ -1,8 +1,9 @@
 #ifndef HASH_H
 #define HASH_H
-#include <iostream>
+
 #include <cstring>
 #include "person.h"
+#include <iostream>
 
 using namespace std;
 
@@ -17,6 +18,7 @@ public:
 	bool remove(char const * const key);
 	person * retrieve(char const *  key);
 	int getSize(void)const;
+	friend ostream& operator<<(ostream& out, Hash& h);
 private:
 	struct node
 	{
