@@ -94,7 +94,7 @@ int main(int argc,char** argv)
     // find a faster way to store data, we want to print out these diagnostics
     // to help make sure we're being as efficient as possible.
     cout << "======= Hashtable stats ===========" << endl;
-    //personMgr.printHtStats();
+    personMgr.printHtStats();
 
     return(0);
 }

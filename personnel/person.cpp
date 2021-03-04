@@ -2,8 +2,12 @@
 #include <iomanip>
 #include <cstring>
 
-person::person():id(NULL), fname(NULL), lname(NULL), familyid(NULL)
+person::person()
 {
+    id = NULL;
+    fname = NULL;
+    lname = NULL;
+    familyid = NULL;
 }
 
 person::person(char* id,  char* fname,  char* lname,  char* familyid):
@@ -27,21 +31,26 @@ person::person(const person& data) :id(NULL),  fname(NULL), lname(NULL), familyi
 }
 person::~person()
 {
+    if(id)
+    {
+        delete[] id;
+        id = NULL;
+    }
     if(fname)
     {
         delete[] fname;
+        fname = NULL;
     }
 	if(lname)
     {
         delete[] lname;
+        lname = NULL;
     }
-    if(id)
-    {
-        delete[] id;
-    }
+    
     if(familyid)
     {
         delete[] familyid;
+        familyid = NULL;
     }
     
 }

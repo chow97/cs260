@@ -13,3 +13,7 @@ person * personmgr::findPerson(char* id)
     return aData;   
 }
 
+void personmgr::printHtStats()
+{
+    cout << "Table uses " << h.getSize() << " out of 9973 entries." << endl;
+}

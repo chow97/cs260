@@ -6,7 +6,6 @@ using namespace std;
 
 Hash::Hash()
 {
-	size = 0;
 	capacity = DEFAULT_CAPACITY;
 
 	table = new node*[DEFAULT_CAPACITY];
@@ -17,7 +16,7 @@ Hash::Hash()
 	}
 }
 
-Hash::Hash(const Hash& aTable):capacity(aTable.capacity), size(aTable.size)
+Hash::Hash(const Hash& aTable):capacity(aTable.capacity)
 {
 	table = new node*[capacity];
 
@@ -60,7 +59,6 @@ const Hash& Hash::operator= (const Hash& aTable)
 		//make *this a deep copy of "aTable"
 		table = new node*[capacity];
 		capacity = aTable.capacity;
-		size = aTable.size;
 
 		//copy the array of linked list
 		int i;	
@@ -129,7 +127,7 @@ void Hash::insert (const person& aData)
 	//insert the new node at the beginning of the linked list
 	if (table[index] = NULL)
 	{
-		table[index] = newNode;
+		table[index] = newNode;	
 	}
 	else
 	{
@@ -176,6 +174,19 @@ int Hash::calculateIndex (char * id)
 	}
 	//cout << "capacity: " << capacity << endl;
 	return hashValue % capacity;
+}
+
+int Hash::getSize()
+{
+	int size = 0;
+	for (int i = 0; i < capacity; i++)
+	{
+		if(table[i])
+		{
+			size++;
+		}
+	}
+	return size;
 }
 
 ostream& operator<<(ostream& out, Hash& h)

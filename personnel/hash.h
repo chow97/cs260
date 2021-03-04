@@ -19,7 +19,7 @@ public:
 	void insert(const person& aData);
 	//bool remove(char const * id);
 	bool retrieve (char * key, person *& aData);
-	int getSize(void)const;
+	int getSize();
 
 	friend ostream& operator<<(ostream& out, Hash& h);
 
@@ -32,8 +32,7 @@ private:
 	};
 	node ** table;
 	int capacity;
-	int size;
-	const static int DEFAULT_CAPACITY = 11;
+	const static int DEFAULT_CAPACITY = 9973;
 
 	void destroyTable();
 	int calculateIndex(char * id);
