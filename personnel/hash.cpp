@@ -68,7 +68,7 @@ Hash::~Hash()
 	destroyTable(); 
 }
 
-void Hash::insert (char const * const key, const person& aData)
+void Hash::insert (char * key, const person& aData)
 {
 	//calculate the insertion position (the index of the array)
 	int index = calculateIndex(key);
@@ -82,7 +82,7 @@ void Hash::insert (char const * const key, const person& aData)
 	table[index] = newNode;
 }
 
-person * Hash::retrieve(char const *  key)
+person * Hash::retrieve(char *  key)
 {
 	//calculate the retrieval position (the index of the array)
 	int index = calculateIndex(key);
