@@ -6,7 +6,7 @@ person::person():fname(NULL), lname(NULL), id(NULL), familyid(NULL)
 {
 }
 
-person::person(const char* fname, const char* lname, const char* id, const char* familyid):
+person::person(char* fname,  char* lname,  char* id,  char* familyid):
     fname(NULL),
     lname(NULL),
     id(NULL),
@@ -46,27 +46,27 @@ person::~person()
     
 }
 
-const char* person::getFname()
+char * person::getFname()const
 {
-    return this->fname;
+    return fname;
 }
 
-const char* person::getLname()
+char * person::getLname()const
 {
-    return this->lname;
+    return lname;
 }
 
-const char* person::getId()
+char * person::getId()const
 {
-    return this->id;
+    return id;
 }
 
-const char* person::getFamilyid()
+char * person::getFamilyid()const
 {
-    return this->familyid;
+    return familyid;
 }
 
-void person::setFname(const char * fname)
+void person::setFname(char * fname)
 {
     //release the exisisting memory if there is any
     if(this->fname)
@@ -78,7 +78,7 @@ void person::setFname(const char * fname)
     this->fname = new char[strlen(fname)+1];
     strcpy(this->fname, fname);
 }
-void person::setLname(const char * lname)
+void person::setLname(char * lname)
 {
     //release the exisisting memory if there is any
     if(this->lname)
@@ -90,7 +90,7 @@ void person::setLname(const char * lname)
     strcpy(this->lname, lname);
 }
 
-void person::setId(const char * id)
+void person::setId(char * id)
 {
     if(this->id)
     {
@@ -101,7 +101,7 @@ void person::setId(const char * id)
     this->id = new char[strlen(id)+1];
     strcpy(this->id, id);
 }
-void person::setFamilyid(const char * familyid)
+void person::setFamilyid(char * familyid)
 {
     if(this->familyid)
     {
@@ -110,4 +110,12 @@ void person::setFamilyid(const char * familyid)
 
     this->familyid = new char[strlen(familyid)+1];
     strcpy(this->familyid, familyid);
+}
+
+ostream& operator<<(ostream &os, const person &aPerson){
+    os << "ID: " << aPerson.getId() << "\nFirst Name: " <<
+    aPerson.getFname() << "\nLast Name: " <<
+    aPerson.getLname() << "\n";
+
+    return os;
 }
