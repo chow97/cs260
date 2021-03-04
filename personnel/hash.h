@@ -11,7 +11,7 @@ class Hash
 {
 public:
     Hash();
-	Hash(const Hash& aTable);
+	//Hash(const Hash& aTable);
 	~Hash();
 
 	void insert(char const * const key, const person& aData);

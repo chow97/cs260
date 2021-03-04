@@ -11,6 +11,7 @@ Hash::Hash() :
 		table[i] = NULL;
 	}
 }
+/*
 Hash::Hash(const Hash& aTable):capacity(aTable.capacity), size(aTable.size)
 {
 	table = new node*[capacity];
@@ -40,6 +41,7 @@ Hash::Hash(const Hash& aTable):capacity(aTable.capacity), size(aTable.size)
 		}
 	}
 }
+*/
 
 void Hash::destroyTable ()
 {
