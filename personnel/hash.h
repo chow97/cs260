@@ -15,7 +15,7 @@ public:
 	~Hash();
 
 	void insert(const person& aData);
-	//bool remove(char const * id);
+	bool remove(char * key);
 	bool retrieve (char * key, person *& aData);
 	int getSize();
 	int getCap();

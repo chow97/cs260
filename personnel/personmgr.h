@@ -10,6 +10,7 @@ class personmgr
         void addPerson(const person& aData);
         person * findPerson(char* id);
         void printHtStats();
+        void removePerson(char* id);
     private:
         Hash h;
 };

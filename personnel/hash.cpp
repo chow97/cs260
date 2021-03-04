@@ -115,6 +115,37 @@ bool Hash::retrieve (char * key, person *& aData)
 	//data is not in the table
 	return false;
 }
+bool Hash::remove (char * key)
+{
+	//calculate the removal position (the index of the array)
+	size_t index = calculateIndex(key);	
+
+	//search for the data to be removed in the chain (linked list)
+	node * curr = table[index];
+	node * prev = NULL;
+	while (curr)
+	{
+		char * id = curr->item.getId();
+		if(strcmp(key, id) == 0)
+		{
+			//find match and remove the node
+			if(!prev)
+				table[index] = curr->next;
+			else
+				prev->next = curr->next;
+
+			curr->next = NULL;
+			delete curr;
+			return true;
+		}
+		else
+		{
+			prev = curr;
+			curr = curr->next;
+		}
+	}
+	return false;
+}
 
 int Hash::calculateIndex (char * id)
 {

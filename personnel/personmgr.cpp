@@ -17,3 +17,8 @@ void personmgr::printHtStats()
 {
     cout << "Table uses " << h.getSize() << " out of " << h.getCap() << " entries." << endl;
 }
+
+void personmgr::removePerson(char* id)
+{
+    h.remove(id);
+}
