@@ -1,6 +1,7 @@
 #ifndef HASH_H
 #define HASH_H
 #include <iostream>
+#include <cstring>
 #include "person.h"
 
 using namespace std;
