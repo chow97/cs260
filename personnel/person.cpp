@@ -77,19 +77,16 @@ char * person::getFamilyid()const
 
 void person::setFname(char * fname)
 {
-    //release the exisisting memory if there is any
     if(this->fname)
     {
 	    delete [] this->fname;
     }
 
-    //set new name
     this->fname = new char[strlen(fname)+1];
     strcpy(this->fname, fname);
 }
 void person::setLname(char * lname)
 {
-    //release the exisisting memory if there is any
     if(this->lname)
     {
 	    delete [] this->lname;
@@ -106,7 +103,6 @@ void person::setId(char * id)
 	    delete [] this->id;
     }
 
-    //set new name
     this->id = new char[strlen(id)+1];
     strcpy(this->id, id);
 }

@@ -14,12 +14,11 @@ public:
 	Hash(const Hash& aTable);
 	~Hash();
 
-	const Hash& operator= (const Hash& aTable);
-
 	void insert(const person& aData);
 	//bool remove(char const * id);
 	bool retrieve (char * key, person *& aData);
 	int getSize();
+	int getCap();
 
 	friend ostream& operator<<(ostream& out, Hash& h);
 

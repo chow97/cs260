@@ -15,5 +15,5 @@ person * personmgr::findPerson(char* id)
 
 void personmgr::printHtStats()
 {
-    cout << "Table uses " << h.getSize() << " out of 9973 entries." << endl;
+    cout << "Table uses " << h.getSize() << " out of " << h.getCap() << " entries." << endl;
 }

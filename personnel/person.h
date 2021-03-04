@@ -27,9 +27,5 @@ class person
         void setFamilyid(char* familyid);
 
         friend ostream& operator<<(ostream &os, const person &aPerson);
-
-
 };
-
-
 #endif

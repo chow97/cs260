@@ -46,50 +46,6 @@ Hash::Hash(const Hash& aTable):capacity(aTable.capacity)
 	}
 }
 
-/*
-const Hash& Hash::operator= (const Hash& aTable)
-{
-	if(this == &aTable)
-		return *this;
-	else
-	{
-		//release dynamically allocated memory held by current object
-		destroyTable(); 
-
-		//make *this a deep copy of "aTable"
-		table = new node*[capacity];
-		capacity = aTable.capacity;
-
-		//copy the array of linked list
-		int i;	
-		for(i=0; i<capacity; i++)
-		{
-			//copy each linked list in the array
-			if (aTable.table[i] == NULL)
-				table[i] = NULL;
-			else
-			{
-				//copy the first node in current chain
-				table[i] = new node(aTable.table[i]->item);
-
-				//copy the rest of the chain
-				node * srcNode = aTable.table[i]->next;
-				node * destNode = table[i];
-				while(srcNode)
-				{
-					destNode->next = new node(srcNode->item);
-					destNode = destNode->next;
-					srcNode = srcNode->next;
-				}
-				destNode->next = NULL;
-			}
-		}		
-		return *this;
-	}
-}
-*/
-
-
 void Hash::destroyTable ()
 {
 	//delete each chain
@@ -120,7 +76,6 @@ void Hash::insert (const person& aData)
 	char * id = aData.getId();
 	//calculate the insertion position (the index of the array)
 	int index = calculateIndex(id);
-	//cout << index << endl;
 
 	//create a new node to hold data
 	node * newNode = new node(aData);
@@ -135,7 +90,6 @@ void Hash::insert (const person& aData)
 		newNode->next = table[index];
 		table[index] = newNode;
 	}
-	
 }
 
 bool Hash::retrieve (char * key, person *& aData)
@@ -151,7 +105,6 @@ bool Hash::retrieve (char * key, person *& aData)
 		char * id = curr->item.getId();
 		if(strcmp(key, id) == 0)
 		{
-			//find match and return the data
 			aData = &(curr->item);
 			return true;
 		}
@@ -173,7 +126,6 @@ int Hash::calculateIndex (char * id)
 	{
 		hashValue += int(id[i]) * int(id[i]);
 	}
-	//cout << "capacity: " << capacity << endl;
 	return hashValue % capacity;
 }
 
@@ -189,19 +141,20 @@ int Hash::getSize()
 	}
 	return size;
 }
+int Hash::getCap()
+{
+	return capacity;
+}
 
 ostream& operator<<(ostream& out, Hash& h)
 {
 	int i;
 	Hash::node * curr;
-
 	
 	for(i=0; i < h.capacity; i++)
 	{
 		for(curr = h.table[i]; curr; curr = curr->next)		
-			//we can use << on data object because we overload << in the data class
 			cout << curr->item << endl;
 	}
-
 	return out;
 }

@@ -12,6 +12,5 @@ class personmgr
         void printHtStats();
     private:
         Hash h;
-        person p;
 };
 #endif
