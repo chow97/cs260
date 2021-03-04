@@ -14,9 +14,9 @@ public:
 	//Hash(const Hash& aTable);
 	~Hash();
 
-	void insert(char * key, const person& aData);
-	//bool remove(char const * key);
-	person * retrieve(char *  key);
+	void insert(char * id, const person& aData);
+	//bool remove(char const * id);
+	person * retrieve(char *  id);
 	int getSize(void)const;
 	friend ostream& operator<<(ostream& out, Hash& h);
 private:
@@ -31,6 +31,7 @@ private:
 	const static int DEFAULT_CAPACITY = 9973;
 
 	void destroyTable();
-	int calculateIndex(char * key);
+	//int calculateIndex(char * id);
+	unsigned long hash(const char* key) const;
 };
 #endif
