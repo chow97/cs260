@@ -2,14 +2,14 @@
 #include <iomanip>
 #include <cstring>
 
-person::person():fname(NULL), lname(NULL), id(NULL), familyid(NULL)
+person::person():id(NULL), fname(NULL), lname(NULL), familyid(NULL)
 {
 }
 
-person::person(char* fname,  char* lname,  char* id,  char* familyid):
+person::person(char* id,  char* fname,  char* lname,  char* familyid):
+    id(NULL),
     fname(NULL),
     lname(NULL),
-    id(NULL),
     familyid(NULL)
 {
     setFname(fname);
@@ -18,11 +18,11 @@ person::person(char* fname,  char* lname,  char* id,  char* familyid):
     setFamilyid(familyid);
 }
 	
-person::person(const person& data) : fname(NULL), lname(NULL), id(NULL), familyid(NULL)
+person::person(const person& data) :id(NULL),  fname(NULL), lname(NULL), familyid(NULL)
 {
+    setId(data.id);
     setFname(data.fname);
     setLname(data.lname);
-    setId(data.id);
     setFamilyid(data.familyid);
 }
 person::~person()

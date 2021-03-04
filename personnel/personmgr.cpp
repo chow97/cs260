@@ -3,15 +3,14 @@ using namespace std;
 
 void personmgr::addPerson(const person& aData) 
 {
-    char* id = new char[100];
-    p.getId();
-    h.insert(id, p);
+    Hash *h = new Hash();
+    h->insert(aData);
 }
 
-person* personmgr::findPerson(const char* id) 
+person * personmgr::findPerson(char* id) 
 {
-    person* p = NULL;
-    h.retrieve(id);
-    return p;   
+    person * aData = NULL;
+    h.retrieve(id, aData);
+    return aData;   
 }
 

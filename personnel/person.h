@@ -13,7 +13,7 @@ class person
 
     public:
         person();
-        person(char* fname, char* lname, char* id, char* familyid);
+        person(char* id, char* fname, char* lname, char* familyid);
         person(const person& data);
         ~person();
         char * getFname()const;

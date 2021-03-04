@@ -8,7 +8,7 @@ class personmgr
 {
     public:
         void addPerson(const person& aData);
-        person * findPerson(const char* id);
+        person * findPerson(char* id);
         void printHtStats();
     private:
         Hash h;

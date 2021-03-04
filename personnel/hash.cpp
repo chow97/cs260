@@ -1,10 +1,15 @@
 #include "hash.h"
+#include <iostream>
+#include <fstream>
 
-Hash::Hash() :
-	size(0),
-	capacity(DEFAULT_CAPACITY),
-	table(new node*[DEFAULT_CAPACITY])
+using namespace std; 
+
+Hash::Hash()
 {
+	size = 0;
+	capacity = DEFAULT_CAPACITY;
+
+	table = new node*[DEFAULT_CAPACITY];
 	//initialize each head of the individual linked list
 	for(int i=0; i<capacity; i++)
 	{
@@ -43,6 +48,49 @@ Hash::Hash(const Hash& aTable):capacity(aTable.capacity), size(aTable.size)
 }
 
 
+const Hash& Hash::operator= (const Hash& aTable)
+{
+	if(this == &aTable)
+		return *this;
+	else
+	{
+		//release dynamically allocated memory held by current object
+		destroyTable(); 
+
+		//make *this a deep copy of "aTable"
+		table = new node*[capacity];
+		capacity = aTable.capacity;
+		size = aTable.size;
+
+		//copy the array of linked list
+		int i;	
+		for(i=0; i<capacity; i++)
+		{
+			//copy each linked list in the array
+			if (aTable.table[i] == NULL)
+				table[i] = NULL;
+			else
+			{
+				//copy the first node in current chain
+				table[i] = new node(aTable.table[i]->item);
+
+				//copy the rest of the chain
+				node * srcNode = aTable.table[i]->next;
+				node * destNode = table[i];
+				while(srcNode)
+				{
+					destNode->next = new node(srcNode->item);
+					destNode = destNode->next;
+					srcNode = srcNode->next;
+				}
+				destNode->next = NULL;
+			}
+		}		
+		return *this;
+	}
+}
+
+
 void Hash::destroyTable ()
 {
 	//delete each chain
@@ -73,6 +121,7 @@ void Hash::insert (const person& aData)
 	char * id = aData.getId();
 	//calculate the insertion position (the index of the array)
 	int index = calculateIndex(id);
+	//cout << index << endl;
 
 	//create a new node to hold data
 	node * newNode = new node(aData);
@@ -88,30 +137,32 @@ void Hash::insert (const person& aData)
 		table[index] = newNode;
 	}
 	
-	
 }
-/*
-person * Hash::retrieve(char *  id)
+
+bool Hash::retrieve (char * key, person *& aData)
 {
 	//calculate the retrieval position (the index of the array)
-	int index = calculateIndex(id);
+	int index = calculateIndex(key);
 
 	//search for the data in the chain (linked list)
 	node * curr = table[index];
-	char id[100];
+	
 	while (curr)
 	{
-		curr->item.getId();
-		if(strcmp(id, id) == 0)
+		char * id = curr->item.getId();
+		if(strcmp(key, id) == 0)
 		{
 			//find match and return the data
-			return &curr->item;
+			aData = &(curr->item);
+			return true;
 		}
 		else
 			curr = curr->next;
 	}
-}
 
+	//data is not in the table
+	return false;
+}
 
 int Hash::calculateIndex (char * id)
 {
@@ -123,30 +174,21 @@ int Hash::calculateIndex (char * id)
 	{
 		hashValue += int(id[i]) * int(id[i]);
 	}
+	//cout << "capacity: " << capacity << endl;
 	return hashValue % capacity;
-}*/
-
-unsigned long Hash::calculateIndex(char *id)
-{
-	unsigned long hash = 5381;
-	int c;
-
-	while (c = *id++)
-		hash = ((hash << 5) + hash) + c; /* hash * 33 + c */
-
-	return hash;
 }
+
 ostream& operator<<(ostream& out, Hash& h)
 {
 	int i;
 	Hash::node * curr;
 
-	cout << "Data in the table: " << endl << endl;
+	
 	for(i=0; i < h.capacity; i++)
 	{
 		for(curr = h.table[i]; curr; curr = curr->next)		
 			//we can use << on data object because we overload << in the data class
-			cout << '\t' << curr->item << endl;
+			cout << curr->item << endl;
 	}
 
 	return out;
