@@ -6,7 +6,7 @@ void personmgr::addPerson(const person& aData)
     h.insert(aData);
 }
 
-person * personmgr::findPerson(char* id) 
+const person * personmgr::findPerson(char* id) 
 {
     person * aData = NULL;
     h.retrieve(id, aData);
@@ -21,4 +21,10 @@ void personmgr::printHtStats()
 void personmgr::removePerson(char* id)
 {
     h.remove(id);
+}
+void personmgr::print()
+{
+    cout << "ID: " << p.getId() << endl;
+    cout << "First Name: " << p.getFname() << endl;
+    cout << "Last Name: " << p.getLname() << endl << endl;
 }

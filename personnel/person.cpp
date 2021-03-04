@@ -124,3 +124,10 @@ ostream& operator<<(ostream &os, const person &aPerson){
 
     return os;
 }
+
+void person::print()const
+{
+    cout << "ID: " << getId() << endl;
+    cout << "First Name: " << getFname() << endl;
+    cout << "Last Name: " << getLname() << endl << endl;
+}

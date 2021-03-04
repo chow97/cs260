@@ -147,6 +147,7 @@ bool Hash::remove (char * key)
 	return false;
 }
 
+
 int Hash::calculateIndex (char * id)
 {
 	int length = strlen(id);
@@ -158,6 +159,7 @@ int Hash::calculateIndex (char * id)
 	}
 	return hashValue % capacity;
 }
+
 
 int Hash::getSize()
 {

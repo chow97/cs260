@@ -80,7 +80,8 @@ int main(int argc,char** argv)
 		    // this person.
 		    if (i == 0 && lookupCount < NUM_PRINTS)
 		    {
-			cout << *perPtr << endl;
+				//cout << *perPtr << endl;
+				perPtr->print();
 		    }
 		}
 	    }
