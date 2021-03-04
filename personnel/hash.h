@@ -31,6 +31,6 @@ private:
 	const static int DEFAULT_CAPACITY = 9973;
 
 	void destroyTable();
-	size_t calculateIndex(char const * key);
+	int calculateIndex(char * key);
 };
 #endif

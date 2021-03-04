@@ -67,10 +67,11 @@ Hash::~Hash()
 {
 	destroyTable(); 
 }
+
 void Hash::insert (char const * const key, const person& aData)
 {
 	//calculate the insertion position (the index of the array)
-	size_t index = calculateIndex(key);
+	int index = calculateIndex(key);
 
 	//create a new node to hold data
 	node * newNode = new node;
@@ -84,7 +85,7 @@ void Hash::insert (char const * const key, const person& aData)
 person * Hash::retrieve(char const *  key)
 {
 	//calculate the retrieval position (the index of the array)
-	size_t index = calculateIndex(key);
+	int index = calculateIndex(key);
 
 	//search for the data in the chain (linked list)
 	node * curr = table[index];
@@ -102,15 +103,15 @@ person * Hash::retrieve(char const *  key)
 	}
 }
 
-size_t Hash::calculateIndex (char const *  key)
+int Hash::calculateIndex (char * key)
 {
 	// something is very wrong with this hash function -- what?
-	size_t length = strlen(key);
-	size_t hashValue = 0;
+	int length = strlen(key);
+	int hashValue = 0;
 
-	for(size_t i=0; i<length; i++)
+	for(int i=0; i<length; i++)
 	{
-		hashValue += size_t(key[i]) * size_t(key[i]);
+		hashValue += int(key[i]) * int(key[i]);
 	}
 	return hashValue % capacity;
 }
