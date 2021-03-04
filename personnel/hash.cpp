@@ -149,7 +149,6 @@ bool Hash::remove (char * key)
 
 int Hash::calculateIndex (char * id)
 {
-	// something is very wrong with this hash function -- what?
 	int length = strlen(id);
 	int hashValue = 0;
 
