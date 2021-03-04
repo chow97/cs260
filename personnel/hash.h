@@ -32,6 +32,6 @@ private:
 
 	void destroyTable();
 	//int calculateIndex(char * id);
-	unsigned long hash(const char* key) const;
+	unsigned long calculateIndex(const char* id) const;
 };
 #endif

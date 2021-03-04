@@ -116,10 +116,10 @@ int Hash::calculateIndex (char * id)
 	return hashValue % capacity;
 }
 */
-unsigned long Hash::hash(const char* key) const {
+unsigned long Hash::calculateIndex(const char* id) const {
     unsigned long hash = 0;
-    for(; *key; ++key) {
-        hash += *key;
+    for(; *id; ++id) {
+        hash += *id;
         hash += (hash << 10);
         hash ^= (hash >> 6);
     }
