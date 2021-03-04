@@ -7,7 +7,9 @@ Hash::Hash() :
 {
 	//initialize each head of the individual linked list
 	for(int i=0; i<capacity; i++)
+	{
 		table[i] = NULL;
+	}
 }
 Hash::Hash(const Hash& aTable):capacity(aTable.capacity), size(aTable.size)
 {
@@ -69,12 +71,12 @@ void Hash::insert (char const * const key, const person& aData)
 	size_t index = calculateIndex(key);
 
 	//create a new node to hold data
-	node * newNode = new node(aData);
+	node * newNode = new node;
+	newNode->item = person(aData);
 
 	//insert the new node at the beginning of the linked list
 	newNode->next = table[index];
 	table[index] = newNode;
-	size++;
 }
 
 person * Hash::retrieve(char const *  key)
