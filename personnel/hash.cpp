@@ -68,10 +68,10 @@ Hash::~Hash()
 	destroyTable(); 
 }
 
-void Hash::insert (char * key, const person& aData)
+void Hash::insert (char * id, const person& aData)
 {
 	//calculate the insertion position (the index of the array)
-	int index = calculateIndex(key);
+	int index = calculateIndex(id);
 
 	//create a new node to hold data
 	node * newNode = new node;
@@ -82,10 +82,10 @@ void Hash::insert (char * key, const person& aData)
 	table[index] = newNode;
 }
 
-person * Hash::retrieve(char *  key)
+person * Hash::retrieve(char *  id)
 {
 	//calculate the retrieval position (the index of the array)
-	int index = calculateIndex(key);
+	int index = calculateIndex(id);
 
 	//search for the data in the chain (linked list)
 	node * curr = table[index];
@@ -93,7 +93,7 @@ person * Hash::retrieve(char *  key)
 	while (curr)
 	{
 		curr->item.getId();
-		if(strcmp(key, id) == 0)
+		if(strcmp(id, id) == 0)
 		{
 			//find match and return the data
 			return &curr->item;
@@ -102,18 +102,32 @@ person * Hash::retrieve(char *  key)
 			curr = curr->next;
 	}
 }
-
-int Hash::calculateIndex (char * key)
+/*
+int Hash::calculateIndex (char * id)
 {
 	// something is very wrong with this hash function -- what?
-	int length = strlen(key);
+	int length = strlen(id);
 	int hashValue = 0;
 
 	for(int i=0; i<length; i++)
 	{
-		hashValue += int(key[i]) * int(key[i]);
+		hashValue += int(id[i]) * int(id[i]);
 	}
 	return hashValue % capacity;
+}
+*/
+unsigned long Hash::hash(const char* key) const {
+    unsigned long hash = 0;
+    for(; *key; ++key) {
+        hash += *key;
+        hash += (hash << 10);
+        hash ^= (hash >> 6);
+    }
+    hash += (hash << 3);
+    hash ^= (hash >> 11);
+    hash += (hash << 15);
+
+    return hash % capacity;
 }
 
 ostream& operator<<(ostream& out, Hash& h)
