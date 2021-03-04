@@ -105,7 +105,9 @@ size_t Hash::calculateIndex (char const *  key)
 	size_t hashValue = 0;
 
 	for(size_t i=0; i<length; i++)
-		hashValue += key[i];
+	{
+		hashValue += int(key[i]) * int(key[i]);
+	}
 	return hashValue % capacity;
 }
 
