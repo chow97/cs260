@@ -12,7 +12,8 @@ int main()
     h->insert(person("G123", "chow", "chow", "F123"));
     h->insert(person("G456", "lee", "kok", "F456"));
     cout << *h;*/
-    personMgr.addPerson(person("MC00I238F", "Grady", "Escamilla", "FAM00I3F9O"));
+    person per("MC00I238F", "Grady", "Escamilla", "FAM00I3F9O");
+    personMgr.addPerson(per);
     //personMgr.addPerson(person("G456", "lee", "kok", "F456"));
 
     personMgr.findPerson("MC00I238F");
