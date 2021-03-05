@@ -6,7 +6,7 @@ using namespace std;
 
 Hash::Hash()
 {
-	size = 0;
+	//size = 0;
 	capacity = DEFAULT_CAPACITY;
 
 	table = new node*[DEFAULT_CAPACITY];
@@ -17,7 +17,7 @@ Hash::Hash()
 	}
 }
 
-Hash::Hash(const Hash& aTable):capacity(aTable.capacity), size(aTable.size)
+Hash::Hash(const Hash& aTable):capacity(aTable.capacity)//, size(aTable.size)
 {
 	table = new node*[capacity];
 
@@ -47,26 +47,6 @@ Hash::Hash(const Hash& aTable):capacity(aTable.capacity), size(aTable.size)
 	}
 }
 
-void Hash::destroyTable ()
-{
-	//delete each chain
-	int i;
-	for(i=0; i<capacity; i++)
-	{
-		node * head = table[i];
-		node * curr;
-		while(head)
-		{
-			curr = head->next;
-			head->next = NULL;
-			delete head;
-			head = curr;
-		}
-	}
-
-	//delete the array
-	delete [] table;
-}
 Hash::~Hash()
 {
 	for(int i = 0; i < DEFAULT_CAPACITY; i++){
@@ -95,7 +75,7 @@ void Hash::insert (const person& aData)
 	if (table[index] = NULL)
 	{
 		table[index] = newNode;	
-		size++;
+		//size++;
 	}
 	else
 	{
@@ -160,7 +140,7 @@ bool Hash::remove (char * key)
 
 			curr->next = NULL;
 			delete curr;
-			size--;
+			//size--;
 			return true;
 		}
 		else
@@ -188,10 +168,12 @@ int Hash::calculateIndex (char * id)
 	return hashValue % capacity;
 	//return hashValue % capacity;
 }
+/*
 int Hash::getSize (void) const
 {
 	return size;
 }
+*/
 
 int Hash::tableSize()
 {
