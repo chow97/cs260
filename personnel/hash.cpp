@@ -52,7 +52,7 @@ Hash::~Hash()
 	{
 		node * head = table[i];
         node * temp = NULL;
-        while(table[i] != NULL)
+        while(head != NULL)
 		{
 			temp = head;
             head = head->next;
