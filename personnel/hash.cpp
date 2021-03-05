@@ -49,7 +49,7 @@ Hash::Hash(const Hash& aTable):capacity(aTable.capacity)
 Hash::~Hash()
 {
 	for(int i = 0; i < DEFAULT_CAPACITY; i++){
-        while(table[i] != NULL){
+        while(table[i]->next != NULL){
             node * temp = table[i];
             table[i] = table[i]->next;
             delete temp;
