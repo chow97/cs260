@@ -69,7 +69,17 @@ void Hash::destroyTable ()
 }
 Hash::~Hash()
 {
-	destroyTable(); 
+	for(int i = 0; i < DEFAULT_CAPACITY; i++){
+        while(table[i]){
+            node * temp = table[i];
+            table[i] = table[i]->next;
+            delete temp;
+            temp = NULL;
+        }
+    }
+
+    delete[] table; 
+    table = NULL;
 }
 
 void Hash::insert (const person& aData)
