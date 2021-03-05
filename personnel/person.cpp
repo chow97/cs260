@@ -10,20 +10,24 @@ person::person()
     familyid = NULL;
 }
 
-person::person(char* id,  char* fname,  char* lname,  char* familyid):
-    id(NULL),
-    fname(NULL),
-    lname(NULL),
-    familyid(NULL)
+person::person(char* id,  char* fname,  char* lname,  char* familyid)
 {
+    id = NULL;
+    fname = NULL;
+    lname = NULL;
+    familyid = NULL;
     setId(id);
     setFname(fname);
     setLname(lname);
     setFamilyid(familyid);
 }
 	
-person::person(const person& data) :id(NULL),  fname(NULL), lname(NULL), familyid(NULL)
+person::person(const person& data)
 {
+    id = NULL;
+    fname = NULL;
+    lname = NULL;
+    familyid = NULL;
     setId(data.id);
     setFname(data.fname);
     setLname(data.lname);
@@ -59,7 +63,6 @@ char * person::getId()const
 {
     return id;
 }
-
 char * person::getFname()const
 {
     return fname;
