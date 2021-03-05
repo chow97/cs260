@@ -15,7 +15,7 @@ const person * personmgr::findPerson(char* id)
 
 void personmgr::printHtStats()
 {
-    cout << "Table uses " << h.getSize() << " out of " << h.getCap() << " entries." << endl;
+    cout << "Table uses " << h.tableSize() << " out of " << h.getCap() << " entries." << endl;
 }
 
 void personmgr::removePerson(char* id)

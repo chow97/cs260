@@ -3,9 +3,9 @@
 #include <iostream>
 #include <cstring>
 #include "person.h"
-const static int MAX_SIZE = 9973;
 using namespace std;
 
+const static int MAX = 9973;
 
 class Hash
 {
@@ -13,12 +13,13 @@ public:
     Hash();
 	Hash(const Hash& aTable);
 	~Hash();
-
+	
 	void insert(const person& aData);
 	bool remove(char * key);
 	bool retrieve (char * key, person *& aData);
-	int getSize();
+	int tableSize();
 	int getCap();
+	int getSize (void) const;
 
 	friend ostream& operator<<(ostream& out, Hash& h);
 
@@ -30,6 +31,7 @@ private:
 		node(const person& aData) : item(aData), next(NULL) {}
 	};
 	node ** table;
+	int size;
 	int capacity;
 	const static int DEFAULT_CAPACITY = 9973;
 

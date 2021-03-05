@@ -1,7 +1,7 @@
-OBJS	= hash.o person.o personnel.o personmgr.o
-SOURCE	= hash.cpp person.cpp personnel.cpp personmgr.cpp
+OBJS	= hash.o person.o testFunc.o personmgr.o
+SOURCE	= hash.cpp person.cpp testFunc.cpp personmgr.cpp
 HEADER	= hash.h person.h personmgr.h
-OUT	= personnel
+OUT	= testFunc
 CC	 = g++
 FLAGS	 = -g -c -Wall
 LFLAGS	 = 
@@ -15,8 +15,8 @@ hash.o: hash.cpp
 person.o: person.cpp
 	$(CC) $(FLAGS) person.cpp 
 
-personnel.o: personnel.cpp
-	$(CC) $(FLAGS) personnel.cpp 
+testFunc.o: testFunc.cpp
+	$(CC) $(FLAGS) testFunc.cpp 
 
 personmgr.o: personmgr.cpp
 	$(CC) $(FLAGS) personmgr.cpp 

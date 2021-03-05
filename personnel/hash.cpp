@@ -6,17 +6,18 @@ using namespace std;
 
 Hash::Hash()
 {
-	capacity = DEFAULT_CAPACITY;
+	size = 0;
+	capacity = MAX;
 
-	table = new node*[DEFAULT_CAPACITY];
+	table = new node*[MAX];
 	//initialize each head of the individual linked list
-	for(int i=0; i<capacity; i++)
+	for(int i=0; i<MAX; i++)
 	{
 		table[i] = NULL;
 	}
 }
 
-Hash::Hash(const Hash& aTable):capacity(aTable.capacity)
+Hash::Hash(const Hash& aTable):capacity(aTable.capacity), size(aTable.size)
 {
 	table = new node*[capacity];
 
@@ -84,6 +85,7 @@ void Hash::insert (const person& aData)
 	if (table[index] = NULL)
 	{
 		table[index] = newNode;	
+		size++;
 	}
 	else
 	{
@@ -96,20 +98,18 @@ bool Hash::retrieve (char * key, person *& aData)
 {
 	//calculate the retrieval position (the index of the array)
 	int index = calculateIndex(key);
-
+	cout << index << endl;
 	//search for the data in the chain (linked list)
 	node * curr = table[index];
 	
-	while (curr)
+	while (curr != NULL)
 	{
-		char * id = curr->item.getId();
-		if(strcmp(key, id) == 0)
+		if(strcmp(key, curr->item.getId()) == 0)
 		{
 			aData = &(curr->item);
 			return true;
 		}
-		else
-			curr = curr->next;
+		curr = curr->next;
 	}
 
 	//data is not in the table
@@ -136,6 +136,7 @@ bool Hash::remove (char * key)
 
 			curr->next = NULL;
 			delete curr;
+			size--;
 			return true;
 		}
 		else
@@ -153,15 +154,22 @@ int Hash::calculateIndex (char * id)
 	int length = strlen(id);
 	int hashValue = 0;
 
-	for(int i=0; i<length; i++)
+	for(int i=0; i<length; ++i)
 	{
 		hashValue += int(id[i]) * int(id[i]);
+		//hashValue ^= (hashValue << 5) +
+                   //	(hashValue >> 2) +
+                  // id[i];
 	}
 	return hashValue % capacity;
+	//return hashValue % capacity;
+}
+int Hash::getSize (void) const
+{
+	return size;
 }
 
-
-int Hash::getSize()
+int Hash::tableSize()
 {
 	int size = 0;
 	for (int i = 0; i < capacity; i++)
@@ -177,7 +185,7 @@ int Hash::getCap()
 {
 	return capacity;
 }
-
+/*
 ostream& operator<<(ostream& out, Hash& h)
 {
 	int i;
@@ -190,3 +198,4 @@ ostream& operator<<(ostream& out, Hash& h)
 	}
 	return out;
 }
+*/
