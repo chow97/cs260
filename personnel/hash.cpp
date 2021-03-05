@@ -61,9 +61,7 @@ Hash::~Hash()
 		}
 		table[i] = NULL;
     }
-
     delete[] table; 
-    table = NULL;
 }
 
 void Hash::insert (const person& aData)
