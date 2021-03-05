@@ -26,7 +26,7 @@ private:
 	{
 		person item;
 		node * next;
-		//node(const person& aData) : item(aData), next(NULL) {}
+		node(const person& aData) : item(aData), next(NULL) {}
 	};
 	node ** table;
 	int capacity;

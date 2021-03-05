@@ -71,9 +71,7 @@ void Hash::insert (const person& aData)
 	int index = calculateIndex(id);
 
 	//create a new node to hold data
-	//node * newNode = new node(aData);
-	node * newNode = new node();
-	newNode->item = aData;
+	node * newNode = new node(aData);
 
 	//insert the new node at the beginning of the linked list
 	if (table[index] = NULL)

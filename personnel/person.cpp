@@ -29,6 +29,7 @@ person::person(const person& data) :id(NULL),  fname(NULL), lname(NULL), familyi
     setLname(data.lname);
     setFamilyid(data.familyid);
 }
+
 person::~person()
 {
     if(id)
@@ -114,7 +115,7 @@ void person::setFamilyid(char * familyid)
     this->familyid = new char[strlen(familyid)+1];
     strcpy(this->familyid, familyid);
 }
-
+/*
 ostream& operator<<(ostream &os, const person &aPerson){
     os << "ID: " << aPerson.getId() << "\nFirst Name: " <<
     aPerson.getFname() << "\nLast Name: " <<
@@ -122,7 +123,7 @@ ostream& operator<<(ostream &os, const person &aPerson){
 
     return os;
 }
-
+*/
 void person::print()const
 {
     cout << "ID: " << getId() << endl;
