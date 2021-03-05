@@ -52,12 +52,14 @@ Hash::~Hash()
 	{
 		node * head = table[i];
         node * temp = NULL;
-        while(head != NULL)
-		{
-			temp = head->next;
-            delete head;
-            head = temp;
-        }
+		if(head != NULL){
+			while(head != NULL)
+			{
+				temp = head->next;
+				delete head;
+				head = temp;
+			}
+		}
     }
 
     delete[] table; 
