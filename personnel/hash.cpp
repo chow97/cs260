@@ -98,7 +98,6 @@ bool Hash::retrieve (char * key, person *& aData)
 {
 	//calculate the retrieval position (the index of the array)
 	int index = calculateIndex(key);
-	cout << index << endl;
 	//search for the data in the chain (linked list)
 	node * curr = table[index];
 	
