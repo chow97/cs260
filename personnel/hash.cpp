@@ -54,10 +54,9 @@ Hash::~Hash()
         node * temp = NULL;
         while(head != NULL)
 		{
-			temp = head;
-            head = head->next;
-            delete temp;
-            temp = NULL;
+			temp = head->next;
+            delete head;
+            head = temp;
         }
     }
 
