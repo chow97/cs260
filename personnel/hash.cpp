@@ -15,7 +15,7 @@ Hash::Hash()
 		table[i] = NULL;
 	}
 }
-
+/*
 Hash::Hash(const Hash& aTable):capacity(aTable.capacity)
 {
 	table = new node*[capacity];
@@ -45,7 +45,7 @@ Hash::Hash(const Hash& aTable):capacity(aTable.capacity)
 		}
 	}
 }
-
+*/
 Hash::~Hash()
 {
 	for(int i = 0; i < DEFAULT_CAPACITY; i++)
@@ -71,7 +71,9 @@ void Hash::insert (const person& aData)
 	int index = calculateIndex(id);
 
 	//create a new node to hold data
-	node * newNode = new node(aData);
+	//node * newNode = new node(aData);
+	node * newNode = new node();
+	newNode->item = aData;
 
 	//insert the new node at the beginning of the linked list
 	if (table[index] = NULL)
