@@ -15,7 +15,7 @@ Hash::Hash()
 		table[i] = NULL;
 	}
 }
-/*
+
 Hash::Hash(const Hash& aTable):capacity(aTable.capacity)
 {
 	table = new node*[capacity];
@@ -45,21 +45,21 @@ Hash::Hash(const Hash& aTable):capacity(aTable.capacity)
 		}
 	}
 }
-*/
+
 Hash::~Hash()
 {
+	node * head;
+    node * temp;
 	for(int i = 0; i < DEFAULT_CAPACITY; i++)
 	{
-		node * head = table[i];
-        node * temp = NULL;
-		if(head != NULL){
-			while(head != NULL)
-			{
-				temp = head->next;
-				delete head;
-				head = temp;
-			}
+		head = table[i];
+		while(head != NULL)
+		{
+			temp = head->next;
+			delete head;
+			head = temp;
 		}
+		
     }
 
     delete[] table; 
