@@ -59,7 +59,7 @@ Hash::~Hash()
 			delete head;
 			head = temp;
 		}
-		
+		table[i] = NULL;
     }
 
     delete[] table; 
