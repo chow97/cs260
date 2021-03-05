@@ -6,7 +6,6 @@ using namespace std;
 
 Hash::Hash()
 {
-	//size = 0;
 	capacity = DEFAULT_CAPACITY;
 
 	table = new node*[DEFAULT_CAPACITY];
@@ -17,7 +16,7 @@ Hash::Hash()
 	}
 }
 
-Hash::Hash(const Hash& aTable):capacity(aTable.capacity)//, size(aTable.size)
+Hash::Hash(const Hash& aTable):capacity(aTable.capacity)
 {
 	table = new node*[capacity];
 
@@ -50,7 +49,7 @@ Hash::Hash(const Hash& aTable):capacity(aTable.capacity)//, size(aTable.size)
 Hash::~Hash()
 {
 	for(int i = 0; i < DEFAULT_CAPACITY; i++){
-        while(table[i]){
+        while(table[i]!= NULL){
             node * temp = table[i];
             table[i] = table[i]->next;
             delete temp;
@@ -75,7 +74,6 @@ void Hash::insert (const person& aData)
 	if (table[index] = NULL)
 	{
 		table[index] = newNode;	
-		//size++;
 	}
 	else
 	{
@@ -83,28 +81,7 @@ void Hash::insert (const person& aData)
 		table[index] = newNode;
 	}
 }
-/*
-bool Hash::retrieve (char * key, person *& aData)
-{
-	//calculate the retrieval position (the index of the array)
-	int index = calculateIndex(key);
-	//search for the data in the chain (linked list)
-	node * curr = table[index];
-	
-	while (curr != NULL)
-	{
-		if(strcmp(key, curr->item.getId()) == 0)
-		{
-			aData = &(curr->item);
-			return true;
-		}
-		curr = curr->next;
-	}
 
-	//data is not in the table
-	return false;
-}
-*/
 bool Hash::retrieve(char * id, person *& aData){
 	bool ret = false;
     int index = calculateIndex(id);
@@ -140,7 +117,6 @@ bool Hash::remove (char * key)
 
 			curr->next = NULL;
 			delete curr;
-			//size--;
 			return true;
 		}
 		else
@@ -161,19 +137,10 @@ int Hash::calculateIndex (char * id)
 	for(int i=0; i<length; ++i)
 	{
 		hashValue += int(id[i]) * int(id[i]);
-		//hashValue ^= (hashValue << 5) +
-                   //	(hashValue >> 2) +
-                  // id[i];
 	}
 	return hashValue % capacity;
-	//return hashValue % capacity;
 }
-/*
-int Hash::getSize (void) const
-{
-	return size;
-}
-*/
+
 
 int Hash::tableSize()
 {

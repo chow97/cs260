@@ -18,7 +18,6 @@ public:
 	bool retrieve (char * key, person *& aData);
 	int tableSize();
 	int getCap();
-	int getSize (void) const;
 
 	friend ostream& operator<<(ostream& out, Hash& h);
 
@@ -30,7 +29,6 @@ private:
 		node(const person& aData) : item(aData), next(NULL) {}
 	};
 	node ** table;
-	int size;
 	int capacity;
 	const static int DEFAULT_CAPACITY = 9973;
 
