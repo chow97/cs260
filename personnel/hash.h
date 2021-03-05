@@ -5,7 +5,6 @@
 #include "person.h"
 using namespace std;
 
-const static int MAX = 9973;
 
 class Hash
 {

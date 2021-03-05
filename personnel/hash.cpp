@@ -7,11 +7,11 @@ using namespace std;
 Hash::Hash()
 {
 	size = 0;
-	capacity = MAX;
+	capacity = DEFAULT_CAPACITY;
 
-	table = new node*[MAX];
+	table = new node*[DEFAULT_CAPACITY];
 	//initialize each head of the individual linked list
-	for(int i=0; i<MAX; i++)
+	for(int i=0; i<capacity; i++)
 	{
 		table[i] = NULL;
 	}
@@ -93,7 +93,7 @@ void Hash::insert (const person& aData)
 		table[index] = newNode;
 	}
 }
-
+/*
 bool Hash::retrieve (char * key, person *& aData)
 {
 	//calculate the retrieval position (the index of the array)
@@ -113,6 +113,21 @@ bool Hash::retrieve (char * key, person *& aData)
 
 	//data is not in the table
 	return false;
+}
+*/
+bool Hash::retrieve(char * id, person *& aData){
+	bool ret = false;
+    int index = calculateIndex(id);
+
+    node * current = table[index];
+    
+    while(strcmp(current->item.getId(),id) != 0 && current->next != NULL)
+	{
+        current = current->next;
+    }
+	aData = & current->item;
+	ret = true;
+    return ret;
 }
 bool Hash::remove (char * key)
 {
