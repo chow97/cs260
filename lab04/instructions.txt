@@ -1,0 +1,51 @@
+Online lab
+
+Start with the code in ~mike.noel/classes/cs260/students/onlinelabs/lab04. You
+will want to copy it into a directory of your own. 
+
+The file supplied.o contains code
+that can build, display, and destroy a binary search tree.
+
+For this exam, you will need to write the following functions in table.cpp,
+and add function prototypes for them to table.h and invoke the functions in
+main.cpp.
+
+* int countNodes(node * root)
+
+  Recursively count the number of the nodes in the tree.
+
+* int sumLeaves(node * root)
+
+  Recursively sum all of the leaf nodes in the tree.
+
+You must use the functions with these exact function prototypes. Use the
+supplied makefile for the project to build it. Please don't forget the
+supplied.o when generating the executable.
+
+Run your program in valgrind and make sure there are no memory errors or
+memory leaks. Assuming the executable file is named app
+
+     valgrind --tool=memcheck --leak-check=full ./app
+
+For lab04 submission, create a tar file containing table.cpp, table.h, and
+main.cpp. Use the turnin command to submit it.
+
+     tar cvf lab04_files.tar main.cpp list.cpp list.h
+     ~mike.noel/bin/turnin cs260 lab04_files.tar
+
+If you do not turn in ALL of your source files or if I'm unable to compile the
+code you submit then you will receive a very low score.
+
+The grading criteria are:
+
+5pts The program compiles
+3pts The program runs without crashing or hanging
+2pts No memory errors or memory leaks
+5pts Correct functionality (2pts for countNodes, 3pts for sumLeaves)
+5pts Recursive implementation (2pts for countNodes, 3pts for sumLeaves)
+
+You can get partial credit so be sure to turn in whatever you have by the end
+of the lab period.
+
+
+
