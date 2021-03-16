@@ -26,24 +26,14 @@ void removeLast(node *& head)
     {
         return;
     }
-    node *temp = head->next;
-
-    if (temp == NULL)
+    if (!head->next)
     {
-        return;
+        node * temp;
+        temp = head;
+        head = head->next;
+        delete temp;
     }
-    /* Change the next link of head */
-
-    head->next = temp->next;
-
-    /* free memory allocated for temp */
-
-    free(temp);
-
-    /* Recursively call for the new next of head */
-
     removeLast(head->next);
-    
 }
 
 
