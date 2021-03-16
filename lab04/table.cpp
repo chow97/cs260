@@ -9,3 +9,8 @@ int countNodes(node * root)
 	}
 	return (root->data + countNodes(root->left) + countNodes(root->right));
 }
+
+int sumLeaves(node* root)
+{
+    
+}
