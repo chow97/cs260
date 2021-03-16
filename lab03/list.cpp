@@ -22,10 +22,7 @@ void reverse(node * head, node *& newHead)
 
 void removeLast(node *& head)
 {
-    if(head == NULL)
-    {
-        return;
-    }
+
     if (head->next->next == NULL)
     {
         head->next = NULL;
