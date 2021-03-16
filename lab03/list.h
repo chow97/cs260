@@ -16,3 +16,5 @@ void display(node * head);  //supplied
 void destroy(node * &head); //supplied
 
 //Write your function prototype here:
+void reverse(node * head, node *& newHead);
+void removeLast(node *& head);

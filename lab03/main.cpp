@@ -13,7 +13,7 @@ int main()
 
     cout << "----------------------------------------------------------------------" << endl;
     cout << "Reversing the list.";
-//    reverse(head,newHead);
+    reverse(head,newHead);
     display(newHead);
     destroy(newHead);
 
