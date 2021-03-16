@@ -1,0 +1,1370 @@
+start_planting
+92741 corn
+83242 broccoli
+46759 tomato
+14941 spinach
+23744 cilantro
+43144 cauliflower
+74505 arugula
+29763 soy
+69449 tomato
+61260 cauliflower
+76353 bean
+1034 broccoli
+49580 lettuce
+96505 rye
+20177 potato
+48308 broccoli
+85315 squash
+80281 radish
+46922 soy
+48961 potato
+27448 wheat
+86735 lettuce
+42152 lettuce
+91844 broccoli
+13548 cabbage
+41820 beet
+77264 tomato
+21980 radish
+16726 pepper
+31689 bean
+91270 arugula
+66171 carrot
+44248 lettuce
+41361 pea
+58024 cabbage
+78186 cabbage
+15128 corn
+3774 soy
+14122 beet
+85231 rye
+81424 radish
+33921 wheat
+2606 cilantro
+18235 carrot
+90736 cauliflower
+72585 cauliflower
+46270 squash
+91292 cauliflower
+17909 tomato
+98037 bean
+39324 tomato
+94107 corn
+90199 barley
+28082 eggplant
+9850 cucumber
+48340 cucumber
+73066 eggplant
+82664 squash
+54512 beet
+27706 rye
+67172 beet
+59955 broccoli
+88100 soy
+36661 chive
+250 lettuce
+98292 rye
+59976 arugula
+26728 corn
+6631 potato
+54493 eggplant
+825 lettuce
+40456 cilantro
+1444 wheat
+82264 cilantro
+56721 pepper
+33906 eggplant
+42962 tomato
+86389 tomato
+77811 tomato
+37069 broccoli
+74099 pepper
+50337 cucumber
+44110 rye
+599 soy
+48225 pepper
+99923 cauliflower
+74274 cabbage
+39290 cauliflower
+96202 spinach
+64377 broccoli
+64226 broccoli
+25870 wheat
+8494 carrot
+54600 barley
+51660 cilantro
+80716 pepper
+76084 arugula
+76183 carrot
+24468 cabbage
+3637 tomato
+48223 squash
+54445 chive
+76641 lettuce
+30917 chive
+64344 wheat
+74820 tomato
+9927 eggplant
+52108 soy
+29299 carrot
+37428 carrot
+47431 arugula
+6715 corn
+81898 rye
+60059 eggplant
+92381 spinach
+28114 chive
+99957 barley
+95803 potato
+8996 spinach
+82143 chive
+54716 pea
+34612 broccoli
+74003 broccoli
+15765 corn
+26130 radish
+84259 lettuce
+87686 eggplant
+13426 squash
+22926 cilantro
+8653 pepper
+69882 wheat
+88613 potato
+35675 corn
+62788 corn
+43837 corn
+50713 broccoli
+18244 lettuce
+79545 pepper
+88395 spinach
+11898 potato
+64853 carrot
+20788 bean
+19833 pea
+38474 arugula
+40401 spinach
+74415 arugula
+243 barley
+80121 barley
+63793 radish
+13291 carrot
+20541 potato
+22533 carrot
+65679 cucumber
+47381 potato
+30091 eggplant
+84949 corn
+71786 beet
+63833 cilantro
+72653 rye
+50727 rye
+82135 spinach
+23336 potato
+88168 soy
+34646 cucumber
+79067 soy
+75942 cilantro
+28291 corn
+54743 rye
+16903 rye
+64394 cauliflower
+77753 cabbage
+58288 potato
+87782 barley
+73860 lettuce
+57130 broccoli
+73487 barley
+82432 cilantro
+37993 potato
+32981 chive
+38911 potato
+53277 corn
+28006 pepper
+29678 cilantro
+91889 pepper
+84870 carrot
+26277 rye
+38328 beet
+44865 bean
+23035 squash
+2894 pepper
+76014 bean
+35780 radish
+89554 squash
+61748 pepper
+95465 beet
+50933 wheat
+31862 tomato
+46660 broccoli
+61685 barley
+40822 bean
+27534 pea
+41881 wheat
+68013 tomato
+8321 eggplant
+38172 lettuce
+87563 arugula
+3946 rye
+5334 potato
+13465 bean
+48738 cabbage
+84091 soy
+74022 arugula
+94960 cucumber
+10194 soy
+91933 pepper
+19550 beet
+50817 rye
+1678 arugula
+80878 radish
+26228 arugula
+37563 wheat
+65939 beet
+53484 radish
+51360 cucumber
+54705 tomato
+92229 cabbage
+16118 cauliflower
+87450 broccoli
+3283 squash
+84073 barley
+97713 corn
+31032 potato
+14108 soy
+62 radish
+59058 soy
+30386 cabbage
+56431 bean
+70832 carrot
+83948 barley
+93215 beet
+54991 bean
+10150 pea
+51693 squash
+98537 beet
+44297 chive
+66541 soy
+35287 eggplant
+6890 bean
+62984 broccoli
+44378 chive
+49591 eggplant
+51364 bean
+87439 arugula
+32288 pepper
+60738 rye
+42741 spinach
+27296 eggplant
+3189 rye
+83192 bean
+50314 tomato
+17038 cucumber
+69497 arugula
+47129 carrot
+18069 broccoli
+99688 cucumber
+48504 spinach
+69913 spinach
+88003 pepper
+22063 cucumber
+61441 rye
+62143 cilantro
+98528 potato
+73423 corn
+84778 carrot
+19793 chive
+84102 carrot
+84649 spinach
+21857 spinach
+62687 rye
+74593 squash
+35074 spinach
+60708 cabbage
+39316 pea
+78690 potato
+85352 broccoli
+60529 wheat
+60663 potato
+69636 eggplant
+93476 potato
+90700 arugula
+22209 carrot
+82801 soy
+61103 soy
+71338 soy
+77285 radish
+18867 barley
+85379 corn
+33697 spinach
+44635 arugula
+2423 wheat
+85219 wheat
+26536 beet
+54711 broccoli
+79967 pea
+83288 cauliflower
+94158 wheat
+61818 cilantro
+45057 corn
+14319 cucumber
+79413 wheat
+95028 carrot
+20314 beet
+10556 potato
+37803 broccoli
+99099 spinach
+34232 soy
+19528 tomato
+46550 corn
+73289 arugula
+38776 pepper
+29885 cabbage
+78424 spinach
+26244 chive
+47326 cucumber
+88930 broccoli
+64869 broccoli
+74072 radish
+97067 spinach
+71895 cauliflower
+72521 tomato
+75094 eggplant
+88014 cucumber
+83870 radish
+85210 pea
+93783 potato
+46438 rye
+73271 barley
+48073 arugula
+81045 rye
+72779 beet
+54840 potato
+70283 cucumber
+39181 cilantro
+29890 squash
+2217 pepper
+14772 broccoli
+41865 arugula
+4634 soy
+70052 potato
+15596 bean
+30181 wheat
+20204 soy
+3246 cauliflower
+19316 squash
+80027 pea
+70616 spinach
+46093 wheat
+80129 wheat
+24598 wheat
+12701 pea
+45132 beet
+36828 lettuce
+46609 squash
+29082 spinach
+47657 bean
+13197 tomato
+23062 radish
+97639 cucumber
+1676 pea
+26949 rye
+41751 arugula
+49272 radish
+71166 bean
+73117 cucumber
+55770 bean
+55282 eggplant
+29640 arugula
+20602 tomato
+49922 cilantro
+9259 pea
+27064 broccoli
+91766 beet
+55855 radish
+92783 carrot
+39061 broccoli
+88288 carrot
+50000 pepper
+85007 chive
+83310 squash
+33280 barley
+60291 cilantro
+72685 cabbage
+97022 broccoli
+82530 potato
+59320 beet
+77225 bean
+30595 beet
+52859 arugula
+74746 eggplant
+93034 wheat
+81725 arugula
+10969 soy
+18879 carrot
+69240 beet
+70449 radish
+73972 cucumber
+23784 cauliflower
+53373 cucumber
+56293 squash
+452 arugula
+60393 pepper
+18347 pepper
+63017 cauliflower
+93787 tomato
+49550 wheat
+84272 radish
+84493 broccoli
+95701 cilantro
+7567 bean
+38264 squash
+83812 chive
+41458 pea
+75242 barley
+61104 arugula
+63435 potato
+63497 barley
+55582 cauliflower
+31166 cauliflower
+85752 spinach
+89064 cilantro
+44476 squash
+82927 corn
+1278 soy
+65044 barley
+59919 pepper
+19563 barley
+31893 broccoli
+84029 carrot
+88553 potato
+55019 bean
+39390 barley
+92165 barley
+33062 pea
+46272 wheat
+64634 radish
+70465 chive
+57725 radish
+54429 corn
+64722 pea
+84198 cilantro
+39130 cilantro
+1074 lettuce
+97483 potato
+78155 spinach
+62937 pea
+54373 tomato
+68040 potato
+13648 wheat
+69867 tomato
+52617 beet
+44310 carrot
+76313 cabbage
+9176 wheat
+77388 tomato
+66565 soy
+31240 rye
+81697 arugula
+76716 cabbage
+50118 bean
+81566 potato
+20747 spinach
+31731 pea
+98828 broccoli
+22590 rye
+38001 arugula
+35898 spinach
+30990 arugula
+17047 broccoli
+59302 squash
+46765 barley
+56020 rye
+31560 radish
+26669 pepper
+65951 barley
+95848 cauliflower
+6192 radish
+16159 broccoli
+21731 barley
+99652 rye
+16383 cilantro
+52229 pepper
+69017 cucumber
+97193 pea
+39735 lettuce
+80498 corn
+98712 bean
+64504 radish
+23288 beet
+54897 bean
+84310 chive
+53107 soy
+83690 arugula
+28424 eggplant
+602 radish
+82444 cauliflower
+14783 cucumber
+1968 eggplant
+34243 chive
+69862 cilantro
+72006 soy
+60476 beet
+3227 potato
+17340 barley
+48855 cauliflower
+15753 squash
+55685 bean
+40017 cauliflower
+38123 arugula
+61146 cilantro
+29219 pepper
+72059 spinach
+10966 cabbage
+27799 broccoli
+73186 cilantro
+35536 squash
+64371 corn
+32260 carrot
+70046 potato
+10464 lettuce
+54540 pepper
+84768 cucumber
+11426 cilantro
+65949 cucumber
+9576 carrot
+20975 beet
+3388 broccoli
+15498 soy
+83411 cabbage
+92264 cucumber
+73660 bean
+34490 corn
+72866 corn
+38332 spinach
+65405 lettuce
+78163 barley
+7714 cucumber
+46519 wheat
+87714 pea
+1390 barley
+72265 eggplant
+85138 pepper
+48100 pepper
+22708 barley
+92986 arugula
+37161 barley
+75474 spinach
+21028 pea
+71104 barley
+91250 chive
+40857 bean
+72803 radish
+48694 rye
+84060 cabbage
+64491 beet
+82751 soy
+40516 pepper
+28759 cilantro
+1226 beet
+69181 cauliflower
+99141 carrot
+77209 squash
+77991 spinach
+39305 pepper
+90298 arugula
+18305 broccoli
+49022 rye
+79723 barley
+43131 pepper
+66826 arugula
+81934 spinach
+60729 eggplant
+50168 soy
+60119 beet
+73657 wheat
+61957 barley
+35640 spinach
+80115 radish
+70104 potato
+95428 cauliflower
+82677 soy
+7906 bean
+37543 wheat
+45765 carrot
+84113 eggplant
+20998 beet
+78519 potato
+21198 arugula
+87565 spinach
+12783 pepper
+10615 radish
+66722 pea
+46607 potato
+76235 radish
+66255 potato
+9814 spinach
+18098 pea
+13333 corn
+38050 cilantro
+69016 cabbage
+4391 rye
+37263 potato
+88091 squash
+44299 bean
+72480 chive
+69580 soy
+48172 arugula
+45699 tomato
+83137 rye
+44192 squash
+42651 lettuce
+47378 squash
+88076 carrot
+49091 potato
+52511 squash
+97343 broccoli
+24471 squash
+56162 tomato
+9417 rye
+20920 carrot
+73892 lettuce
+81341 pea
+43152 beet
+49545 corn
+98027 lettuce
+24735 lettuce
+47740 radish
+34128 eggplant
+49174 corn
+94644 rye
+1324 carrot
+58585 broccoli
+42942 rye
+71059 wheat
+47909 arugula
+66957 barley
+98829 cucumber
+76567 eggplant
+24391 pepper
+972 beet
+36198 wheat
+79446 wheat
+14170 eggplant
+52456 spinach
+13143 cucumber
+65027 barley
+71788 rye
+72964 barley
+87412 cabbage
+99791 potato
+36000 cilantro
+73472 barley
+47748 squash
+9512 arugula
+8852 wheat
+10907 pea
+52541 eggplant
+61689 soy
+36630 arugula
+46405 cilantro
+10298 carrot
+80590 cilantro
+84098 tomato
+29518 soy
+13926 potato
+6829 bean
+28758 spinach
+17458 bean
+63041 soy
+48643 eggplant
+70156 bean
+49644 radish
+82605 cucumber
+22109 tomato
+58180 broccoli
+69006 wheat
+96297 arugula
+66914 barley
+19499 wheat
+68255 corn
+42090 cucumber
+99701 bean
+88087 cucumber
+47352 spinach
+60479 lettuce
+55723 wheat
+88247 broccoli
+69681 chive
+49403 cauliflower
+6437 radish
+76654 spinach
+76059 broccoli
+57740 arugula
+86048 squash
+55755 potato
+43365 spinach
+45737 squash
+85044 broccoli
+76575 cucumber
+17655 pea
+77445 tomato
+390 soy
+11447 pea
+69245 potato
+78211 cabbage
+84783 soy
+83826 lettuce
+60518 soy
+36517 radish
+51506 squash
+866 lettuce
+22820 chive
+54288 cauliflower
+96778 corn
+89313 arugula
+619 cucumber
+4160 radish
+65151 lettuce
+87430 chive
+9159 bean
+42780 lettuce
+53207 tomato
+71134 spinach
+874 bean
+60288 wheat
+16273 carrot
+63602 wheat
+40460 bean
+79658 cabbage
+65102 tomato
+68020 pea
+52079 lettuce
+83080 pea
+20489 arugula
+84329 tomato
+68852 cilantro
+39940 carrot
+86417 broccoli
+35782 eggplant
+18723 barley
+56022 radish
+89926 cauliflower
+90439 corn
+37511 soy
+83973 lettuce
+71770 pepper
+84684 lettuce
+56875 soy
+73782 barley
+70975 barley
+39714 spinach
+17921 rye
+78235 spinach
+7078 rye
+7980 lettuce
+42789 cilantro
+77147 eggplant
+83623 rye
+79451 eggplant
+86736 tomato
+56448 beet
+48119 wheat
+82354 pea
+41597 cabbage
+15059 corn
+46948 barley
+68748 tomato
+67130 pepper
+69205 corn
+93702 chive
+16359 cilantro
+57536 rye
+85556 soy
+93793 arugula
+78642 potato
+61132 cilantro
+55385 rye
+92572 wheat
+46946 broccoli
+26576 soy
+79443 tomato
+49481 pea
+38391 chive
+27877 rye
+7168 pea
+17483 broccoli
+74420 arugula
+49734 wheat
+48880 chive
+57684 arugula
+40406 eggplant
+95314 chive
+44417 potato
+49880 spinach
+54758 wheat
+69718 corn
+66330 lettuce
+15094 potato
+68511 lettuce
+45018 rye
+80900 beet
+31908 pepper
+70222 corn
+47997 broccoli
+41519 squash
+62973 cucumber
+40846 pepper
+94066 beet
+62524 potato
+9328 soy
+53103 soy
+67832 tomato
+30947 cilantro
+40503 spinach
+42247 eggplant
+7839 cabbage
+64372 wheat
+11168 cauliflower
+37740 soy
+53693 pepper
+81195 broccoli
+93886 broccoli
+91304 eggplant
+23654 corn
+64599 cauliflower
+87459 radish
+28378 squash
+69837 broccoli
+54567 bean
+91484 cauliflower
+95859 spinach
+52663 pea
+71773 chive
+27527 chive
+39346 cucumber
+5121 pepper
+30589 radish
+42581 spinach
+3308 bean
+92070 wheat
+15567 broccoli
+18311 cucumber
+83873 lettuce
+35971 pea
+14837 lettuce
+67957 potato
+43128 lettuce
+3630 cauliflower
+801 carrot
+40763 bean
+28727 barley
+77039 pepper
+77593 cauliflower
+97558 barley
+2204 radish
+81510 barley
+18210 broccoli
+10769 bean
+20670 pea
+73226 cauliflower
+90545 barley
+62554 spinach
+78152 lettuce
+81276 corn
+30042 soy
+51803 spinach
+625 soy
+50787 cabbage
+64811 rye
+75470 eggplant
+87027 arugula
+17488 barley
+89503 radish
+40023 lettuce
+91347 bean
+62030 lettuce
+31914 chive
+39821 carrot
+44236 squash
+51579 chive
+61335 spinach
+41230 cauliflower
+46772 soy
+93169 cilantro
+89406 eggplant
+95572 pepper
+18136 tomato
+67852 rye
+11597 arugula
+87757 spinach
+57440 cauliflower
+30913 eggplant
+23820 rye
+18894 potato
+40596 cucumber
+96797 lettuce
+39027 rye
+46754 pea
+60418 arugula
+40743 barley
+69174 corn
+89419 wheat
+54091 tomato
+78170 chive
+32820 chive
+55665 spinach
+40814 bean
+95965 broccoli
+57311 eggplant
+49040 wheat
+1682 broccoli
+32539 radish
+215 carrot
+59209 bean
+68270 cilantro
+43159 corn
+68968 cauliflower
+41103 eggplant
+6199 broccoli
+5097 cilantro
+1549 cauliflower
+45630 cabbage
+63690 broccoli
+6995 wheat
+67961 rye
+18222 pepper
+47895 cauliflower
+12495 carrot
+11772 cucumber
+39758 bean
+18207 rye
+3858 arugula
+48135 radish
+94933 eggplant
+65427 beet
+30344 cabbage
+55195 lettuce
+85353 cabbage
+47737 tomato
+34574 pea
+48991 eggplant
+32548 bean
+3935 tomato
+20340 broccoli
+58509 rye
+86987 broccoli
+1527 pea
+68728 squash
+901 radish
+2892 carrot
+76492 chive
+26438 cauliflower
+59971 potato
+10226 spinach
+86296 barley
+56108 lettuce
+46651 spinach
+48523 beet
+66400 soy
+98995 spinach
+61663 pepper
+34327 radish
+76825 radish
+29202 arugula
+83065 tomato
+93107 radish
+98031 carrot
+23946 lettuce
+47685 eggplant
+98412 pea
+28026 tomato
+85618 corn
+59525 pepper
+57965 bean
+19354 pepper
+67183 corn
+59291 lettuce
+60557 squash
+20914 carrot
+62896 spinach
+54554 wheat
+96238 pea
+8250 cucumber
+43288 corn
+3409 beet
+22619 pea
+12569 pea
+38814 bean
+58728 radish
+end_planting
+start_harvest
+cabbage 14368 18498
+chive 86440 90570
+barley 91800 95930
+bean 99411 103541
+squash 30902 35032
+radish 74817 78947
+rye 57006 61136
+pea 66151 70281
+soy 98305 102435
+soy 6129 10259
+wheat 79391 83521
+soy 99643 103773
+carrot 57324 61454
+eggplant 26596 30726
+pea 656 4786
+lettuce 25619 29749
+wheat 12459 16589
+barley 12926 17056
+cilantro 90492 94622
+soy 89318 93448
+chive 65364 69494
+rye 15190 19320
+carrot 26208 30338
+cabbage 91964 96094
+tomato 4796 8926
+broccoli 98809 102939
+cauliflower 23982 28112
+cabbage 2546 6676
+spinach 27014 31144
+spinach 10145 14275
+cauliflower 47168 51298
+cauliflower 59045 63175
+rye 64173 68303
+lettuce 96589 100719
+wheat 17009 21139
+radish 92409 96539
+arugula 82744 86874
+cilantro 21094 25224
+cabbage 37993 42123
+squash 82520 86650
+cucumber 43853 47983
+rye 26974 31104
+lettuce 12482 16612
+cucumber 81842 85972
+cauliflower 75013 79143
+bean 83517 87647
+eggplant 44101 48231
+soy 14510 18640
+rye 47234 51364
+rye 95641 99771
+soy 13356 17486
+pea 62966 67096
+barley 28350 32480
+potato 54106 58236
+soy 29820 33950
+lettuce 25482 29612
+cucumber 50656 54786
+wheat 57858 61988
+barley 14679 18809
+cauliflower 18985 23115
+squash 48037 52167
+wheat 44574 48704
+bean 77765 81895
+spinach 33114 37244
+rye 86533 90663
+lettuce 5591 9721
+radish 49506 53636
+chive 28691 32821
+bean 68967 73097
+broccoli 60549 64679
+arugula 35773 39903
+carrot 88810 92940
+cauliflower 54837 58967
+barley 65917 70047
+squash 2717 6847
+broccoli 75557 79687
+pea 20105 24235
+radish 75595 79725
+carrot 95566 99696
+wheat 39218 43348
+eggplant 70166 74296
+chive 14690 18820
+carrot 29717 33847
+pea 30230 34360
+wheat 26175 30305
+barley 30173 34303
+arugula 93159 97289
+bean 64727 68857
+cauliflower 98352 102482
+pepper 33862 37992
+pea 31896 36026
+cucumber 84525 88655
+chive 62253 66383
+wheat 82573 86703
+potato 85179 89309
+cilantro 72619 76749
+pepper 82950 87080
+broccoli 7718 11848
+cauliflower 47039 51169
+arugula 44053 48183
+end_harvest
+start_pruning
+64491
+80878
+47895
+40460
+6890
+57130
+73782
+33697
+56162
+88003
+18347
+73289
+38001
+40456
+95028
+84073
+64504
+83826
+34612
+55855
+97713
+68013
+625
+18136
+47748
+83870
+46272
+20602
+46765
+79658
+18235
+78186
+38911
+93476
+81566
+70104
+32981
+51803
+77039
+51693
+52079
+17340
+76654
+54554
+63497
+85315
+73972
+29640
+94644
+end_pruning
+start_planting
+74737 beet
+95139 carrot
+49579 arugula
+36149 carrot
+82079 eggplant
+46564 cilantro
+88907 arugula
+759 corn
+34135 barley
+91967 radish
+97390 beet
+90350 barley
+10610 barley
+91928 barley
+10923 pepper
+63123 corn
+57434 barley
+76593 radish
+86072 radish
+93005 squash
+38157 potato
+14980 cabbage
+79975 beet
+21722 wheat
+38415 tomato
+70611 lettuce
+10050 pepper
+51878 cucumber
+46746 pepper
+13599 radish
+8332 tomato
+59679 cabbage
+67685 squash
+5481 beet
+65364 bean
+54610 spinach
+54406 cucumber
+63286 radish
+64840 corn
+15047 pepper
+8599 rye
+12761 lettuce
+78459 pepper
+36985 wheat
+33526 rye
+85130 pepper
+43784 tomato
+45827 beet
+22922 soy
+47750 spinach
+31061 barley
+79823 barley
+52886 barley
+95705 squash
+54296 tomato
+69526 chive
+68551 chive
+72426 arugula
+74495 eggplant
+39066 broccoli
+87429 radish
+1225 pepper
+93362 squash
+96829 pea
+10166 wheat
+95788 squash
+32703 carrot
+87840 cabbage
+82749 cucumber
+55510 lettuce
+54086 wheat
+67263 pepper
+87421 corn
+52273 radish
+66129 potato
+83385 squash
+19969 soy
+47108 wheat
+93029 tomato
+94078 bean
+43704 wheat
+9533 soy
+54889 beet
+21166 tomato
+72212 squash
+22614 cauliflower
+33439 soy
+69159 pepper
+64337 cauliflower
+80048 beet
+10188 eggplant
+56530 pepper
+63305 tomato
+99328 arugula
+85455 potato
+63599 beet
+52141 pepper
+25064 chive
+88828 broccoli
+82685 pea
+56275 eggplant
+50373 barley
+86037 cabbage
+63216 tomato
+61525 pepper
+62220 barley
+19910 potato
+69674 potato
+1011 arugula
+56948 soy
+44736 broccoli
+30509 broccoli
+71736 pepper
+2886 pepper
+85550 pea
+4708 wheat
+34396 cilantro
+67256 lettuce
+86140 cucumber
+19219 beet
+20225 lettuce
+39710 chive
+16540 beet
+39700 chive
+94736 arugula
+53071 chive
+33544 chive
+52698 pea
+39150 lettuce
+82194 chive
+57504 cauliflower
+82874 radish
+58332 pea
+45034 wheat
+13304 corn
+92135 radish
+45691 soy
+6367 pepper
+57578 potato
+12483 rye
+42713 cabbage
+8135 rye
+49132 cucumber
+14239 eggplant
+end_planting
+start_harvest
+bean 96433 100200
+tomato 6623 10390
+soy 44910 48677
+corn 74369 78136
+chive 76259 80026
+corn 24694 28461
+potato 27325 31092
+cilantro 2553 6320
+potato 80940 84707
+arugula 49450 53217
+broccoli 26320 30087
+soy 86070 89837
+squash 42601 46368
+end_harvest
+start_pruning
+55665
+40743
+56293
+87421
+2423
+14941
+69837
+41865
+76235
+68968
+39181
+48961
+61689
+6199
+63123
+39346
+84310
+92135
+82749
+60288
+91304
+47108
+96238
+6715
+14122
+4160
+40017
+6829
+71059
+46405
+54540
+15047
+19969
+19563
+22209
+12483
+66255
+21980
+50933
+16273
+50168
+9159
+10050
+5121
+10615
+33439
+54086
+44192
+14837
+42962
+37069
+68728
+45765
+84272
+end_pruning
