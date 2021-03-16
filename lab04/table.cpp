@@ -3,11 +3,11 @@
 //Please put the impelementation of the required functions here
 int countNodes(node * root)
 {
-	if(root == nullptr)
+	if(root == NULL)
 	{
 		return 0;
 	}
-    int count = 0;
+    static int count = 0;
     if (root->left && root->right)
     {
         count++;
