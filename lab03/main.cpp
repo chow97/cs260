@@ -19,7 +19,7 @@ int main()
 
     cout << "----------------------------------------------------------------------" << endl;
     cout << "Removing the last element.";
-//    removeLast(head);
+    removeLast(head);
     display(head);
     destroy(head);
 
