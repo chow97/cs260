@@ -7,13 +7,11 @@ int countNodes(node * root)
 	{
 		return 0;
 	}
-    static int count = 0;
-    if (root->left && root->right)
+    if (root->left == NULL && root->right == NULL)
     {
-        count++;
+        return 1;
     }
-    count += (countNodes(root->left) +  countNodes(root->right)); 
-	return count;
+	return countNodes(root->left) + countNodes(root->right) + 1;
 }
 
 int sumLeaves(node* root)
