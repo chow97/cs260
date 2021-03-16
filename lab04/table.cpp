@@ -24,9 +24,5 @@ int sumLeaves(node* root)
     {
         return root->data;
     }
-    else
-    {
-        return sumLeaves(root->left) + sumLeaves(root->right);
-    }
-    
+    return sumLeaves(root->left) + sumLeaves(root->right);
 }
