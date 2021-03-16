@@ -20,7 +20,7 @@ void reverse(node * head, node *& newHead)
     first->next = NULL;
 }
 
-void removeLast(node *& head)
+void removeLast(node * head)
 {
     if (head == NULL)
     {

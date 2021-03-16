@@ -17,4 +17,4 @@ void destroy(node * &head); //supplied
 
 //Write your function prototype here:
 void reverse(node * head, node *& newHead);
-void removeLast(node *& head);
+void removeLast(node * head);
