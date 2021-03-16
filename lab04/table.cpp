@@ -16,5 +16,13 @@ int countNodes(node * root)
 
 int sumLeaves(node* root)
 {
-
+    if(root == NULL)
+	{
+		return 0;
+	}
+    if (root->left == NULL && root->right == NULL)
+    {
+        return root->data;
+    }
+    return sumLeaves(root->left) + sumLeaves(root->right);
 }
