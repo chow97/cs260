@@ -12,7 +12,7 @@ int countNodes(node * root)
     {
         count++;
     }
-    count = (countNodes(root->left) +  countNodes(root->right)); 
+    count += (countNodes(root->left) +  countNodes(root->right)); 
 	return count;
 }
 
