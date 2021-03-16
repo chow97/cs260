@@ -7,17 +7,17 @@ void reverse(node * head, node *& newHead)
     {
         return;
     }
-    
-    if (head->next == NULL)
+    node* first = head;
+    node* temp = first->next;
+    if (temp == NULL)
     {
-        newHead = head;
+        newHead = first;
         return;
     }
 
-    reverse(head->next, newHead);
-    node * temp = head;
-    temp->next = newHead;
-    head->next = NULL;
+    reverse(temp, newHead);
+    temp->next = first;
+    first->next = NULL;
 }
 
 void removeLast(node *& head)
