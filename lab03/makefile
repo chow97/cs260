@@ -9,4 +9,6 @@ OBJ = list.o supplied.o main.o
 main: $(OBJ)
 	$(CC) $(CPPFLAGS) -o $@ $^
 
+clean:
+	rm -f main main.o list.o
 
