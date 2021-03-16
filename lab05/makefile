@@ -9,4 +9,5 @@ OBJ = table.o supplied.o main.o
 main: $(OBJ)
 	$(CC) $(CPPFLAGS) -o $@ $^
 
-
+clean: 
+	rm -f table.o main main.o 
