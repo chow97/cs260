@@ -22,11 +22,27 @@ void reverse(node * head, node *& newHead)
 
 void removeLast(node *& head)
 {
-if (head == NULL)
-{
-    return;
-}
+    if (head == NULL)
+    {
+        return;
+    }
+    node *temp = head->next;
 
+    if (temp == NULL)
+    {
+        return;
+    }
+    /* Change the next link of head */
+
+    head->next = temp->next;
+
+    /* free memory allocated for temp */
+
+    free(temp);
+
+    /* Recursively call for the new next of head */
+
+    removeLast(head->next);
     
 }
 
