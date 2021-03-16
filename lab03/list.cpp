@@ -28,7 +28,7 @@ void removeLast(node *& head)
     }
     if (!head->next)
     {
-        node * temp;
+        node * temp = new node;
         temp = head;
         head = head->next;
         delete temp;
