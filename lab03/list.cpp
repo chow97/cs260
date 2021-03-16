@@ -26,10 +26,14 @@ void removeLast(node *& head)
     {
         return;
     }
-    if (head->next == NULL)
+    if (head->next->next == NULL)
     {
-        delete(head->next);
+        head->next = NULL;
         return;
+    }
+    else
+    {
+        head = NULL;
     }
     removeLast(head->next);
     
