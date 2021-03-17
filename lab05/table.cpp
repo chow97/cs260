@@ -26,6 +26,10 @@ void printExtreme(node* root,bool smallest)
 }
 void copyOdd(node* root,node** newRoot)
 {
+    if (root == NULL)
+    {
+        return;
+    }
     if(root->data % 2 == 1)
 	{
 		//copy root
@@ -33,10 +37,12 @@ void copyOdd(node* root,node** newRoot)
         newRoot->data = root->data;
 		copyOdd(root->left, &(newRoot)->left);
 		copyOdd(root->right, &(newRoot)->right);
+        return;
 	}
 	else
 	{
 		*newRoot = NULL;
+        return;
 	}
     copyOdd(root->left, newRoot);
     copyOdd(root->right, newRoot);
