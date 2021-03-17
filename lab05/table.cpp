@@ -5,12 +5,12 @@ void printExtreme(node* root,bool smallest)
 {
     if (smallest == true)
     {
-        if (root == NULL)
+        if (root->left != NULL)
         {
+            printExtreme(root->left, true);
             return;
         }
-        printExtreme(root->left, true);
-        cout << root->data << endl;
+        cout << root->data << " ";
         return;
     }
     if (smallest == false)
