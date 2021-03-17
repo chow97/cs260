@@ -34,10 +34,12 @@ void copyOdd(node* root,node** newRoot)
 	{
 		//copy root
 		*newRoot = new node;
-        *newRoot->data = root->data;
+        (*newRoot)->data = root->data;
 		copyOdd(root->left, &(*newRoot)->left);
 		copyOdd(root->right, &(*newRoot)->right);
-        return;
 	}
-	
+	else
+	{
+		*newRoot = NULL;
+	}
 }
