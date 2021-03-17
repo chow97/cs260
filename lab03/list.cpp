@@ -22,18 +22,20 @@ void reverse(node * head, node *& newHead)
 
 void removeLast(node *& head)
 {
+    node * solution, smallerSol;
     if (head == NULL)
     {
         return;
     }
     if (head->next == NULL)
     {
-        head = NULL;
-    }
-    if (head->next->next == NULL)
-    {        
-        head->next = NULL;        
         return;
     }
-    removeLast(head->next);
+    else
+    {
+        removeLast(head->next);
+        solution = head;
+        return;
+    }
+    //removeLast(head->next);
 }
