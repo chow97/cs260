@@ -37,7 +37,6 @@ void copyOdd(node* root, node** newRoot)
         (*newRoot)->data = root->data;
         //copyOdd(root->left, &(*newRoot)->left);
 	    //copyOdd(root->right, &(*newRoot)->right);  
-		return;
 	}
     copyOdd(root->left, &(*newRoot)->left);
 	copyOdd(root->right, &(*newRoot)->right);  
