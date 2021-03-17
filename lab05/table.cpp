@@ -18,6 +18,7 @@ void printExtreme(node* root,bool smallest)
         if (root->right != NULL)
         {
             printExtreme(root->right, false);
+            return;
         }
         cout << root->data << " ";
         return;
