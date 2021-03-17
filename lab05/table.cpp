@@ -30,20 +30,14 @@ void copyOdd(node* root,node** newRoot)
     {
         return;
     }
-    if(root->data % 2 == 1)
+    if(root->data % 2 != 0)
 	{
 		//copy root
-		node *newRoot = new node;
-        newRoot->data = root->data;
-		copyOdd(root->left, &(newRoot)->left);
-		copyOdd(root->right, &(newRoot)->right);
+		*newRoot = new node;
+        *newRoot->data = root->data;
+		copyOdd(root->left, &(*newRoot)->left);
+		copyOdd(root->right, &(*newRoot)->right);
         return;
 	}
-	else
-	{
-		*newRoot = NULL;
-        return;
-	}
-    copyOdd(root->left, newRoot);
-    copyOdd(root->right, newRoot);
+	
 }
