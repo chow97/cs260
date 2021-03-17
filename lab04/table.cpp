@@ -21,16 +21,19 @@ int sumLeaves(node* root)
         mysum = 0;
 		return mysum;
 	}
-    else
+    if (root->left == NULL && root->right == NULL)
     {
-        lsum = sumLeaves(root->left);
-        rsum = sumLeaves(root->right);
-
-        mysum = lsum + rsum;
-        return mysum;
+        return root->data;
     }
+    
+    lsum = sumLeaves(root->left);
+    rsum = sumLeaves(root->right);
 
-    }
+    mysum = lsum + rsum;
+    return mysum;
+    
+
+}
 
     
 /*
