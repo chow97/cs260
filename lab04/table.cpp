@@ -15,22 +15,28 @@ int countNodes(node * root)
 }
 int sumLeaves(node* root)
 {
-    int mysum, lsum, rsum = 0;
-    if(root == NULL)
-	{
-        mysum = 0;
-		return mysum;
-	}
-    if (root->left == NULL && root->right == NULL)
-    {
-        return root->data;
-    }
-    
-    lsum = sumLeaves(root->left);
-    rsum = sumLeaves(root->right);
-
-    mysum = lsum + rsum;
-    return mysum;
+    int sum, sumLeft, sumRight;  
+    sum = sumRight = sumLeft = 0;  
+      
+    //Check whether tree is empty  
+    if(root == NULL) 
+    {  
+        return 0;  
+    }  
+    else 
+    {  
+        //Calculate the sum of nodes present in left subtree  
+        if(root->left != NULL)  
+            sumLeft = sumLeaves(root->left);  
+          
+        //Calculate the sum of nodes present in right subtree  
+        if(root->right != NULL)  
+              sumRight = sumLeaves(root->right);  
+          
+        //Calculate the sum of all nodes by adding sumLeft, sumRight and root node's data  
+        sum = root->data + sumLeft + sumRight;   
+        return sum;  
+    }      
     
 
 }
