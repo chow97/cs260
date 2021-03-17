@@ -19,7 +19,7 @@ void printExtreme(node* root,bool smallest)
         {
             printExtreme(root->right, false);
         }
-        cout << root->data;
+        cout << root->data << " ";
         return;
     }
 }
