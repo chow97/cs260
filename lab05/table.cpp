@@ -11,7 +11,7 @@ void printExtreme(node* root,bool smallest)
         }
         printExtreme(root->left, true);
         cout << root->data << endl;
-        
+        return;
     }
     if (smallest == false)
     {
@@ -20,6 +20,7 @@ void printExtreme(node* root,bool smallest)
             printExtreme(root->right, false);
         }
         cout << root->data;
+        return;
     }
 }
 void copyOdd(node* root,node** newRoot)
