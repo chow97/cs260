@@ -24,13 +24,13 @@ void printExtreme(node* root,bool smallest)
         return;
     }
 }
-void copyOdd(node* root,node** newRoot)
+void copyOdd(node* root, node** newRoot)
 {
     if (root == NULL)
     {
         return;
     }
-    if(root->data % 2 != 0)
+    if(root)//->data % 2 != 0)
 	{
 		//copy root
 		*newRoot = new node;
