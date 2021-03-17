@@ -31,7 +31,7 @@ void removeLast(node *& head)
     {
         node* temp = head->next->next;
         delete temp;
-        head->next = NULL;
+        //head->next = NULL;
         
         return;
     }
