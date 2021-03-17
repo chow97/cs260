@@ -3,10 +3,6 @@
 //Please put the impelementation of the required functions here
 void printExtreme(node* root,bool smallest)
 {
-    if (root == NULL)
-    {
-        return;
-    }
     if (smallest == true)
     {
         if (root == NULL)
@@ -14,7 +10,7 @@ void printExtreme(node* root,bool smallest)
             return;
         }
         printExtreme(root->left, true);
-        cout << root->data;
+        cout << root->data << endl;
         
     }
     if (smallest == false)
