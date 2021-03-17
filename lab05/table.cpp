@@ -9,11 +9,13 @@ void printExtreme(node* root,bool smallest)
     }
     if (smallest == true)
     {
-        if (root->left != NULL)
+        if (root == NULL)
         {
-            printExtreme(root->left, true);
+            return;
         }
+        printExtreme(root->left, true);
         cout << root->data;
+        
     }
     if (smallest == false)
     {
