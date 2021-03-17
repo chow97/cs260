@@ -9,15 +9,20 @@ void printExtreme(node* root,bool smallest)
     }
     if (smallest == true)
     {
-        if (root->left == NULL)
+        if (root->left != NULL)
         {
-            cout << root->data;
+            printExtreme(root->left, true);
         }
-        printExtreme(root->left, true);
         cout << root->data;
     }
-    
-    
+    if (smallest == false)
+    {
+        if (root->right != NULL)
+        {
+            printExtreme(root->right, false);
+        }
+        cout << root->data;
+    }
 }
 void copyOdd(node* root,node** newRoot)
 {
