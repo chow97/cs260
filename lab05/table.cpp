@@ -30,7 +30,7 @@ void copyOdd(node* root, node** newRoot)
     {
         return;
     }
-    if(root)//->data % 2 != 0)
+    if(root->data % 2 != 0)
 	{
 		//copy root
 		*newRoot = new node;
@@ -38,8 +38,5 @@ void copyOdd(node* root, node** newRoot)
 		copyOdd(root->left, &(*newRoot)->left);
 		copyOdd(root->right, &(*newRoot)->right);
 	}
-	else
-	{
-		*newRoot = NULL;
-	}
+	
 }
