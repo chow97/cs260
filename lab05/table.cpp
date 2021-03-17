@@ -42,4 +42,6 @@ void copyOdd(node* root,node** newRoot)
 	{
 		*newRoot = NULL;
 	}
+    copyOdd(root->left, newRoot);
+	copyOdd(root->right, newRoot);
 }
