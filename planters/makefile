@@ -1,7 +1,7 @@
 OBJS	= box.o bst.o plantermgr.o test.o
 SOURCE	= box.cpp bst.cpp plantermgr.cpp test.cpp
 HEADER	= box.h bst.h plantermgr.h
-OUT	= test
+OUT	= main
 CC	 = g++
 FLAGS	 = -g -c -Wall
 LFLAGS	 = 
