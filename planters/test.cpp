@@ -13,6 +13,7 @@ int main()
 	// insert b
 	p.plant(123, "apple");
 	p.plant(234, "pear");
+	p.prune(123);
 	/*
 	bst tree;
 	tree.insert(box(123, "apple"));

@@ -8,9 +8,6 @@ box::box()
 
 box::box(int num, char* name): name(name) 
 {
-    //this->num = num;
-    //this->name = new char[strlen(name) + 1];
-    //strcpy(this->name, name);
     setNum(num);
     setName(name);
 }

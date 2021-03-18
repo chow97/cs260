@@ -16,4 +16,5 @@ void plantermgr::harvest(char* name, int start, int stop)
 void plantermgr::prune(int num)
 {
     tree.remove(num);
+    cout << "Pruning box number " << num << "." << endl;
 }
