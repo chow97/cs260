@@ -6,13 +6,13 @@ box::box()
     name = NULL;
 }
 
-box::box(int num, char* name)//: name(name) 
+box::box(int num, char* name): name(name) 
 {
-    this->num = num;
-    this->name = new char[strlen(name) + 1];
-    strcpy(this->name, name);
-    //setNum(num);
-    //setName(name);
+    //this->num = num;
+    //this->name = new char[strlen(name) + 1];
+    //strcpy(this->name, name);
+    setNum(num);
+    setName(name);
 }
 
 box::box(const box& data): name(NULL)
@@ -47,11 +47,6 @@ void box::setNum(int num)
 
 void box::setName(char* name)
 {
-    if(this->name)
-    {
-        delete [] this->name;
-    }
-
     this->name = new char[strlen(name) + 1];
     strcpy(this->name, name);
 }
