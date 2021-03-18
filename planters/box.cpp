@@ -47,10 +47,13 @@ void box::setName(char* name)
     if(this->name)
     {
         delete [] this->name;
+        this->name = NULL;
     }
+
     this->name = new char[strlen(name) + 1];
     strcpy(this->name, name);
 }
+
 bool operator<(const box& d1, const box& d2)
 {
 	return d1.num < d2.num;
