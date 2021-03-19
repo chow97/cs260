@@ -1,0 +1,54 @@
+Proficiency Test Final
+
+
+********************************************************************************
+VERY IMPORTANT: This test is administered under a very tight time limit
+timeline. Unless you have PRIOR approval, you are required to complete with
+the time limit. If your submission exceeds the time limit, even by 1 minute,
+you will receive a 0 on the exam. This time limit is enforced strictly.
+********************************************************************************
+
+The file "supplied.o" contains code that can build, display, and
+destroy a binary search tree.
+
+For this exam, you will need to write the following functions in table.cpp,
+and add function prototypes for them to table.h and invoke the functions in
+main.cpp.
+
+* int sumOfNodes(node * root)
+
+  Recursively calculate the sum of all the nodes in the tree.
+
+* void copyLeaf(node * src, node *& dest)
+
+  Recursively copy all the leaves from the source tree to the destination
+  tree. The destination tree must be a binary search tree.
+
+Run your program in valgrind and make sure there are no memory leaks or memory
+errors. Assuming the executable file is named main
+
+valgrind --tool=memcheck --leak-check=full ./main
+
+For test submission, create a tar file containing table.cpp, table.h, and
+main.cpp. Use the turnin command to submit it.
+
+     tar cvf finalexam_files.tar main.cpp table.cpp table.h
+     ~mike.noel/bin/turnin cs260 finalexam_files.tar
+
+If you do not turn in ALL of your source files or if I'm unable to compile the
+code you submit then you will receive a very low score.
+
+The grading criteria are:
+
+5pts The program compiles
+3pts The program runs without crashing or hanging
+2pts No memory errors or memory leaks
+5pts Correct functionality (2pts for sumOfNodes, 3pts for copyLeaf)
+5pts Recursive implementation (2pts for sumOfNodes, 3pts for copyLeaf)
+
+You can get partial credit so be sure to turn in whatever you have by the end
+of the testing time period.
+
+
+ 
+
