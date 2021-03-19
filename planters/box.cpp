@@ -13,33 +13,9 @@ box::box(int num, char* name): num(num), name(NULL)
 
 box::box(const box& data): name(NULL)
 {
-    //setNum(data.num);
-    //setName(data.name);   
-    if(this != &data) {
-        this->num = data.num;
-        if(this->name) {
-            delete [] this->name;
-            this->name = nullptr;
-        }
-        this->name = new char[strlen(data.name) + 1];
-        strcpy(this->name, data.name);
-    }
-    
+    setNum(data.num);
+    setName(data.name);   
 }
-const box& box::operator= (const box& src) {
-    if(this != &src) {
-        this->num = src.num;
-        if(this->name) {
-            delete [] this->name;
-            this->name = nullptr;
-        }
-        this->name = new char[strlen(src.name) + 1];
-        strcpy(name, src.name);
-        //cout << &name << " copied: " << name << " len: " << len << endl;
-    }
-    return *this;
-};
-
 box::~box()
 {
     if(name)
@@ -68,7 +44,7 @@ void box::setName(char* name)
 {
     if(this->name)
     {
-	    delete [] this->name;
+	    //delete [] this->name;
     }
 
     this->name = new char[strlen(name)+1];
