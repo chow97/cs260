@@ -1,11 +1,11 @@
 #include "bst.h"
 using namespace std;
 
-bst::bst(): root(NULL), size(0)
+bst::bst(): root(NULL)
 {
 }
 
-bst::bst(const bst& aTable):root(NULL), size(aTable.size)
+bst::bst(const bst& aTable):root(NULL)
 {
 	if(this != &aTable) 
     {
@@ -17,7 +17,6 @@ void bst::copyTree (node ** newRoot, node * root)
 {
 	if(root)
 	{
-		//copy root
 		*newRoot = new node(root->item);
 		copyTree(&(*newRoot)->left, root->left);
 		copyTree(&(*newRoot)->right, root->right);
@@ -53,7 +52,6 @@ void bst::insert (node ** root, const box& data)
 	if(! *root)
 	{
 		*root = new node(data);
-		size++;
 	}
 	else if(data < (*root)->item)
 	{
@@ -64,24 +62,7 @@ void bst::insert (node ** root, const box& data)
 		insert(&((*root)->right), data);
 	}
 }
-/*
-bool bst::contains(int num, char* name) const
-{
-	return contains(root, num, name);
-}
 
-bool bst::contains(node * root, int num, char* name) const
-{
-	if (! root)
-		return false;
-	else if(num == root->item.getNum() && strcmp(name, root->item.getName()) == 0)
-		return true;
-	else if(num < root->item.getNum())
-		return contains(root->left, num, name);
-	else
-		return contains(root->right, num, name);
-}
-*/
 bool bst::remove (int num)
 {
 	return remove(&root, num);
@@ -148,7 +129,6 @@ void bst::deleteNode (node ** target)
 		curr->right = NULL;
 		delete curr;
 	}
-	size--;
 }
 void bst::inOrder(int start, int stop, char* name) 
 {
