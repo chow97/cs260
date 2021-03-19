@@ -8,7 +8,8 @@ box::box()
 
 box::box(int num, char* name): name(NULL) 
 {
-    setNum(num);
+    //setNum(num);
+    this->name = name;
     setName(name);
 }
 
