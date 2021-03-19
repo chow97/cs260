@@ -43,7 +43,9 @@ void box::setNum(int num)
 void box::setName(char* name)
 {
     if(this->name)
-	delete [] this->name;
+    {
+	    delete [] this->name;
+    }
 
     this->name = new char[strlen(name)+1];
     strcpy(this->name, name);
