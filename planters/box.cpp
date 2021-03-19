@@ -55,6 +55,7 @@ bool operator<(const box& d1, const box& d2)
 {
 	return d1.num < d2.num;
 }
+/*
 const box& box::operator= (const box& src) {
     if(this != &src) {
         this->num = src.num;
@@ -68,3 +69,4 @@ const box& box::operator= (const box& src) {
     }
     return *this;
 }
+*/
