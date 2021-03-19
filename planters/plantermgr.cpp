@@ -10,8 +10,8 @@ void plantermgr::plant(int num, char* name)
 
 void plantermgr::harvest(char* name, int start, int stop)
 {
-    cout << "Harvesting " << name << " from boxes " << start << " to " << stop
-    << ". The following boxes will be harvested: ";
+    cout << "Harvesting " << name << " from boxes " << start << " to " << stop;
+    cout << ". The following boxes will be harvested: ";
     tree.inOrder(start, stop, name);
     cout << endl << endl;
 }
