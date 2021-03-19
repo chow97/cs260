@@ -20,7 +20,7 @@ box::~box()
 {
     if(name)
     {
-        delete [] name;
+        //delete [] name;
         name = NULL;
     }
 }
