@@ -64,7 +64,7 @@ void bst::insert (node ** root, const box& data)
 		insert(&((*root)->right), data);
 	}
 }
-
+/*
 bool bst::contains(int num, char* name) const
 {
 	return contains(root, num, name);
@@ -81,7 +81,7 @@ bool bst::contains(node * root, int num, char* name) const
 	else
 		return contains(root->right, num, name);
 }
-
+*/
 bool bst::remove (int num)
 {
 	return remove(&root, num);
@@ -149,4 +149,23 @@ void bst::deleteNode (node ** target)
 		delete curr;
 	}
 	size--;
+}
+void bst::inOrder(int start, int stop, char* name) 
+{
+    inOrder(&root, start, stop, name);
+}
+
+void bst::inOrder(node ** root, int start, int stop, char* name) 
+{
+    if(*root) 
+	{
+        inOrder(&(*root)->left, start, stop, name);
+        int num = (*root)->item.getNum();
+        char* target = (*root)->item.getName();
+        if(num >= start && num <= stop && strcmp(name, target) == 0)
+		{
+            cout << (*root)->item.getNum() << " ";
+		}
+        inOrder(&(*root)->right, start, stop, name);
+    }
 }

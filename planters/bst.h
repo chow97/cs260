@@ -14,6 +14,7 @@ class bst
         void insert(const box& data);
         bool remove(int num);
         bool contains(int num, char* name)const;
+        void inOrder(int start, int stop, char* name);
     private:
         struct node
         {
@@ -33,6 +34,7 @@ class bst
         //void display(ostream& out, node * root, int level) const;
         void destroyTree(node ** root);
         void copyTree(node ** newRoot, node * root);
+        void inOrder(node ** root, int start, int stop, char* name);
 
 };
 #endif

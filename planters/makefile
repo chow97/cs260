@@ -1,5 +1,5 @@
-OBJS	= box.o bst.o plantermgr.o test.o
-SOURCE	= box.cpp bst.cpp plantermgr.cpp test.cpp
+OBJS	= box.o bst.o plantermgr.o planters.o
+SOURCE	= box.cpp bst.cpp plantermgr.cpp planters.cpp
 HEADER	= box.h bst.h plantermgr.h
 OUT	= main
 CC	 = g++
@@ -18,8 +18,8 @@ bst.o: bst.cpp
 plantermgr.o: plantermgr.cpp
 	$(CC) $(FLAGS) plantermgr.cpp 
 
-test.o: test.cpp
-	$(CC) $(FLAGS) test.cpp 
+planters.o: planters.cpp
+	$(CC) $(FLAGS) planters.cpp 
 
 
 clean:
