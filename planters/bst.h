@@ -10,6 +10,7 @@ class bst
         bst();
         bst(const bst& aTable);
         ~bst();
+        const bst& operator= (const bst& aTable);
 
         void insert(const box& data);
         bool remove(int num);
