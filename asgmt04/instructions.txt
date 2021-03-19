@@ -1,0 +1,161 @@
+================================================================================
+========================================================= Overview and Objective 
+
+For this assignment you will write a program that reads in the data for
+planting, harvesting, and pruning plants in an automated food growing
+factory. The program is demonstrating a fast and efficient way of handling the
+large list of plants while also providing a way to traverse the data structure
+in order. You can read background.txt if you want more context for why we are
+doing this. For those who have been following along with the story, there is
+also an epilogue.txt that describes what happens with the colony.
+
+The objective of this assignment is to learn how to implement and use a
+BST. Since this is the objective, you cannot use a premade BST or any other
+premade data structure. A secondary objective is to become more familiar with
+using char* to represent string data. You cannot use std::string to represent
+the strings.
+
+Your program will be evaluated based on both how it runs as well as how it was
+designed and coded. Pay attention to the "rubric.txt" file to see how it will
+be evaluated.
+
+Along with these instructions, I have provided data files and the EXACT
+expected output that corresponds to those data files. It is important that
+your program output matches EXACTLY. This includes spelling, whitespace, and
+punctuation.
+
+The rest of this document provides more details about the assignment. If you
+have any questions, be sure to post in the discussion group or send me
+email. Do not wait until the last minute to start this assignment.
+
+================================================================================
+======================================================================== Details 
+
+The following sections provides details about the requirements for the
+assignment.
+
+-------------------------------------------------------------------- the factory
+
+This program provides automation for a simulated food growing factory. The
+factory is used to grow plants and harvest the food from them. Each plant is
+planted in a box and that box is used by the factory to locate the plant. Each
+box has a number and grows exactly one type of plant. The example datafiles
+show this structure. For example, in the planting section of small.txt there
+is this:
+
+92741 corn
+
+That means that box #92741 will be planted with a corn plant. The factory also
+supports harvesting and pruning plants. See the description of plantermgr
+below for details of how each action should be handled.
+
+------------------------------------------------------------------- planters.cpp
+
+The planters.cpp file contains the main application for your program. This
+code is meant to read in plant data (from the provided data file) and process
+that data. The data file includes commands to plant, harvest, and prune
+plants.
+
+The code relies on one class that you must provide. This is the plantermgr
+class (see below).
+
+You should use this code (planters.cpp) unchanged.
+
+--------------------------------------------------------------------- plantermgr
+
+The plantermgr class contains a data structure that keeps track of all of the
+active plants. The plantermgr class also contains the factory logic for doing
+the three actions that the factory can do: plant, harvest, prune.
+
+Planting new plants means creating a new box for the plant and adding that to
+the data structure.
+
+Harvesting is done one plant type at a time and in blocks of boxes. For
+example the following command:
+
+chive 48223 58268
+
+directs the factory to harvest all of the chive plants between boxes 48223
+and 58268. It may be that there aren't any matching plants in that range but
+the factory will still look to see. An important point about harvesting is
+that it should not traverse the entire BST but only the portion of the tree
+indicated by the range of boxes. Traversing the whole tree would take too
+long. 
+
+Pruning a box means removing it from the data structure.
+
+Since this is just a simlulation, planting, harvest, and pruning simply print
+messages to the screen to say that's what is being done.
+
+--------------------------------------------------------------------- data files
+
+The data files for this project are more complex than in the previous
+projects. Each data file has multiple sections. Each section is marked with
+"start_section" and "end_section". The data within the section is different
+for each type of section. There are three types of sections: planting,
+harvesting, pruning.
+
+The planting section looks like this:
+
+start_planting
+92741 corn
+end_planting
+
+This plants corn in box 92741.
+
+The harvesting section looks like this:
+
+start_harvest
+chive 48223 58268
+end_harvest
+
+This harvests all chive plants between 48223 and 58268, if any.
+
+The pruning section looks like this:
+
+start_pruning
+91270
+end_pruning
+
+This prunes the plant in box 91270 (that is, it removes it from the data
+structure).
+
+There can be multiple instances of each section in the data file. The box
+numbers in each section are not in numerical order.
+
+This data file format is handled properly by the provided planters.cpp
+file. If you want to make your own data files, you will need to follow this
+format.
+
+---------------------------------------------------------- External Requirements
+
+- The main driver (planters.cpp) will plant, harvest, and prune through the
+  plantermgr class. Your program must have a plantermgr class that works
+  with planters.cpp.
+- The plantermgr class needs to store all plants (boxes) in a BST.
+- The BST must support insert, remove, and traversal of a range of values.
+- The harvesting algorithm must not traverse the entire tree.
+- The output from your program must match the output files exactly.
+- The program will be evaluated on how quickly it can process large.txt. See
+  the rubric for point values associated with different performance numbers.
+
+================================================================================
+========================================================================= Design
+
+The design of your program is just as important as the functionality of the
+program. Throughout this class you have seen several examples of creating good
+design with classes. For this assignment, it is up to you to determine the
+best classes (other than the plantermgr class).
+
+================================================================================
+======================================================== Turnin and Extra Credit
+
+You must use the "turnin" program to turn in your assignment. DO NOT USE D2L
+TO TURN IN YOUR ASSIGNMENT. Assignments turned in using D2L will not be
+counted. For information on using the "turnin" program see
+~mike.noel/classes/all/turnin.txt.
+
+IMPORTANT: If the program fails to compile, crashes, or hangs then the program
+automatically gets a 0.
+
+There is no extra credit for this assignment. 
