@@ -13,8 +13,17 @@ box::box(int num, char* name): num(num), name(NULL)
 
 box::box(const box& data): name(NULL)
 {
-    setNum(data.num);
-    setName(data.name);   
+    //setNum(data.num);
+    //setName(data.name);   
+    if(this != &data) {
+        this->num = data.num;
+        if(this->name) {
+            delete [] this->name;
+            this->name = nullptr;
+        }
+        this->name = new char[strlen(data.name) + 1];
+        strcpy(this->name, data.name);
+    }
     
 }
 const box& box::operator= (const box& src) {
