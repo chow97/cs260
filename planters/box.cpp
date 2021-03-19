@@ -1,9 +1,7 @@
 #include "box.h"
 
-box::box()
+box::box(): num(0), name(NULL)
 {
-    num = 0;
-    name = NULL;
 }
 
 box::box(int num, char* name): name(NULL) 
