@@ -9,7 +9,7 @@ box::box()
 box::box(int num, char* name): name(NULL) 
 {
     //setNum(num);
-    this->name = name;
+    this->num = num;
     setName(name);
 }
 
