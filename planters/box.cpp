@@ -4,10 +4,10 @@ box::box(): num(0), name(NULL)
 {
 }
 
-box::box(int num, char* name): name(NULL) 
+box::box(int num, char* name): num(num), name(NULL) 
 {
-    //setNum(num);
-    this->num = num;
+    setNum(num);
+    //this->num = num;
     setName(name);
 }
 
