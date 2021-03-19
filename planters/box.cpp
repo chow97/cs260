@@ -20,7 +20,7 @@ box::~box()
 {
     if(name)
     {
-        //delete [] name;
+        delete [] name;
         name = NULL;
     }
 }
@@ -44,7 +44,7 @@ void box::setName(char* name)
 {
     if(this->name)
     {
-	    //delete [] this->name;
+	    delete [] this->name;
     }
 
     this->name = new char[strlen(name)+1];
