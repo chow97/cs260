@@ -13,6 +13,7 @@ class box
         box(int num, char* name);
         box(const box& data);
         ~box();
+        const box& operator= (const box& src);
         friend bool operator< (const box& d1, const box& d2);
         void setNum(int num);
         void setName(char* name);

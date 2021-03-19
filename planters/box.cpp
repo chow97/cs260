@@ -17,6 +17,19 @@ box::box(const box& data): name(NULL)
     setName(data.name);   
     
 }
+const box& box::operator= (const box& src) {
+    if(this != &src) {
+        this->num = src.num;
+        if(this->name) {
+            delete [] this->name;
+            this->name = nullptr;
+        }
+        this->name = new char[strlen(src.name) + 1];
+        strcpy(name, src.name);
+        //cout << &name << " copied: " << name << " len: " << len << endl;
+    }
+    return *this;
+};
 
 box::~box()
 {
