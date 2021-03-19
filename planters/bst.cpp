@@ -4,7 +4,7 @@ using namespace std;
 bst::bst(): root(NULL)
 {
 }
-/*
+
 bst::bst(const bst& aTable):root(NULL)
 {
 	if(this != &aTable) 
@@ -12,25 +12,6 @@ bst::bst(const bst& aTable):root(NULL)
         destroyTree(&root);
         copyTree(&root, aTable.root);
     }
-}*/
-bst::bst(const bst& aTable):root(NULL)
-{
-	*this = aTable;
-}
-
-const bst& bst::operator= (const bst& aTable)
-{
-	if(this == &aTable)
-		return *this;
-	else
-	{
-		//release dynamically allocated memory held by current object
-		destroyTree(&root); 
-
-		//copy the table
-		copyTree(&root, aTable.root);
-		return *this;
-	}
 }
 void bst::copyTree (node ** newRoot, node * root)
 {
