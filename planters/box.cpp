@@ -6,9 +6,9 @@ box::box()
     name = NULL;
 }
 
-box::box(int num, char* name): name(name) 
+box::box(int num, char* name): name(NULL) 
 {
-    setNum(num);
+    //setNum(num);
     setName(name);
 }
 
