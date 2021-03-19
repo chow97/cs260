@@ -25,12 +25,12 @@ class bst
         };
         node * root;	
         
-        void insert(node * root, const box& data);
-        bool remove(node * root, int num);
-        void deleteNode(node * target);
-        void destroyTree(node * root);
-        void copyTree(node *& newRoot, node * root);
-        void inOrder(node * root, int start, int stop, char* name);
+        void insert(node ** root, const box& data);
+        bool remove(node ** root, int num);
+        void deleteNode(node ** target);
+        void destroyTree(node ** root);
+        void copyTree(node ** newRoot, node * root);
+        void inOrder(node ** root, int start, int stop, char* name);
 
 };
 #endif
