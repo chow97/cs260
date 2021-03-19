@@ -44,7 +44,7 @@ void box::setName(char* name)
 {
     if(this->name)
     {
-	    //delete [] this->name;
+	    delete [] this->name;
     }
 
     this->name = new char[strlen(name)+1];
@@ -54,4 +54,17 @@ void box::setName(char* name)
 bool operator<(const box& d1, const box& d2)
 {
 	return d1.num < d2.num;
+}
+const box& box::operator= (const box& src) {
+    if(this != &src) {
+        this->num = src.num;
+        if(this->name) {
+            delete [] this->name;
+            this->name = nullptr;
+        }
+        this->name = new char[strlen(src.name) + 1];
+        strcpy(name, src.name);
+        //cout << &name << " copied: " << name << " len: " << len << endl;
+    }
+    return *this;
 }
