@@ -13,8 +13,8 @@ box::box(int num, char* name): num(num), name(NULL)
 
 box::box(const box& data): name(NULL)
 {
-    setNum(data.num);
-    setName(data.name);   
+    //setNum(data.num);
+    //setName(data.name);   
 }
 
 box::~box()
