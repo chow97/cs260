@@ -4,7 +4,7 @@ using namespace std;
 bst::bst(): root(NULL)
 {
 }
-
+/*
 bst::bst(const bst& aTable):root(NULL)
 {
 	if(this != &aTable) 
@@ -13,6 +13,7 @@ bst::bst(const bst& aTable):root(NULL)
         copyTree(&root, aTable.root);
     }
 }
+*/
 void bst::copyTree (node ** newRoot, node * root)
 {
 	if(root)
