@@ -139,7 +139,7 @@ void bst::inOrder(node ** root, int start, int stop, char* name)
 {
     if(*root) 
 	{
-        //inOrder(&(*root)->left, start, stop, name);
+        inOrder(&(*root)->left, start, stop, name);
         int num = (*root)->item.getNum();
         char* target = (*root)->item.getName();
         if(num >= start && num <= stop && strcmp(name, target) == 0)
